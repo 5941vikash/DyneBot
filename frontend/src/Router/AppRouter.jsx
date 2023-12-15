@@ -1,6 +1,12 @@
+// React
 import React from "react";
 
+/* ------------- React Router Dom ------------- */
+// Router,Route,Routes
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+
+/* ------------- Components ------------- */
+// Navbar Component
 import Navbar from "../Components/Navbar/Navbar";
 
 const AppRouter = () => {
@@ -8,7 +14,11 @@ const AppRouter = () => {
     <>
       <Router>
         <Navbar />
-        <Routes>{/* <Route/> */}</Routes>
+        <Routes>
+          {" "}
+          {/* Home Route */}
+          {/* <Route exact path="/" element={<Home />} /> */}
+        </Routes>
       </Router>
     </>
   );
