@@ -1,0 +1,390 @@
+.homeContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: var(--Black, #16205f);
+  font-family: Poppins;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.5px;
+}
+
+.homeContainer .homeFirstCont {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 50px 0;
+}
+
+.homeContainer .homeFirstCont .box {
+  width: 40%;
+  border-radius: 0px 80px 0px 0px;
+  background: #ffff;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 40px 150px 40px 0;
+  margin-right: -150px;
+  z-index: 1;
+}
+
+.homeContainer .homeFirstCont img {
+  width: 80%;
+  height: 520px;
+  z-index: 0;
+}
+
+.homeContainer .homeFirstCont .box h2 {
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+
+.homeContainer .homeFirstCont .box p {
+  font-weight: 400;
+}
+
+.homeContainer .homeFirstCont .box button {
+  padding: 10px 20px;
+  border-radius: 8px;
+  border-style: none;
+  color: #fff;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  background: linear-gradient(90deg, #30bcc9 0%, #313968 100%);
+  box-shadow: 0px 4px 22px 0px rgba(0, 0, 0, 0.12);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+@media only screen and (max-width: 1040px) {
+  .homeContainer .homeFirstCont {
+    width: 100%;
+    justify-content: center;
+    flex-direction: column-reverse;
+    margin-top: 0px;
+  }
+
+  .homeContainer .homeFirstCont img {
+    width: 100%;
+    height: auto;
+  }
+
+  .homeContainer .homeFirstCont .box {
+    width: 90%;
+    margin-right: 0px;
+    padding: 0;
+    padding-top: 40px;
+  }
+}
+
+.homeContainer .homeSecondCont {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 50px 0;
+}
+
+.homeContainer .homeSecondCont .box {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.homeContainer .homeSecondCont .box img {
+  width: 60px;
+  height: 60px;
+  margin: 5px;
+  border-radius: 12px;
+  background: linear-gradient(90deg, #30bcc9 0%, #313968 100%);
+  padding: 5px;
+}
+
+.homeContainer .homeSecondCont .box span {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  margin: 5px 10px;
+}
+
+.homeContainer .homeSecondCont .box span p:nth-child(1) {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.homeContainer .homeSecondCont .box span p:nth-child(2) {
+  font-size: 15px;
+  font-weight: 400;
+}
+
+@media only screen and (max-width: 1040px) {
+  .homeContainer .homeSecondCont {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .homeContainer .homeSecondCont .box {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .homeContainer .homeSecondCont .box img {
+    align-self: center;
+    margin-bottom: 10px;
+  }
+}
+
+.homeContainer .homeThirdCont {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0;
+  flex-direction: column;
+  background: linear-gradient(90deg, #30bcc9 0.62%, #313968 95.42%);
+  /* Shadow */
+  box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.06);
+  padding: 40px 0;
+}
+
+.homeContainer .homeThirdCont h6 {
+  color: #fff;
+  text-align: center;
+  font-weight: 600;
+  text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  margin: 10px 0;
+  letter-spacing: 1px;
+}
+
+.homeContainer .homeThirdCont h2 {
+  text-align: center;
+  font-weight: 600;
+  margin: 10px 0;
+}
+
+.homeContainer .homeThirdCont p {
+  width: 400px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  margin: 10px 0;
+}
+
+.homeContainer .homeThirdCont .box {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.homeContainer .homeThirdCont .box .inBox {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.homeContainer .homeThirdCont .box .inBox img {
+  width: 80px;
+  height: 80px;
+  margin: 15px 0;
+}
+
+.homeContainer .homeThirdCont .box .inBox p {
+  width: auto;
+  font-size: 17px;
+  font-weight: 600;
+  margin: 0;
+  padding: 0;
+}
+
+.homeContainer .homeThirdCont .box .inBox p strong {
+  font-size: 25px;
+  margin-right: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  .homeContainer .homeThirdCont .box {
+    flex-direction: column;
+  }
+
+  .homeContainer .homeThirdCont .box .inBox {
+    margin: 20px 0;
+  }
+
+  .homeContainer .homeThirdCont p {
+    width: 80%;
+  }
+
+  .homeContainer .homeThirdCont .box .inBox {
+    width: 50%;
+  }
+
+  .homeContainer .homeThirdCont .box .inBox p {
+    width: auto;
+  }
+}
+
+.homeContainer .homeFourthCont,
+.homeContainer .homeFifthCont {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  margin: 30px 0;
+}
+
+.homeContainer .homeFourthCont h5,
+.homeContainer .homeFifthCont h5 {
+  font-weight: 600;
+}
+
+.homeContainer .homeFourthCont h2,
+.homeContainer .homeFifthCont h2 {
+  font-weight: 600;
+  width: 500px;
+  margin: 10px 0;
+}
+
+.homeContainer .homeFourthCont p {
+  font-weight: 400;
+  width: 500px;
+}
+
+.homeContainer .homeFourthCont .box {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.homeContainer .homeFourthCont .box .inBox {
+  width: 20%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.homeContainer .homeFourthCont .box .inBox img {
+  width: 60px;
+  height: 60px;
+  border-radius: 12px;
+  background: linear-gradient(90deg, #30bcc9 0%, #313968 100%);
+  padding: 5px;
+  margin: 20px 0;
+}
+
+.homeContainer .homeFourthCont .box .inBox p:nth-child(2) {
+  font-weight: 600;
+  font-size: 18px;
+  width: 100%;
+  margin: 5px 0;
+}
+
+.homeContainer .homeFourthCont .box .inBox p:nth-child(3) {
+  font-weight: 500;
+  width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+  .homeContainer .homeFourthCont h2,
+  .homeContainer .homeFourthCont p {
+    width: auto;
+  }
+
+  .homeContainer .homeFourthCont .box {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .homeContainer .homeFourthCont .box .inBox {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+}
+
+.homeContainer .homeFifthCont .box {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin: 20px 0;
+}
+
+.homeContainer .homeFifthCont .box .inBox {
+  width: 22%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px;
+  border-radius: 12px;
+  background: #fff;
+  height: 70px;
+  /* Shadow */
+  box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.06);
+  margin: 10px 0;
+  position: relative; /* Add this line to use absolute positioning for the border */
+}
+
+.homeContainer .homeFifthCont .box .inBox::before {
+  content: ""; /* Empty content to create a pseudo-element for the border */
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 10px; /* Set the width of the border */
+  border-radius: 12px 0 0 12px; /* Border radius to match the container */
+  background: linear-gradient(
+    180deg,
+    #30bcc9 0%,
+    #313968 100%
+  ); /* Gradient color for the border */
+}
+
+.homeContainer .homeFifthCont .box .inBox img {
+  width: 32px;
+  height: 32px;
+  margin: 10px;
+  margin-right: 15px;
+}
+
+.homeContainer .homeFifthCont .box .inBox p {
+  font-size: 14px;
+  font-weight: 500;
+  align-self: center;
+  margin: 10px 0;
+}
+
+@media only screen and (max-width: 900px) {
+  .homeContainer .homeFifthCont .box .inBox {
+    width: 45%;
+  }
+}
+
+@media only screen and (max-width: 615px) {
+  .homeContainer .homeFifthCont h2,
+  .homeContainer .homeFifthCont p {
+    width: auto;
+  }
+  .homeContainer .homeFifthCont .box .inBox {
+    width: 100%;
+  }
+}

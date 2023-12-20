@@ -7,7 +7,7 @@
 }
 
 .footerBox .firstContFootBox {
-  /* width: 50%; */
+  width: 90%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -15,12 +15,12 @@
 }
 
 .footerBox .firstContFootBox img {
-  width: 560px;
+  width: 50%;
   height: 670px;
 }
 
 .footerBox .firstContFootBox .formBox {
-  width: 555px;
+  width: 50%;
   border-radius: 60px 0px 0px 0px;
   background: #fff;
   position: relative;
@@ -34,7 +34,8 @@
   font-family: Poppins;
   font-style: normal;
   font-weight: 600;
-  line-height: 58px; /* 126.087% */
+  letter-spacing: 1px;
+  margin: 10px 0;
 }
 
 .footerBox .firstContFootBox .formBox .formDetails {
@@ -131,7 +132,7 @@
 
 .footerBox .firstContFootBox button {
   width: 250px;
-  height: 45px;
+  padding: 10px 20px;
   flex-shrink: 0;
   border-radius: 8px;
   background: linear-gradient(90deg, #30bcc9 0%, #313968 50%);
@@ -151,14 +152,58 @@
   line-height: normal;
 }
 
+@media only screen and (max-width: 880px) {
+  .footerBox .firstContFootBox {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .footerBox .firstContFootBox img {
+    width: 100%;
+    height: 565px;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 0px;
+  }
+
+  .footerBox .firstContFootBox .formBox {
+    width: 90%;
+    background-color: #fff;
+    position: static;
+    border-radius: 0px;
+    margin-top: -150px;
+  }
+
+  .footerBox .firstContFootBox .formBox .formDetails {
+    width: 100%;
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
+
+  .footerBox .firstContFootBox .formBox .formDetails .box {
+    width: 100%;
+  }
+
+  .footerBox .firstContFootBox button {
+    width: 100%;
+    margin-top: 40px;
+  }
+}
+
 .footerBox .secondContFootBox {
   width: 100%;
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   margin: 20px 0;
-  padding: 20px;
+  padding: 20px 0;
   border-top: 1px solid #c4c4c4;
+}
+
+.footerBox .secondContFootBox .innerBox {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
 .footerBox .secondContFootBox .footBox {
@@ -211,6 +256,18 @@ a {
   margin: 10px 0;
 }
 
+@media only screen and (max-width: 700px) {
+  .footerBox .secondContFootBox .innerBox {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footerBox .secondContFootBox .footBox {
+    width: 90%;
+    margin: 20px 0;
+  }
+}
+
 .footerBox .thirdContFootBox {
   width: 100%;
   display: flex;
@@ -228,7 +285,7 @@ a {
 }
 
 .footerBox .thirdContFootBox .innerBox {
-  width: 87%;
+  width: 90%;
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
@@ -244,7 +301,7 @@ a {
 }
 
 .footerBox .fourthContFootBox {
-  width: 87%;
+  width: 90%;
   margin-bottom: 100px;
 }
 

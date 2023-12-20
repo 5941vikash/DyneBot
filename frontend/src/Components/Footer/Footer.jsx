@@ -1,16 +1,38 @@
-import React from "react";
+// React & UseState
+import React, { useState } from "react";
+// Footer CSS
 import "./Footer.css";
+
+// Image
 import footerCom from "./Assets/footerCom.png";
+// Logo
 import Logo from "./Assets/Logo.png";
 
-// Right Arrow Icon
-import ArrowForwardOutlinedIcon from "@mui/icons-material/ArrowForwardOutlined";
-import EmailOutlinedIcon from "@mui/icons-material/EmailOutlined";
-import PhoneEnabledIcon from "@mui/icons-material/PhoneEnabled";
-import LocationOnOutlinedIcon from "@mui/icons-material/LocationOnOutlined";
+/* ------------- React Router Dom ------------- */
+// Link
 import { Link } from "react-router-dom";
 
+// Axios
+import axios from "axios";
+
+/* ------------------- MUI Icons ------------------- */
+// Right Arrow Icon
+import ArrowForwardOutlinedIcon from "@mui/icons-material/ArrowForwardOutlined";
+// Email Icon
+import EmailOutlinedIcon from "@mui/icons-material/EmailOutlined";
+// Phone Icon
+import PhoneEnabledIcon from "@mui/icons-material/PhoneEnabled";
+// Location Icon
+import LocationOnOutlinedIcon from "@mui/icons-material/LocationOnOutlined";
+
+/* ------------- Alerts ------------- */
+// Snack Bar
+import Snackbar from "@mui/material/Snackbar";
+// Alert
+import MuiAlert from "@mui/material/Alert";
+
 const Footer = () => {
+  // Company List
   const company = [
     {
       content: "About Us",
@@ -34,6 +56,7 @@ const Footer = () => {
     },
   ];
 
+  // Services List
   const services = [
     {
       content: "Hire Permanent Staff",
@@ -53,6 +76,7 @@ const Footer = () => {
     },
   ];
 
+  // Start List
   const start = [
     {
       content: "You Asked",
@@ -72,13 +96,101 @@ const Footer = () => {
     },
   ];
 
+  // All Data UseState
+  const [comp, setComp] = useState("");
+  const [yourName, setYourName] = useState("");
+  const [phoneNumber, setPhoneNumber] = useState("");
+  const [email, setEmail] = useState("");
+  const [projectDetail, setProjectDetail] = useState("");
+
+  // Handle Change Func
+  const handleInputChange = (e, setter) => {
+    setter(e.target.value);
+  };
+
+  // CheckBox State
+  const [isChecked, setIsChecked] = useState(false);
+
+  const handleCheckboxChange = () => {
+    setIsChecked(!isChecked);
+  };
+
+  // Email and Phone Regex
+  const emailRegex = /^([a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,})$/;
+  const phoneRegex = /^([+]?[0-9]{1,4}[ -]?)?([0-9]{10})$/;
+
+  // Alert State
+  const [alert, setAlert] = useState({
+    emailAlert: "",
+    phoneAlert: "",
+  });
+
+  // Snackbar Alert UseState
+  const [snack, setSnack] = useState({
+    open: false,
+    message: "",
+    severity: "error",
+  });
+
+  // Close SnackBar Alert Func
+  const handleClose = (event, reason) => {
+    if (reason === "clickaway") {
+      return;
+    }
+
+    setSnack({
+      ...snack,
+      open: false,
+    });
+  };
+
+  // Consultation Func
+  const consultation = () => {
+    if (
+      comp.trim() !== "" &&
+      yourName.trim() !== "" &&
+      phoneNumber.trim() !== "" &&
+      alert.phoneAlert === "" &&
+      email.trim() !== "" &&
+      alert.emailAlert === "" &&
+      projectDetail.trim() !== "" &&
+      isChecked
+    ) {
+      // Save data for send backend
+      const data = {
+        comp,
+        yourName,
+        phoneNumber,
+        email,
+        projectDetail,
+      };
+      // Post Request
+      axios
+        .post(`/api`, data)
+        .then((res) => {
+          // Response
+        })
+        .catch((err) => {
+          // Error
+        });
+    } else {
+      setSnack({
+        open: true,
+        message: "Wrong Credentials !!",
+        severity: "warning",
+      });
+    }
+  };
+
   return (
     <>
       <div className="footerBox">
         <div className="firstContFootBox">
+          {/* Image */}
           <img src={footerCom} alt="" />
           <div className="formBox">
             <h2>Connect With Your Next Great Hire Today!</h2>
+            {/* All Form Details */}
             <div className="formDetails">
               {[
                 "Company",
@@ -86,25 +198,96 @@ const Footer = () => {
                 "Phone Number",
                 "Email",
                 "Project Detail",
-              ].map((e, i) => {
-                return (
-                  <div className="box" key={i}>
-                    <p>{e}</p>
-                    <input type="text" placeholder="Placeholder" />
-                  </div>
-                );
-              })}
+              ].map((e, i) => (
+                <div className="box" key={i}>
+                  {/* Title */}
+                  <p>{e}</p>
+                  {/* Inputs */}
+                  <input
+                    type="text"
+                    placeholder={`Enter ${e}`}
+                    value={
+                      e === "Company"
+                        ? comp
+                        : e === "Your Name"
+                        ? yourName
+                        : e === "Phone Number"
+                        ? phoneNumber
+                        : e === "Email"
+                        ? email
+                        : projectDetail
+                    }
+                    onChange={(event) =>
+                      handleInputChange(event, (value) => {
+                        if (e === "Company") setComp(value);
+                        else if (e === "Your Name") setYourName(value);
+                        else if (e === "Phone Number") setPhoneNumber(value);
+                        else if (e === "Email") setEmail(value);
+                        else setProjectDetail(value);
+                      })
+                    }
+                    onBlur={() => {
+                      if (e === "Phone Number") {
+                        if (!phoneRegex.test(phoneNumber)) {
+                          setAlert({
+                            ...alert,
+                            phoneAlert: "Invalid phone no. !!",
+                          });
+                        } else {
+                          setAlert({
+                            ...alert,
+                            phoneAlert: "",
+                          });
+                        }
+                      } else if (e === "Email") {
+                        if (!emailRegex.test(email)) {
+                          setAlert({
+                            ...alert,
+                            emailAlert: "Invalid Email !!",
+                          });
+                        } else {
+                          setAlert({
+                            ...alert,
+                            emailAlert: "",
+                          });
+                        }
+                      }
+                    }}
+                  />
+                  {/* Alert Show */}
+                  {e === "Email" || e === "Phone Number" ? (
+                    <p
+                      style={{
+                        fontSize: "12px",
+                        fontWeight: "500",
+                        color: "red",
+                        height: "20px",
+                      }}
+                    >
+                      {e === "Email" ? alert.emailAlert : alert.phoneAlert}
+                    </p>
+                  ) : (
+                    <></>
+                  )}
+                </div>
+              ))}
             </div>
 
             <div className="policy">
-              <input type="checkbox" name="check" id="" />
+              <input
+                type="checkbox"
+                name="check"
+                checked={isChecked}
+                onChange={handleCheckboxChange}
+              />
               <span>
                 By sending this form I confirm that I have read and accept the
                 <strong> Privacy Policy</strong>
               </span>
             </div>
 
-            <button>
+            {/* Consultation Button */}
+            <button onClick={consultation}>
               <span>GET CONSULTATION</span>
               <ArrowForwardOutlinedIcon
                 sx={{
@@ -118,66 +301,68 @@ const Footer = () => {
         </div>
 
         <div className="secondContFootBox">
-          <div className="footBox">
-            <img src={Logo} alt="" />
-            <p>
-              Expertly trained, battle-tested, elite software developers on
-              demand
-            </p>
-            <p>
-              <PhoneEnabledIcon
-                sx={{
-                  mr: 1,
-                }}
-              />{" "}
-              +91 9358174038
-            </p>
-            <p>
-              <EmailOutlinedIcon
-                sx={{
-                  mr: 1,
-                }}
-              />{" "}
-              <a href="mailto:hello@webduality.com">hello@webduality.com</a>
-            </p>
-            <p>
-              <LocationOnOutlinedIcon
-                sx={{
-                  mr: 1,
-                }}
-              />
-              Greater Noida Sector 4
-            </p>
-          </div>
-          <div className="footBox">
-            <p>Company</p>
-            {company.map((e, i) => {
-              return (
-                <Link key={i} to={e.link} className="footLink">
-                  {e.content}
-                </Link>
-              );
-            })}
-          </div>
-          <div className="footBox">
-            <p>Services</p>
-            {services.map((e, i) => {
-              return (
-                <Link key={i} to={e.link} className="footLink">
-                  {e.content}
-                </Link>
-              );
-            })}
-          </div>
-          <div className="footBox">
-            <p>How to Start</p>
-            {start.map((e, i) => {
-              return (
-                <Link key={i} to={e.link} className="footLink">
-                  {e.content}
-                </Link>
-              );
-            })}
+          <div className="innerBox">
+            <div className="footBox">
+              <img src={Logo} alt="" />
+              <p>
+                Expertly trained, battle-tested, elite software developers on
+                demand
+              </p>
+              <p>
+                <PhoneEnabledIcon
+                  sx={{
+                    mr: 1,
+                  }}
+                />{" "}
+                +91 9358174038
+              </p>
+              <p>
+                <EmailOutlinedIcon
+                  sx={{
+                    mr: 1,
+                  }}
+                />{" "}
+                <a href="mailto:hello@webduality.com">hello@webduality.com</a>
+              </p>
+              <p>
+                <LocationOnOutlinedIcon
+                  sx={{
+                    mr: 1,
+                  }}
+                />
+                Greater Noida Sector 4
+              </p>
+            </div>
+            <div className="footBox">
+              <p>Company</p>
+              {company.map((e, i) => {
+                return (
+                  <Link key={i} to={e.link} className="footLink">
+                    {e.content}
+                  </Link>
+                );
+              })}
+            </div>
+            <div className="footBox">
+              <p>Services</p>
+              {services.map((e, i) => {
+                return (
+                  <Link key={i} to={e.link} className="footLink">
+                    {e.content}
+                  </Link>
+                );
+              })}
+            </div>
+            <div className="footBox">
+              <p>How to Start</p>
+              {start.map((e, i) => {
+                return (
+                  <Link key={i} to={e.link} className="footLink">
+                    {e.content}
+                  </Link>
+                );
+              })}
+            </div>
           </div>
         </div>
 
@@ -262,6 +447,26 @@ const Footer = () => {
           <p>&copy; 2022 webDuality</p>
         </div>
       </div>
+
+      {/* Snack Bar Alert */}
+      <Snackbar
+        open={snack.open}
+        autoHideDuration={6000}
+        onClose={handleClose}
+        anchorOrigin={{
+          vertical: "bottom",
+          horizontal: "center",
+        }}
+      >
+        {/* Mui Alert */}
+        <MuiAlert
+          onClose={handleClose}
+          severity={snack.severity}
+          sx={{ width: "100%" }}
+        >
+          <strong>{snack.message}</strong>
+        </MuiAlert>
+      </Snackbar>
     </>
   );
 };

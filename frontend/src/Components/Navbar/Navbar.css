@@ -1,19 +1,34 @@
 .navbar {
   width: 100%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   background-color: #ffff;
   border-bottom: 1px solid #e1e1e1;
+  position: sticky;
+  top: 0;
+  z-index: 999;
 }
 
-.box {
+.navbar .innerNav {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffff;
+}
+
+.navbar .innerNav .hide {
+  display: none;
+}
+
+.navbar .innerNav .box {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
 }
 
-.box img {
+.navbar .innerNav .box img {
   width: 161px;
   height: 85px;
   margin: 1px 0;
@@ -21,7 +36,7 @@
   user-select: none;
 }
 
-.box li {
+.navbar .innerNav .box li {
   list-style: none;
   cursor: pointer;
   color: var(--Black, #16205f);
@@ -35,7 +50,7 @@
   align-items: center;
 }
 
-.box li .navLink {
+.navbar .innerNav .box li .navLink {
   text-decoration: none;
   color: var(--Black, #16205f);
   font-family: Poppins;
@@ -45,7 +60,7 @@
   line-height: normal;
 }
 
-.box li .active {
+.navbar .innerNav .box li .active {
   background: var(
     --Yellow-Original,
     linear-gradient(90deg, #ed7901 0%, #fcb81f 50%)
@@ -55,7 +70,7 @@
   -webkit-text-fill-color: transparent;
 }
 
-.box button {
+.navbar .innerNav .box button {
   width: 189px;
   height: 41px;
   display: flex;
@@ -69,7 +84,7 @@
   cursor: pointer;
 }
 
-.box button span {
+.navbar .innerNav .box button span {
   color: var(--Dark, #16205f);
   text-align: center;
   font-family: Poppins;
@@ -80,97 +95,12 @@
   text-transform: uppercase;
 }
 
-.team {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  flex-direction: column;
-}
+@media only screen and (max-width: 1150px) {
+  .navbar .innerNav .box:not(:first-child) {
+    display: none;
+  }
 
-.team span {
-  width: 526px;
-  height: 71px;
-  padding-bottom: 13px;
-  color: var(--Black, #16205f);
-  font-family: Poppins;
-  font-size: 46px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 58px; /* 126.087% */
-}
-
-.team p {
-  width: 394px;
-  height: 56px;
-  padding-bottom: 29px;
-  color: var(--Black, #16205f);
-  font-family: Poppins;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-}
-
-.tabBox .custom-tabs span {
-  display: none; /* Remove the default underline style for the active tab */
-}
-
-.tabBox .custom-tab {
-  width: 227.5px;
-  height: 54px;
-  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
-    rgba(17, 17, 26, 0.05) 0px 8px 32px;
-  text-align: center;
-  font-family: Poppins;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
-}
-
-.tabBox .custom-tab:nth-child(1) {
-  border-radius: 8px 0px 0px 8px;
-}
-
-.mainTab .data {
-  width: 100%;
-  display: flex;
-  justify-content: flex-start;
-}
-
-.mainTab .dataBox {
-  margin: 0 10px;
-}
-
-.mainTab .dataBox span {
-  width: 415.941px;
-  height: 29px;
-  flex-shrink: 0;
-  color: var(--Black, #16205f);
-  font-family: Poppins;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
-}
-
-.mainTab .dataBox input[type="text"] {
-  display: flex;
-  width: 456.128px;
-  height: 60px;
-  padding: 10px 0px 10px 8px;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 10px;
-  flex-shrink: 0;
-  border-radius: 8px;
-  border: 1px solid #c5e0ff;
-  background: var(--White-Default, #fff);
-  margin-top: 10px;
-}
-
-.mainTab .dataBox input[type="text"]:focus {
-  outline: none;
+  .navbar .innerNav .hide {
+    display: flex;
+  }
 }
