@@ -6,12 +6,77 @@ import backimg from "./Assets/backimg.png";
 import ArrowForwardOutlinedIcon from "@mui/icons-material/ArrowForwardOutlined";
 import Team from "../../Components/Team/Team";
 
+import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
+import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
+
 import {
   firstHomeBox,
   secondHomeBox,
   thirdHomeBox,
   fourthHomeBox,
+  fifthHomeBox,
+  sixthHomeBox,
 } from "./HomeBox";
+import SliderBox from "./SliderBox";
+
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
+// Slider
+import Slider from "react-slick";
+
+// Slider Responsive
+const settings = {
+  dots: true,
+  infinite: false,
+  speed: 500,
+  slidesToShow: 4,
+  slidesToScroll: 2,
+  initialSlide: 0,
+  prevArrow: (
+    <ArrowBackIosIcon
+      sx={{
+        color: "#16205f",
+      }}
+    />
+  ),
+  nextArrow: (
+    <ArrowForwardIosIcon
+      sx={{
+        color: "#16205f",
+      }}
+    />
+  ),
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 2,
+        infinite: true,
+        dots: true,
+      },
+    },
+    {
+      breakpoint: 750,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2,
+        initialSlide: 2,
+      },
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      },
+    },
+  ],
+  display: "flex",
+  justifyContent: "center",
+  alignItems: "center",
+};
 
 const Home = () => {
   // Build Team Dialog UseState
@@ -26,6 +91,18 @@ const Home = () => {
   const handleBuildTeamCloseDialog = () => {
     setOpenBuildTeamDialog(false);
   };
+
+  const techList = fifthHomeBox.map((e, i) => (
+    <div className="techBox" key={i}>
+      <img src={e.img} alt="" />
+    </div>
+  ));
+
+  const clientList = sixthHomeBox.map((e, i) => (
+    <div className="techBox" key={i}>
+      <img src={e.img} alt="" />
+    </div>
+  ));
 
   return (
     <>
@@ -53,17 +130,26 @@ const Home = () => {
         </div>
 
         <div className="homeSecondCont">
-          {firstHomeBox.map((e, i) => {
-            return (
-              <div className="box" key={i}>
-                <img src={e.img} alt="" draggable="false" />
-                <span>
-                  <p>{e.heading}</p>
-                  <p>{e.para}</p>
-                </span>
-              </div>
-            );
-          })}
+          <h5>Solutions</h5>
+          <h2>Software Solutions, with expert software engineering teams</h2>
+          <p>
+            We specialize in helping you build a team of expert developers,
+            testers, and leaders.
+          </p>
+          <div className="box hide">
+            {firstHomeBox.map((e, i) => {
+              return (
+                <div className="inBox" key={i}>
+                  <img src={e.img} alt="" draggable="false" />
+                  <span>
+                    <p>{e.heading}</p>
+                    <p>{e.para}</p>
+                  </span>
+                </div>
+              );
+            })}
+          </div>
+          <SliderBox boxes={firstHomeBox} />
         </div>
 
         <div className="homeThirdCont">
@@ -96,24 +182,28 @@ const Home = () => {
             with remote devs as needed
           </p>
 
-          <div className="box">
+          <div className="box hide">
             {thirdHomeBox.map((e, i) => {
               return (
                 <div className="inBox" key={i}>
                   <img src={e.img} alt="" draggable="false" />
-                  <p>{e.heading}</p>
-                  <p>{e.para}</p>
+                  <span>
+                    <p>{e.heading}</p>
+                    <p>{e.para}</p>
+                  </span>
                 </div>
               );
             })}
           </div>
+
+          <SliderBox boxes={thirdHomeBox} />
         </div>
 
         <div className="homeFifthCont">
           <h5>Specialized</h5>
           <h2>Specialized Staff We Provide</h2>
 
-          <div className="box">
+          <div className="box hide">
             {fourthHomeBox.map((e, i) => {
               return (
                 <div className="inBox" key={i}>
@@ -122,6 +212,22 @@ const Home = () => {
                 </div>
               );
             })}
+          </div>
+        </div>
+
+        <div className="homeSixthCont">
+          <h5>Specialized</h5>
+          <h2>Technologies</h2>
+          <div className="box">
+            <Slider {...settings}>{techList}</Slider>
+          </div>
+        </div>
+
+        <div className="homeSixthCont">
+          <h5>Clients</h5>
+          <h2>Amazing clients who trust us</h2>
+          <div className="box">
+            <Slider {...settings}>{clientList}</Slider>
           </div>
         </div>
       </div>

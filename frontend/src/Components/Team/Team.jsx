@@ -1,7 +1,7 @@
 // React,UseState,UseEffect
 import React, { useState, useEffect } from "react";
 // Team CSS
-import "./Team.css"
+import "./Team.css";
 
 /* ------------------- MUI Component ------------------- */
 // Dialog
@@ -100,7 +100,11 @@ const Team = (props) => {
         maxWidth="xl"
       >
         {/* Dialog Content */}
-        <DialogContent>
+        <DialogContent
+          style={{
+            width: "100%",
+          }}
+        >
           {/* Team Box */}
           <div className="team">
             <span>Build a team</span>
@@ -110,7 +114,7 @@ const Team = (props) => {
           {/* Main Tab Box */}
           <Box sx={{ width: "100%" }} className="mainTab">
             <Box
-              sx={{ borderBottom: 1, borderColor: "divider" }}
+              sx={{ borderBottom: 1, borderColor: "divider", width: "100%" }}
               className="tabBox"
               style={{
                 borderBottom: "0px",

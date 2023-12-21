@@ -31,6 +31,14 @@ import padlock from "./Assets/padlock.png"
 import go from "./Assets/Go-Logo_Black.png"
 import database from "./Assets/database.png"
 
+import reactlogo from "./Assets/React_logo.png"
+import angularlogo from "./Assets/angular-logo.png"
+import nextjslogo from "./Assets/next-logo.png"
+import nodejslogo from "./Assets/nodejs-logo.png"
+import expresslogo from "./Assets/express-logo.png"
+
+import clientlogo from "./Assets/client.jpg"
+
 const firstHomeBox = [
     {
         img: cube,
@@ -187,4 +195,40 @@ const fourthHomeBox = [
     }
 ]
 
-export { firstHomeBox, secondHomeBox, thirdHomeBox,fourthHomeBox }
+const fifthHomeBox = [
+    {
+        img: reactlogo,
+    },
+    {
+        img: angularlogo,
+    },
+    {
+        img: nextjslogo,
+    },
+    {
+        img: nodejslogo,
+    },
+    {
+        img: expresslogo,
+    },
+]
+
+const sixthHomeBox = [
+    {
+        img: clientlogo,
+    },
+    {
+        img: clientlogo,
+    },
+    {
+        img: clientlogo,
+    },
+    {
+        img: clientlogo,
+    },
+    {
+        img: clientlogo,
+    },
+]
+
+export { firstHomeBox, secondHomeBox, thirdHomeBox, fourthHomeBox, fifthHomeBox, sixthHomeBox }
