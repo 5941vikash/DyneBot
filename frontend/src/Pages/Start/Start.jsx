@@ -1,8 +1,12 @@
+// React
 import React from "react";
+// Start CSS
 import "./Start.css";
 
+// Boxes
 import { firstStartBox, secondStartBox } from "./StartBox";
 
+// Slider Component
 import SliderBox from "../Home/SliderBox";
 
 const Start = () => {
@@ -34,7 +38,7 @@ const Start = () => {
               );
             })}
           </div>
-
+          {/* Responsive */}
           <SliderBox boxes={firstStartBox} />
         </div>
 

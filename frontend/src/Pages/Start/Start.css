@@ -115,10 +115,15 @@
     display: none;
   }
 
+  .startPage .c {
+    align-self: center;
+  }
+
   .startPage .secondStartCont .box {
     justify-content: center;
     align-items: center;
     text-align: center;
+    margin: 0;
   }
 
   .startPage .secondStartCont .box .inBox {
@@ -141,7 +146,7 @@
     margin-bottom: 10px;
   }
 
-  .startPage .secondStartCont .box .inBox span p{
+  .startPage .secondStartCont .box .inBox span p {
     align-self: center;
   }
 }

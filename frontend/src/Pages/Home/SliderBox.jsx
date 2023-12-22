@@ -1,12 +1,15 @@
+// React & UseState & UseEffect
 import React, { useState, useEffect } from "react";
 
 const SliderBox = ({ boxes }) => {
+  // Current Slide UseState
   const [currentSlide, setCurrentSlide] = useState(0);
+  // Go to Slide Func
   const goToSlide = (index) => {
-    console.log(index);
     setCurrentSlide(index);
   };
 
+  // Slide Change UseEffect
   useEffect(() => {
     const intervalId = setInterval(() => {
       setCurrentSlide((prevSlide) => (prevSlide + 1) % boxes.length);
@@ -18,8 +21,9 @@ const SliderBox = ({ boxes }) => {
 
   return (
     <>
-      <div className="homeSecondCont homeFourthCont secondStartCont">
+      <div className="homeSecondCont homeFourthCont secondStartCont c">
         <div className="slider-container">
+          {/* Slide Box */}
           <div className="slides box">
             {boxes.map((e, i) => {
               return (
@@ -38,6 +42,7 @@ const SliderBox = ({ boxes }) => {
               );
             })}
           </div>
+          {/* Indiccators */}
           <div className="indicators">
             {boxes.map((_, index) => (
               <span

@@ -1,3 +1,55 @@
+/* Custom Slider CSS */
+.slider-container {
+  display: none;
+}
+
+.slider-container .indicators {
+  display: flex;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.slider-container .indicators span {
+  width: 48px;
+  height: 7px;
+  background-color: #e1e1e1;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.slider-container .indicators span.active {
+  background-color: #9f9f9f;
+}
+
+.slider-container .slides {
+  width: 100%;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.slider-container .slides .slide {
+  width: 100%;
+  opacity: 0;
+  pointer-events: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  transition: opacity 0.5s ease-in-out;
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+.slider-container .slides .active {
+  width: 100%;
+  opacity: 1;
+  pointer-events: auto;
+  position: relative; /* Reset to relative positioning for other elements to respect the space */
+}
+
+/* Main Home Container */
 .homeContainer {
   width: 100%;
   display: flex;
@@ -11,6 +63,7 @@
   letter-spacing: 0.5px;
 }
 
+/* First Container */
 .homeContainer .homeFirstCont {
   width: 90%;
   display: flex;
@@ -90,6 +143,7 @@
   }
 }
 
+/* Second Fourth Fifth Sixth Container */
 .homeContainer .homeSecondCont,
 .homeContainer .homeFourthCont,
 .homeContainer .homeFifthCont,
@@ -184,56 +238,6 @@
   font-weight: 400;
 }
 
-.slider-container {
-  display: none;
-}
-
-.slider-container .indicators {
-  display: flex;
-  gap: 10px;
-  margin: 10px 0;
-}
-
-.slider-container .indicators span {
-  width: 48px;
-  height: 7px;
-  background-color: #e1e1e1;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.slider-container .indicators span.active {
-  background-color: #9f9f9f;
-}
-
-.slider-container .slides {
-  width: 100%;
-  margin-bottom: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.slider-container .slides .slide {
-  width: 100%;
-  opacity: 0;
-  pointer-events: none;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  position: absolute;
-  transition: opacity 0.5s ease-in-out;
-  box-sizing: border-box; /* Include padding and border in the element's total width and height */
-}
-
-.slider-container .slides .active {
-  width: 100%;
-  opacity: 1;
-  pointer-events: auto;
-  position: relative; /* Reset to relative positioning for other elements to respect the space */
-}
-
 @media only screen and (max-width: 1040px) {
   .homeContainer .homeSecondCont .hide,
   .homeContainer .homeFourthCont .hide {
@@ -262,6 +266,10 @@
     flex-direction: column;
   }
 
+  .homeContainer .c {
+    align-self: center;
+  }
+
   .homeContainer .homeSecondCont .box .inBox img,
   .homeContainer .homeFourthCont .box .inBox img {
     align-self: center;
@@ -281,6 +289,7 @@
   }
 }
 
+/* Third Container */
 .homeContainer .homeThirdCont {
   width: 100%;
   display: flex;
@@ -373,6 +382,7 @@
   }
 }
 
+/* Fifth Container */
 .homeContainer .homeFifthCont .box {
   width: 100%;
   display: flex;
@@ -426,18 +436,37 @@
   margin: 10px 0;
 }
 
-@media only screen and (max-width: 900px) {
-  .homeContainer .homeFifthCont .box .inBox {
-    width: 45%;
+@media only screen and (max-width: 1040px) {
+  .homeContainer .homeFifthCont {
+    margin: 50px 0 20px 0;
   }
-}
 
-@media only screen and (max-width: 615px) {
+  .homeContainer .homeFifthCont .hide {
+    display: none;
+  }
+
+  .slider-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
   .homeContainer .homeFifthCont .box .inBox {
     width: 100%;
   }
+
+  .homeContainer .homeFifthCont .slide {
+    display: none;
+  }
+
+  .homeContainer .homeFifthCont .active {
+    display: flex;
+  }
 }
 
+/* Sisth Container */
 .homeContainer .homeSixthCont .box {
   width: 95%;
   justify-content: center;
@@ -451,14 +480,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 10px;
 }
 
 .homeContainer .homeSixthCont .box .techBox img {
   width: 130px;
   height: 40px;
+  margin: 0 auto;
 }
 
+/* React Slick CSS */
 .homeContainer .homeSixthCont .box .slick-dots li button {
   pointer-events: none;
   visibility: hidden;

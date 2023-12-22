@@ -1,14 +1,22 @@
-import React, { useState } from "react";
+// React & UseState & UseEffect
+import React, { useState, useEffect } from "react";
+// Home CSS
 import "./Home.css";
+
+// Image
 import backimg from "./Assets/backimg.png";
 
 // Right Arrow Icon
 import ArrowForwardOutlinedIcon from "@mui/icons-material/ArrowForwardOutlined";
-import Team from "../../Components/Team/Team";
-
+// Next Arrow
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
+// Previous Arrow
 import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
 
+// Team Component
+import Team from "../../Components/Team/Team";
+
+// All Boxes
 import {
   firstHomeBox,
   secondHomeBox,
@@ -17,13 +25,15 @@ import {
   fifthHomeBox,
   sixthHomeBox,
 } from "./HomeBox";
+
+// Slider Box Component
 import SliderBox from "./SliderBox";
 
+// React Slick Slider
+import Slider from "react-slick";
+// React Slick Slider CSS
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-
-// Slider
-import Slider from "react-slick";
 
 // Slider Responsive
 const settings = {
@@ -92,17 +102,36 @@ const Home = () => {
     setOpenBuildTeamDialog(false);
   };
 
+  // Tech Box List
   const techList = fifthHomeBox.map((e, i) => (
     <div className="techBox" key={i}>
       <img src={e.img} alt="" />
     </div>
   ));
 
+  // Client Box List
   const clientList = sixthHomeBox.map((e, i) => (
     <div className="techBox" key={i}>
       <img src={e.img} alt="" />
     </div>
   ));
+
+  // Current Slide UseState
+  const [currentSlide, setCurrentSlide] = useState(0);
+  // Go to Slide Func
+  const goToSlide = (index) => {
+    setCurrentSlide(index);
+  };
+
+  // Slide Change UseEffect
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setCurrentSlide((prevSlide) => (prevSlide + 1) % 4);
+    }, 5000);
+
+    // Clear the interval when the component is unmounted
+    return () => clearInterval(intervalId);
+  }, []);
 
   return (
     <>
@@ -149,6 +178,7 @@ const Home = () => {
               );
             })}
           </div>
+          {/* Responsive */}
           <SliderBox boxes={firstHomeBox} />
         </div>
 
@@ -195,7 +225,7 @@ const Home = () => {
               );
             })}
           </div>
-
+          {/* Responsive */}
           <SliderBox boxes={thirdHomeBox} />
         </div>
 
@@ -213,11 +243,45 @@ const Home = () => {
               );
             })}
           </div>
+
+          {/* Responsive */}
+          <div className="slider-container">
+            <div className="slides box">
+              {[0, 1, 2, 3].map((_, index) => (
+                <div
+                  key={index}
+                  className={`slide ${index === currentSlide ? "active" : ""}`}
+                >
+                  {fourthHomeBox
+                    .slice(
+                      (index * fourthHomeBox.length) / 4,
+                      ((index + 1) * fourthHomeBox.length) / 4
+                    )
+                    .map((e, i) => (
+                      <div key={i} className="inBox">
+                        <img src={e.img} alt="" draggable="false" />
+                        <p>{e.heading}</p>
+                      </div>
+                    ))}
+                </div>
+              ))}
+            </div>
+            <div className="indicators">
+              {[0, 1, 2, 3].map((_, index) => (
+                <span
+                  key={index}
+                  className={index === currentSlide ? "active" : ""}
+                  onClick={() => goToSlide(index)}
+                ></span>
+              ))}
+            </div>
+          </div>
         </div>
 
         <div className="homeSixthCont">
           <h5>Specialized</h5>
           <h2>Technologies</h2>
+          {/* React Slick Slider */}
           <div className="box">
             <Slider {...settings}>{techList}</Slider>
           </div>
@@ -226,12 +290,14 @@ const Home = () => {
         <div className="homeSixthCont">
           <h5>Clients</h5>
           <h2>Amazing clients who trust us</h2>
+          {/* React Slick Slider */}
           <div className="box">
             <Slider {...settings}>{clientList}</Slider>
           </div>
         </div>
       </div>
 
+      {/* Team Dialog */}
       <Team
         openBuildTeamDialog={openBuildTeamDialog}
         handleBuildTeamCloseDialog={handleBuildTeamCloseDialog}
