@@ -35,6 +35,39 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
+// React Slider Left Arrow
+const SlickArrowLeft = ({ currentSlide, slideCount, ...props }) => (
+  <ArrowBackIosIcon
+    sx={{
+      color: "#16205f",
+    }}
+    {...props}
+    className={
+      "slick-prev slick-arrow" + (currentSlide === 0 ? " slick-disabled" : "")
+    }
+    aria-hidden="true"
+    aria-disabled={currentSlide === 0 ? true : false}
+    type="button"
+  />
+);
+
+// React Slider Right Arrow
+const SlickArrowRight = ({ currentSlide, slideCount, ...props }) => (
+  <ArrowForwardIosIcon
+    sx={{
+      color: "#16205f",
+    }}
+    {...props}
+    className={
+      "slick-next slick-arrow" +
+      (currentSlide === slideCount - 1 ? " slick-disabled" : "")
+    }
+    aria-hidden="true"
+    aria-disabled={currentSlide === slideCount - 1 ? true : false}
+    type="button"
+  />
+);
+
 // Slider Responsive
 const settings = {
   dots: true,
@@ -43,20 +76,8 @@ const settings = {
   slidesToShow: 4,
   slidesToScroll: 2,
   initialSlide: 0,
-  prevArrow: (
-    <ArrowBackIosIcon
-      sx={{
-        color: "#16205f",
-      }}
-    />
-  ),
-  nextArrow: (
-    <ArrowForwardIosIcon
-      sx={{
-        color: "#16205f",
-      }}
-    />
-  ),
+  prevArrow: <SlickArrowLeft />,
+  nextArrow: <SlickArrowRight />,
   responsive: [
     {
       breakpoint: 1024,
@@ -117,16 +138,16 @@ const Home = () => {
   ));
 
   // Current Slide UseState
-  const [currentSlide, setCurrentSlide] = useState(0);
+  const [currentSlideState, setCurrentSlideState] = useState(0);
   // Go to Slide Func
   const goToSlide = (index) => {
-    setCurrentSlide(index);
+    setCurrentSlideState(index);
   };
 
   // Slide Change UseEffect
   useEffect(() => {
     const intervalId = setInterval(() => {
-      setCurrentSlide((prevSlide) => (prevSlide + 1) % 4);
+      setCurrentSlideState((prevSlide) => (prevSlide + 1) % 4);
     }, 5000);
 
     // Clear the interval when the component is unmounted
@@ -232,7 +253,6 @@ const Home = () => {
         <div className="homeFifthCont">
           <h5>Specialized</h5>
           <h2>Specialized Staff We Provide</h2>
-
           <div className="box hide">
             {fourthHomeBox.map((e, i) => {
               return (
@@ -243,14 +263,15 @@ const Home = () => {
               );
             })}
           </div>
-
-          {/* Responsive */}
+          Responsive
           <div className="slider-container">
             <div className="slides box">
               {[0, 1, 2, 3].map((_, index) => (
                 <div
                   key={index}
-                  className={`slide ${index === currentSlide ? "active" : ""}`}
+                  className={`slide ${
+                    index === currentSlideState ? "active" : ""
+                  }`}
                 >
                   {fourthHomeBox
                     .slice(
@@ -270,7 +291,7 @@ const Home = () => {
               {[0, 1, 2, 3].map((_, index) => (
                 <span
                   key={index}
-                  className={index === currentSlide ? "active" : ""}
+                  className={index === currentSlideState ? "active" : ""}
                   onClick={() => goToSlide(index)}
                 ></span>
               ))}
