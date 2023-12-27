@@ -17,25 +17,31 @@ import KeyboardArrowDownOutlinedIcon from "@mui/icons-material/KeyboardArrowDown
 import ArrowForwardOutlinedIcon from "@mui/icons-material/ArrowForwardOutlined";
 
 /* ------------------- MUI Components ------------------- */
-import Button from "@mui/material/Button";
+// Menu
 import Menu from "@mui/material/Menu";
+// Menu Item
 import MenuItem from "@mui/material/MenuItem";
 
 // Team Component
 import Team from "../Team/Team";
 // DrawerNav Component
 import DrawerNav from "./DrawerNav";
-import { navServicesPages, navTechnologyPages  } from "./NavPages";
+
+// NavPages
+import { navServicesPages, navTechnologyPages } from "./NavPages";
 
 const Navbar = () => {
+  // Menu Anchor
   const [anchorEl, setAnchorEl] = useState([null, null]); // Initialize with null for each icon
 
+  // Open Menu
   const handleClick = (event, index) => {
     const newAnchorEl = [...anchorEl];
     newAnchorEl[index] = event.currentTarget;
     setAnchorEl(newAnchorEl);
   };
 
+  // Close Menu
   const handleClose = (index) => {
     const newAnchorEl = [...anchorEl];
     newAnchorEl[index] = null;
@@ -82,6 +88,7 @@ const Navbar = () => {
               <NavLink to="/services" className="navLink">
                 Services
               </NavLink>
+              {/* Dropdown Menu */}
               <div>
                 <KeyboardArrowDownOutlinedIcon
                   id="basic-button"
@@ -166,6 +173,7 @@ const Navbar = () => {
               <NavLink to="/technologies" className="navLink">
                 Technologies
               </NavLink>
+              {/* Dropdown Menu */}
               <div>
                 <KeyboardArrowDownOutlinedIcon
                   id="basic-button"

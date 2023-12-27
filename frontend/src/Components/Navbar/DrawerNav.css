@@ -56,3 +56,28 @@
   line-height: normal;
   letter-spacing: 0.5px;
 }
+
+.drawerNav .menuBox {
+  width: 90%;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.drawerNav .menuBox .menu {
+  width: 100%;
+  margin: 5px 0;
+  color: var(--Black, #16205f);
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  border-left: 4px solid transparent;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.drawerNav .menuBox .menu:hover{
+  border-left: 4px solid #30bcc9;
+  background-color: rgb(250, 247, 247);
+}

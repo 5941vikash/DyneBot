@@ -16,6 +16,9 @@ import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
 // Team Component
 import Team from "../../Components/Team/Team";
 
+// React Type Animation
+import { TypeAnimation } from "react-type-animation";
+
 // All Boxes
 import {
   firstHomeBox,
@@ -154,12 +157,64 @@ const Home = () => {
     return () => clearInterval(intervalId);
   }, []);
 
+  // Handle Intersection Func
+  const handleIntersection = (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("show");
+      } else {
+        entry.target.classList.remove("show");
+      }
+    });
+  };
+
+  // UseEffect for Observing Content and set animation
+  useEffect(() => {
+    const observer = new IntersectionObserver(handleIntersection, {
+      threshold: 0.5,
+    });
+
+    const targetRefs = document.querySelectorAll(".hidden");
+
+    targetRefs.forEach((targetRef) => {
+      observer.observe(targetRef);
+    });
+
+    return () => {
+      targetRefs.forEach((targetRef) => {
+        observer.unobserve(targetRef);
+      });
+    };
+  }, []);
+
   return (
     <>
       <div className="homeContainer">
         <div className="homeFirstCont">
           <div className="box">
-            <h2>Building dev team, Quickly and Affordably</h2>
+            {/* Type Animation */}
+            <h2>
+              <TypeAnimation
+                sequence={[
+                  // Same substring at the start will only be typed out once, initially
+                  "Building dev team, Quickly and Affordably",
+                  1000,
+                  "Growing a Development Team, Swiftly and Economically",
+                  1000,
+                  "Establishing a Dev Team, Speedily and Budget-Friendly",
+                  1000,
+                  "Constructing a Tech Team, Rapidly and Cost-Effectively",
+                  1000,
+                  "Forming a Development Squad, Quickly and Within Budget",
+                  1000,
+                  "Assembling a Coding Team, Fast and Affordably",
+                  1000,
+                ]}
+                wrapper="span"
+                speed={250}
+                repeat={Infinity}
+              />
+            </h2>
             <p>
               We specialize in helping you build a team of expert developers,
               testers, and leaders. We are setup to deliver long term solutions,
@@ -189,7 +244,7 @@ const Home = () => {
           <div className="box hide">
             {firstHomeBox.map((e, i) => {
               return (
-                <div className="inBox" key={i}>
+                <div className="inBox hidden" key={i}>
                   <img src={e.img} alt="" draggable="false" />
                   <span>
                     <p>{e.heading}</p>
@@ -213,7 +268,7 @@ const Home = () => {
           <div className="box">
             {secondHomeBox.map((e, i) => {
               return (
-                <div className="inBox" key={i}>
+                <div className="inBox hidden" key={i}>
                   <img src={e.img} alt="" draggable="false" />
                   <p>
                     <strong>{e.heading}</strong>
@@ -236,7 +291,7 @@ const Home = () => {
           <div className="box hide">
             {thirdHomeBox.map((e, i) => {
               return (
-                <div className="inBox" key={i}>
+                <div className="inBox hidden" key={i}>
                   <img src={e.img} alt="" draggable="false" />
                   <span>
                     <p>{e.heading}</p>
@@ -256,7 +311,7 @@ const Home = () => {
           <div className="box hide">
             {fourthHomeBox.map((e, i) => {
               return (
-                <div className="inBox" key={i}>
+                <div className="inBox hidden" key={i}>
                   <img src={e.img} alt="" draggable="false" />
                   <p>{e.heading}</p>
                 </div>
@@ -299,7 +354,7 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="homeSixthCont">
+        <div className="homeSixthCont hidden">
           <h5>Specialized</h5>
           <h2>Technologies</h2>
           {/* React Slick Slider */}
@@ -308,7 +363,7 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="homeSixthCont">
+        <div className="homeSixthCont hidden">
           <h5>Clients</h5>
           <h2>Amazing clients who trust us</h2>
           {/* React Slick Slider */}

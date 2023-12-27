@@ -93,6 +93,7 @@
 
 .homeContainer .homeFirstCont .box h2 {
   font-weight: 600;
+  height: 150px;
   margin-bottom: 40px;
 }
 
@@ -134,6 +135,10 @@
     margin-right: 0px;
     padding: 0;
     padding-top: 40px;
+  }
+
+  .homeContainer .homeFirstCont .box h2 {
+    height: 60px;
   }
 }
 
@@ -182,7 +187,7 @@
 
 .homeContainer .homeSecondCont .box,
 .homeContainer .homeFourthCont .box {
-  width: 90%;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -194,6 +199,15 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+}
+
+/* Inner Box Animation Transition */
+.homeContainer .homeSecondCont .show:nth-child(2) {
+  transition-delay: 500ms;
+}
+
+.homeContainer .homeSecondCont .show:nth-child(3) {
+  transition-delay: 1s;
 }
 
 .homeContainer .homeFourthCont .box .inBox {
@@ -236,6 +250,19 @@
   width: 100%;
   font-size: 15px;
   font-weight: 400;
+}
+
+/* Inner Box Animation Transition */
+.homeContainer .homeFourthCont .show:nth-child(2) {
+  transition-delay: 300ms;
+}
+
+.homeContainer .homeFourthCont .show:nth-child(3) {
+  transition-delay: 500ms;
+}
+
+.homeContainer .homeFourthCont .show:nth-child(4) {
+  transition-delay: 700ms;
 }
 
 @media only screen and (max-width: 1040px) {
@@ -520,4 +547,19 @@
   .homeContainer .homeSixthCont .box {
     width: 80%;
   }
+}
+
+/* Hidden Animation */
+.hidden {
+  opacity: 0;
+  filter: blur(1px);
+  visibility: hidden;
+  transition: all linear 1s; /* Delay visibility change */
+}
+
+/* Show Animation */
+.show {
+  opacity: 1;
+  filter: blur(0);
+  visibility: visible;
 }

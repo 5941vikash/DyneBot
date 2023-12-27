@@ -93,14 +93,12 @@
   .mainTab .data {
     flex-direction: column;
   }
-}
 
-@media only screen and (max-width: 580px) {
-  .tabBox .custom-tab{
+  .tabBox .custom-tab {
     width: auto;
   }
 
-  .mainTab .dataBox input[type="text"]{
+  .mainTab .dataBox input[type="text"] {
     width: 100%;
   }
 }

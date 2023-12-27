@@ -23,6 +23,9 @@ import ArrowForwardOutlinedIcon from "@mui/icons-material/ArrowForwardOutlined";
 // Menu Icon
 import MenuIcon from "@mui/icons-material/Menu";
 
+// NavPages
+import { navServicesPages, navTechnologyPages } from "./NavPages";
+
 // Team Component
 import Team from "../Team/Team";
 
@@ -60,6 +63,16 @@ const DrawerNav = (props) => {
     setState({ ...state, [anchor]: open });
   };
 
+  // Open Drop UseState
+  const [openDrop, setOpenDrop] = useState([false, false]);
+
+  // Handle Drop Func
+  const handleDrop = (index) => {
+    const newDrop = [...openDrop];
+    newDrop[index] = !openDrop[index];
+    setOpenDrop(newDrop);
+  };
+
   // List Func
   const list = (anchor) => (
     // Main Box
@@ -72,20 +85,28 @@ const DrawerNav = (props) => {
         flexDirection: "column",
       }}
       role="presentation"
-      onClick={toggleDrawer(anchor, false)}
-      onKeyDown={toggleDrawer(anchor, false)}
       className="drawerNav"
     >
       {/* Start Route */}
       <li>
-        <NavLink to="/start" className="navLink">
+        <NavLink
+          onClick={toggleDrawer(anchor, false)}
+          onKeyDown={toggleDrawer(anchor, false)}
+          to="/start"
+          className="navLink"
+        >
           How to start
         </NavLink>
       </li>
 
       {/* Services Route */}
       <li>
-        <NavLink to="/services" className="navLink">
+        <NavLink
+          onClick={toggleDrawer(anchor, false)}
+          onKeyDown={toggleDrawer(anchor, false)}
+          to="/services"
+          className="navLink"
+        >
           Services
         </NavLink>
         {/* Dropdown Icon */}
@@ -93,33 +114,88 @@ const DrawerNav = (props) => {
           sx={{
             width: 24,
             height: 24,
+            transform: openDrop[0] ? "rotate(180deg)" : "rotate(0deg)",
+          }}
+          onClick={() => {
+            handleDrop(0);
           }}
         />
+      </li>
+
+      {/* Service Dropdown Box */}
+      <li
+        className="menuBox"
+        style={{
+          display: openDrop[0] ? "flex" : "none",
+        }}
+      >
+        {navServicesPages.map((e, i) => {
+          return (
+            <div className="menu" key={i}>
+              {e.name}
+            </div>
+          );
+        })}
       </li>
 
       {/* Technologies Route */}
       <li>
-        <NavLink to="/technologies" className="navLink">
+        <NavLink
+          onClick={toggleDrawer(anchor, false)}
+          onKeyDown={toggleDrawer(anchor, false)}
+          to="/technologies"
+          className="navLink"
+        >
           Technologies
         </NavLink>
+        {/* Dropdown Icon */}
         <KeyboardArrowDownOutlinedIcon
           sx={{
             width: 24,
             height: 24,
+            transform: openDrop[1] ? "rotate(180deg)" : "rotate(0deg)",
+          }}
+          onClick={() => {
+            handleDrop(1);
           }}
         />
+      </li>
+      {/* Technology Dropdown Box*/}
+      <li
+        className="menuBox"
+        style={{
+          display: openDrop[1] ? "flex" : "none",
+        }}
+      >
+        {navTechnologyPages.map((e, i) => {
+          return (
+            <div className="menu" key={i}>
+              {e.name}
+            </div>
+          );
+        })}
       </li>
 
       {/* Careers Route */}
       <li>
-        <NavLink to="/careers" className="navLink">
+        <NavLink
+          onClick={toggleDrawer(anchor, false)}
+          onKeyDown={toggleDrawer(anchor, false)}
+          to="/careers"
+          className="navLink"
+        >
           Careers
         </NavLink>
       </li>
 
       {/* Contact Route */}
       <li>
-        <NavLink to="/contact" className="navLink">
+        <NavLink
+          onClick={toggleDrawer(anchor, false)}
+          onKeyDown={toggleDrawer(anchor, false)}
+          to="/contact"
+          className="navLink"
+        >
           Contact Us
         </NavLink>
       </li>

@@ -1,5 +1,5 @@
 // React
-import React from "react";
+import React, { useState, useEffect } from "react";
 // Start CSS
 import "./Start.css";
 
@@ -10,6 +10,36 @@ import { firstStartBox, secondStartBox } from "./StartBox";
 import SliderBox from "../Home/SliderBox";
 
 const Start = () => {
+  // Handle Intersection Func
+  const handleIntersection = (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("show");
+      } else {
+        entry.target.classList.remove("show");
+      }
+    });
+  };
+
+  // UseEffect for Observing Content and set animation
+  useEffect(() => {
+    const observer = new IntersectionObserver(handleIntersection, {
+      threshold: 0.5,
+    });
+
+    const targetRefs = document.querySelectorAll(".hidden");
+
+    targetRefs.forEach((targetRef) => {
+      observer.observe(targetRef);
+    });
+
+    return () => {
+      targetRefs.forEach((targetRef) => {
+        observer.unobserve(targetRef);
+      });
+    };
+  }, []);
+
   return (
     <>
       <div className="startPage">
@@ -28,7 +58,7 @@ const Start = () => {
           <div className="box hide">
             {firstStartBox.map((e, i) => {
               return (
-                <div className="inBox" key={i}>
+                <div className="inBox hidden" key={i}>
                   <img src={e.img} alt="" draggable="false" />
                   <span>
                     <p>{e.heading}</p>
@@ -45,7 +75,7 @@ const Start = () => {
         <div className="thirdStartCont">
           <h3>Why You Need To Hire Remote Developers</h3>
 
-          <div className="box">
+          <div className="box hidden">
             {secondStartBox.map((e, i) => {
               return <h6 key={i}>{e.heading}</h6>;
             })}
