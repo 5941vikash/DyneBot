@@ -16,12 +16,32 @@ import KeyboardArrowDownOutlinedIcon from "@mui/icons-material/KeyboardArrowDown
 // Right Arrow Icon
 import ArrowForwardOutlinedIcon from "@mui/icons-material/ArrowForwardOutlined";
 
+/* ------------------- MUI Components ------------------- */
+import Button from "@mui/material/Button";
+import Menu from "@mui/material/Menu";
+import MenuItem from "@mui/material/MenuItem";
+
 // Team Component
 import Team from "../Team/Team";
 // DrawerNav Component
 import DrawerNav from "./DrawerNav";
+import { navPages } from "./NavPages";
 
 const Navbar = () => {
+  const [anchorEl, setAnchorEl] = useState([null, null]); // Initialize with null for each icon
+
+  const handleClick = (event, index) => {
+    const newAnchorEl = [...anchorEl];
+    newAnchorEl[index] = event.currentTarget;
+    setAnchorEl(newAnchorEl);
+  };
+
+  const handleClose = (index) => {
+    const newAnchorEl = [...anchorEl];
+    newAnchorEl[index] = null;
+    setAnchorEl(newAnchorEl);
+  };
+
   // Build Team Dialog UseState
   const [openBuildTeamDialog, setOpenBuildTeamDialog] = useState(false);
 
@@ -62,12 +82,83 @@ const Navbar = () => {
               <NavLink to="/services" className="navLink">
                 Services
               </NavLink>
-              <KeyboardArrowDownOutlinedIcon
-                sx={{
-                  width: 24,
-                  height: 24,
-                }}
-              />
+              <div>
+                <KeyboardArrowDownOutlinedIcon
+                  id="basic-button"
+                  aria-controls={anchorEl[0] ? "basic-menu" : undefined}
+                  aria-haspopup="true"
+                  aria-expanded={anchorEl[0] ? "true" : undefined}
+                  onClick={(event) => handleClick(event, 0)}
+                  sx={{
+                    width: 24,
+                    height: 24,
+                    transform: Boolean(anchorEl[0])
+                      ? "rotate(180deg)"
+                      : "rotate(0deg)",
+                  }}
+                />
+                <Menu
+                  id="basic-menu"
+                  anchorEl={anchorEl[0]}
+                  open={Boolean(anchorEl[0])}
+                  onClose={() => handleClose(0)}
+                  MenuListProps={{
+                    "aria-labelledby": "basic-button",
+                  }}
+                  PaperProps={{
+                    elevation: 0,
+                    sx: {
+                      overflow: "visible",
+                      filter: "drop-shadow(0px 1px 2px rgba(0,0,0,0.32))",
+                      mt: 1.5,
+                      "& .MuiAvatar-root": {
+                        width: 32,
+                        height: 32,
+                        ml: -0.5,
+                        mr: 1,
+                      },
+                      "&::before": {
+                        content: '""',
+                        display: "block",
+                        position: "absolute",
+                        top: 0,
+                        right: 6,
+                        width: 10,
+                        height: 10,
+                        bgcolor: "background.paper",
+                        transform: "translateY(-50%) rotate(45deg)",
+                        zIndex: 0,
+                      },
+                    },
+                  }}
+                  transformOrigin={{ horizontal: "right", vertical: "top" }}
+                  anchorOrigin={{ horizontal: "right", vertical: "bottom" }}
+                >
+                  {navPages.map((e, i) => {
+                    return (
+                      <MenuItem
+                        key={i}
+                        onClick={() => handleClose(0)}
+                        sx={{
+                          color: "var(--Dark, #16205f)",
+                          fontWeight: 500,
+                          fontFamily: "Poppins",
+                          fontSize: "16px",
+                          mt: 0.5,
+                          mb: 0.5,
+                          borderRadius: "2px 0 0 2px",
+                          borderLeft: "4px solid transparent",
+                          "&:hover": {
+                            borderLeft: "4px solid #fcb81f",
+                          },
+                        }}
+                      >
+                        {e.name}
+                      </MenuItem>
+                    );
+                  })}
+                </Menu>
+              </div>
             </li>
 
             {/* Technologies Route */}
@@ -75,12 +166,83 @@ const Navbar = () => {
               <NavLink to="/technologies" className="navLink">
                 Technologies
               </NavLink>
-              <KeyboardArrowDownOutlinedIcon
-                sx={{
-                  width: 24,
-                  height: 24,
-                }}
-              />
+              <div>
+                <KeyboardArrowDownOutlinedIcon
+                  id="basic-button"
+                  aria-controls={anchorEl[1] ? "basic-menu" : undefined}
+                  aria-haspopup="true"
+                  aria-expanded={anchorEl[1] ? "true" : undefined}
+                  onClick={(event) => handleClick(event, 1)}
+                  sx={{
+                    width: 24,
+                    height: 24,
+                    transform: Boolean(anchorEl[1])
+                      ? "rotate(180deg)"
+                      : "rotate(0deg)",
+                  }}
+                />
+                <Menu
+                  id="basic-menu"
+                  anchorEl={anchorEl[1]}
+                  open={Boolean(anchorEl[1])}
+                  onClose={() => handleClose(1)}
+                  MenuListProps={{
+                    "aria-labelledby": "basic-button",
+                  }}
+                  PaperProps={{
+                    elevation: 0,
+                    sx: {
+                      overflow: "visible",
+                      filter: "drop-shadow(0px 1px 2px rgba(0,0,0,0.32))",
+                      mt: 1.5,
+                      "& .MuiAvatar-root": {
+                        width: 32,
+                        height: 32,
+                        ml: -0.5,
+                        mr: 1,
+                      },
+                      "&::before": {
+                        content: '""',
+                        display: "block",
+                        position: "absolute",
+                        top: 0,
+                        right: 6,
+                        width: 10,
+                        height: 10,
+                        bgcolor: "background.paper",
+                        transform: "translateY(-50%) rotate(45deg)",
+                        zIndex: 0,
+                      },
+                    },
+                  }}
+                  transformOrigin={{ horizontal: "right", vertical: "top" }}
+                  anchorOrigin={{ horizontal: "right", vertical: "bottom" }}
+                >
+                  {navPages.map((e, i) => {
+                    return (
+                      <MenuItem
+                        key={i}
+                        onClick={() => handleClose(1)}
+                        sx={{
+                          color: "var(--Dark, #16205f)",
+                          fontWeight: 500,
+                          fontFamily: "Poppins",
+                          fontSize: "16px",
+                          mt: 0.5,
+                          mb: 0.5,
+                          borderRadius: "2px 0 0 2px",
+                          borderLeft: "4px solid transparent",
+                          "&:hover": {
+                            borderLeft: "4px solid #fcb81f",
+                          },
+                        }}
+                      >
+                        {e.name}
+                      </MenuItem>
+                    );
+                  })}
+                </Menu>
+              </div>
             </li>
 
             {/* Careers Route */}

@@ -60,6 +60,16 @@
   line-height: normal;
 }
 
+.navbar .innerNav .box li:hover {
+  background: var(
+    --Yellow-Original,
+    linear-gradient(90deg, #ed7901 0%, #fcb81f 50%)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .navbar .innerNav .box li .active {
   background: var(
     --Yellow-Original,

@@ -263,7 +263,7 @@ const Home = () => {
               );
             })}
           </div>
-          Responsive
+          {/* Responsive */}
           <div className="slider-container">
             <div className="slides box">
               {[0, 1, 2, 3].map((_, index) => (
