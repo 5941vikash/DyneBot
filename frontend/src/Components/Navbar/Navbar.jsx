@@ -25,7 +25,7 @@ import MenuItem from "@mui/material/MenuItem";
 import Team from "../Team/Team";
 // DrawerNav Component
 import DrawerNav from "./DrawerNav";
-import { navPages } from "./NavPages";
+import { navServicesPages, navTechnologyPages  } from "./NavPages";
 
 const Navbar = () => {
   const [anchorEl, setAnchorEl] = useState([null, null]); // Initialize with null for each icon
@@ -134,7 +134,7 @@ const Navbar = () => {
                   transformOrigin={{ horizontal: "right", vertical: "top" }}
                   anchorOrigin={{ horizontal: "right", vertical: "bottom" }}
                 >
-                  {navPages.map((e, i) => {
+                  {navServicesPages.map((e, i) => {
                     return (
                       <MenuItem
                         key={i}
@@ -218,7 +218,7 @@ const Navbar = () => {
                   transformOrigin={{ horizontal: "right", vertical: "top" }}
                   anchorOrigin={{ horizontal: "right", vertical: "bottom" }}
                 >
-                  {navPages.map((e, i) => {
+                  {navTechnologyPages.map((e, i) => {
                     return (
                       <MenuItem
                         key={i}
