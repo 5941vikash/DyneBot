@@ -10,18 +10,23 @@ import { firstStartBox, secondStartBox } from "./StartBox";
 import SliderBox from "../Home/SliderBox";
 
 const Start = () => {
+  const [animationsShown, setAnimationsShown] = useState({});
+
   // Handle Intersection Func
   const handleIntersection = (entries) => {
     entries.forEach((entry) => {
-      if (entry.isIntersecting) {
+      if (entry.isIntersecting && !entry.target.classList.contains("show")) {
         entry.target.classList.add("show");
-      } else {
-        entry.target.classList.remove("show");
+
+        // Update the state to mark this animation as shown
+        setAnimationsShown((prev) => ({
+          ...prev,
+          [entry.target.dataset.animationKey]: true,
+        }));
       }
     });
   };
 
-  // UseEffect for Observing Content and set animation
   useEffect(() => {
     const observer = new IntersectionObserver(handleIntersection, {
       threshold: 0.5,
@@ -30,7 +35,15 @@ const Start = () => {
     const targetRefs = document.querySelectorAll(".hidden");
 
     targetRefs.forEach((targetRef) => {
-      observer.observe(targetRef);
+      const animationKey = targetRef.dataset.animationKey;
+
+      // Check if the animation for this box has already been shown
+      if (!animationsShown[animationKey]) {
+        observer.observe(targetRef);
+      } else {
+        // If the animation has already been shown, add the 'show' class immediately
+        targetRef.classList.add("show");
+      }
     });
 
     return () => {
@@ -38,7 +51,7 @@ const Start = () => {
         observer.unobserve(targetRef);
       });
     };
-  }, []);
+  }, [animationsShown]); // Add animationsShown to the dependency array
 
   return (
     <>
@@ -58,7 +71,11 @@ const Start = () => {
           <div className="box hide">
             {firstStartBox.map((e, i) => {
               return (
-                <div className="inBox hidden" key={i}>
+                <div
+                  className="inBox hidden"
+                  data-animation-key={`secondStartCont${i}`}
+                  key={i}
+                >
                   <img src={e.img} alt="" draggable="false" />
                   <span>
                     <p>{e.heading}</p>
@@ -75,9 +92,17 @@ const Start = () => {
         <div className="thirdStartCont">
           <h3>Why You Need To Hire Remote Developers</h3>
 
-          <div className="box hidden">
+          <div className="box">
             {secondStartBox.map((e, i) => {
-              return <h6 key={i}>{e.heading}</h6>;
+              return (
+                <h6
+                  className="hidden"
+                  data-animation-key={`thirdStartCont${i}`}
+                  key={i}
+                >
+                  {e.heading}
+                </h6>
+              );
             })}
           </div>
         </div>

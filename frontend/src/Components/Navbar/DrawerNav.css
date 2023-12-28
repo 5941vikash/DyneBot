@@ -66,6 +66,7 @@
 .drawerNav .menuBox .menu {
   width: 100%;
   margin: 5px 0;
+  text-decoration: none;
   color: var(--Black, #16205f);
   font-family: Poppins;
   font-size: 16px;
@@ -80,4 +81,13 @@
 .drawerNav .menuBox .menu:hover{
   border-left: 4px solid #30bcc9;
   background-color: rgb(250, 247, 247);
+}
+
+.drawerNav .menuBox .active{
+  border-left: 4px solid #30bcc9;
+  background-color: rgb(250, 247, 247);
+  background: linear-gradient(90deg, #30bcc9 0%, #313968 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }

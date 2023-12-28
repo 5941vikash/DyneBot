@@ -143,25 +143,29 @@ const Navbar = () => {
                 >
                   {navServicesPages.map((e, i) => {
                     return (
-                      <MenuItem
+                      <NavLink
                         key={i}
                         onClick={() => handleClose(0)}
-                        sx={{
-                          color: "var(--Dark, #16205f)",
-                          fontWeight: 500,
-                          fontFamily: "Poppins",
-                          fontSize: "16px",
-                          mt: 0.5,
-                          mb: 0.5,
-                          borderRadius: "2px 0 0 2px",
-                          borderLeft: "4px solid transparent",
-                          "&:hover": {
-                            borderLeft: "4px solid #fcb81f",
-                          },
-                        }}
+                        to={`/${e.link}`}
                       >
-                        {e.name}
-                      </MenuItem>
+                        <MenuItem
+                          sx={{
+                            color: "var(--Dark, #16205f)",
+                            fontWeight: 500,
+                            fontFamily: "Poppins",
+                            fontSize: "16px",
+                            borderRadius: "2px 0 0 2px",
+                            borderLeft: "4px solid transparent",
+                            mt: 0.5,
+                            mb: 0.5,
+                            "&:hover": {
+                              borderLeft: "4px solid #fcb81f",
+                            },
+                          }}
+                        >
+                          {e.name}
+                        </MenuItem>
+                      </NavLink>
                     );
                   })}
                 </Menu>
@@ -228,25 +232,29 @@ const Navbar = () => {
                 >
                   {navTechnologyPages.map((e, i) => {
                     return (
-                      <MenuItem
+                      <NavLink
                         key={i}
-                        onClick={() => handleClose(1)}
-                        sx={{
-                          color: "var(--Dark, #16205f)",
-                          fontWeight: 500,
-                          fontFamily: "Poppins",
-                          fontSize: "16px",
-                          mt: 0.5,
-                          mb: 0.5,
-                          borderRadius: "2px 0 0 2px",
-                          borderLeft: "4px solid transparent",
-                          "&:hover": {
-                            borderLeft: "4px solid #fcb81f",
-                          },
-                        }}
+                        onClick={() => handleClose(0)}
+                        to={`/${e.link}`}
                       >
-                        {e.name}
-                      </MenuItem>
+                        <MenuItem
+                          sx={{
+                            color: "var(--Dark, #16205f)",
+                            fontWeight: 500,
+                            fontFamily: "Poppins",
+                            fontSize: "16px",
+                            borderRadius: "2px 0 0 2px",
+                            borderLeft: "4px solid transparent",
+                            mt: 0.5,
+                            mb: 0.5,
+                            "&:hover": {
+                              borderLeft: "4px solid #fcb81f",
+                            },
+                          }}
+                        >
+                          {e.name}
+                        </MenuItem>
+                      </NavLink>
                     );
                   })}
                 </Menu>

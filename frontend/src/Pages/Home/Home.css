@@ -563,3 +563,20 @@
   filter: blur(0);
   visibility: visible;
 }
+
+/* Hidden Animation */
+.homeThirdCont .box .hidden:not(:first-child) {
+  opacity: 0;
+  filter: blur(1px);
+  visibility: hidden;
+  transform: translateX(-100%);
+  transition: all linear 1s; /* Delay visibility change */
+}
+
+/* Show Animation */
+.homeThirdCont .box .show:not(:first-child) {
+  opacity: 1;
+  filter: blur(0);
+  visibility: visible;
+  transform: translateX(0);
+}

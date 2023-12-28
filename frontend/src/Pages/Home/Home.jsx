@@ -157,18 +157,23 @@ const Home = () => {
     return () => clearInterval(intervalId);
   }, []);
 
+  const [animationsShown, setAnimationsShown] = useState({});
+
   // Handle Intersection Func
   const handleIntersection = (entries) => {
     entries.forEach((entry) => {
-      if (entry.isIntersecting) {
+      if (entry.isIntersecting && !entry.target.classList.contains("show")) {
         entry.target.classList.add("show");
-      } else {
-        entry.target.classList.remove("show");
+
+        // Update the state to mark this animation as shown
+        setAnimationsShown((prev) => ({
+          ...prev,
+          [entry.target.dataset.animationKey]: true,
+        }));
       }
     });
   };
 
-  // UseEffect for Observing Content and set animation
   useEffect(() => {
     const observer = new IntersectionObserver(handleIntersection, {
       threshold: 0.5,
@@ -177,7 +182,15 @@ const Home = () => {
     const targetRefs = document.querySelectorAll(".hidden");
 
     targetRefs.forEach((targetRef) => {
-      observer.observe(targetRef);
+      const animationKey = targetRef.dataset.animationKey;
+
+      // Check if the animation for this box has already been shown
+      if (!animationsShown[animationKey]) {
+        observer.observe(targetRef);
+      } else {
+        // If the animation has already been shown, add the 'show' class immediately
+        targetRef.classList.add("show");
+      }
     });
 
     return () => {
@@ -185,7 +198,7 @@ const Home = () => {
         observer.unobserve(targetRef);
       });
     };
-  }, []);
+  }, [animationsShown]); // Add animationsShown to the dependency array
 
   return (
     <>
@@ -244,7 +257,11 @@ const Home = () => {
           <div className="box hide">
             {firstHomeBox.map((e, i) => {
               return (
-                <div className="inBox hidden" key={i}>
+                <div
+                  className="inBox hidden"
+                  data-animation-key={`homeSecondCont${i}`}
+                  key={i}
+                >
                   <img src={e.img} alt="" draggable="false" />
                   <span>
                     <p>{e.heading}</p>
@@ -268,7 +285,8 @@ const Home = () => {
           <div className="box">
             {secondHomeBox.map((e, i) => {
               return (
-                <div className="inBox hidden" key={i}>
+                <div className="inBox hidden"
+                data-animation-key={`homeThirdCont${i}`} key={i}>
                   <img src={e.img} alt="" draggable="false" />
                   <p>
                     <strong>{e.heading}</strong>
@@ -291,7 +309,8 @@ const Home = () => {
           <div className="box hide">
             {thirdHomeBox.map((e, i) => {
               return (
-                <div className="inBox hidden" key={i}>
+                <div className="inBox hidden"
+                data-animation-key={`homeFourthCont${i}`} key={i}>
                   <img src={e.img} alt="" draggable="false" />
                   <span>
                     <p>{e.heading}</p>
@@ -311,7 +330,8 @@ const Home = () => {
           <div className="box hide">
             {fourthHomeBox.map((e, i) => {
               return (
-                <div className="inBox hidden" key={i}>
+                <div className="inBox hidden"
+                data-animation-key={`homeFifthCont${i}`} key={i}>
                   <img src={e.img} alt="" draggable="false" />
                   <p>{e.heading}</p>
                 </div>
@@ -354,7 +374,7 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="homeSixthCont hidden">
+        <div className="homeSixthCont">
           <h5>Specialized</h5>
           <h2>Technologies</h2>
           {/* React Slick Slider */}
@@ -363,7 +383,7 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="homeSixthCont hidden">
+        <div className="homeSixthCont">
           <h5>Clients</h5>
           <h2>Amazing clients who trust us</h2>
           {/* React Slick Slider */}

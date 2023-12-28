@@ -131,9 +131,9 @@ const DrawerNav = (props) => {
       >
         {navServicesPages.map((e, i) => {
           return (
-            <div className="menu" key={i}>
+            <NavLink className="menu" to={`/${e.link}`} key={i}>
               {e.name}
-            </div>
+            </NavLink>
           );
         })}
       </li>
@@ -169,9 +169,9 @@ const DrawerNav = (props) => {
       >
         {navTechnologyPages.map((e, i) => {
           return (
-            <div className="menu" key={i}>
+            <NavLink className="menu" to={`/${e.link}`} key={i}>
               {e.name}
-            </div>
+            </NavLink>
           );
         })}
       </li>

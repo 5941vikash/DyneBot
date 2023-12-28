@@ -80,6 +80,11 @@
   -webkit-text-fill-color: transparent;
 }
 
+#basic-menu .active .MuiMenuItem-root{
+  background-color: rgb(243, 243, 243);
+  border-left: 4px solid #fcb81f;
+}
+
 .navbar .innerNav .box button {
   width: 189px;
   height: 41px;
