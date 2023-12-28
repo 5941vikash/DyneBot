@@ -1,6 +1,7 @@
 const navServicesPages = [
     {
         "name": "Web Development",
+        link :"web-development"
     },
     {
         "name": "UI UX Design",
