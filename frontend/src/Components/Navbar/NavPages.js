@@ -1,43 +1,43 @@
 const navServicesPages = [
     {
         "name": "Web Development",
-        "link" : "web-development"
+        "link": "web-development"
     },
     {
         "name": "UI UX Design",
-        "link" : "uiux-design"
+        "link": "uiux-design"
     },
     {
         "name": "Cloud Services",
-        "link" : "cloud-services"
+        "link": "cloud-services"
     },
     {
         "name": "PWA Development",
-        "link" : "pwa-development"
+        "link": "pwa-development"
     },
     {
         "name": "Mobile App Development",
-        "link" : "mobile-app-development"
+        "link": "mobile-app-development"
     },
     {
         "name": "Product Development",
-        "link" : "product-development"
+        "link": "product-development"
     },
     {
         "name": "Software Testing",
-        "link" : "software-testing"
+        "link": "software-testing"
     },
     {
         "name": "Web API",
-        "link" : "web-api"
+        "link": "web-api"
     },
     {
         "name": "Databases",
-        "link" : "databases"
+        "link": "databases"
     },
     {
         "name": "Reporting",
-        "link" : "reporting"
+        "link": "reporting"
     },
 ]
 
