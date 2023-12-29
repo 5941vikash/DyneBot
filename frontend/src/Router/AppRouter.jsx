@@ -16,6 +16,7 @@ import Services from "../Pages/Services/Services";
 import Technology from "../Pages/Technology/Technology";
 import Careers from "../Pages/Careers/Careers";
 import Contact from "../Pages/Contact/Contact";
+import WebDevelopment from "../Pages/WebDevelopment/WebDevelopment";
 
 const AppRouter = () => {
   return (
@@ -26,6 +27,9 @@ const AppRouter = () => {
           <Route exact path="/" element={<Home />} />
           <Route exact path="/start" element={<Start />} />
           <Route exact path="/services" element={<Services />} />
+
+          <Route exact path="/web-development" element={<WebDevelopment />} />
+
           <Route exact path="/technologies" element={<Technology />} />
           <Route exact path="/careers" element={<Careers />} />
           <Route exact path="/contact" element={<Contact />} />

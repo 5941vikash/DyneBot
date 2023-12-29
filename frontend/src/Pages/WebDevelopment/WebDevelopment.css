@@ -1,0 +1,242 @@
+.webDevContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  letter-spacing: 1px;
+  text-align: center;
+  font-family: Poppins;
+  font-style: normal;
+}
+
+.webDevContainer .firstWebCont {
+  width: 100%;
+  height: 450px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: linear-gradient(rgba(0, 0, 0, 0.404), rgba(0, 0, 0, 0.5)),
+    url("./Assets/webback.jpg") no-repeat;
+  background-size: 100% 100%;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.webDevContainer .firstWebCont h2 {
+  font-weight: 600;
+  font-size: 2.5rem;
+}
+
+.webDevContainer .firstWebCont p {
+  width: 50%;
+  margin: 15px 0;
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.webDevContainer .firstWebCont .buttonBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.webDevContainer .firstWebCont .buttonBox button {
+  border-style: none;
+  margin: 10px;
+  padding: 10px 20px;
+  border-radius: 25px;
+  background-color: white;
+  color: #16205f;
+  font-weight: 600;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.webDevContainer .firstWebCont .buttonBox button:hover {
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+    rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,
+    rgba(0, 0, 0, 0.09) 0px 4px 2px;
+}
+
+@media only screen and (max-width: 1130px) {
+  .webDevContainer .firstWebCont p {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .webDevContainer .firstWebCont {
+    height: fit-content;
+    padding: 50px 0;
+    background-size: cover;
+  }
+
+  .webDevContainer .firstWebCont h2 {
+    font-size: 1.6rem;
+  }
+}
+
+.webDevContainer .secondWebCont {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #16205f;
+  padding: 30px 0;
+}
+
+.webDevContainer .secondWebCont .leftCount {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: start;
+}
+
+.webDevContainer .secondWebCont .leftCount h2 strong {
+  background: var(
+    --Yellow-Original,
+    linear-gradient(90deg, #ed7901 0%, #fcb81f 50%)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.webDevContainer .secondWebCont .leftCount h2 {
+  align-self: flex-start;
+  margin: 10px 0;
+}
+
+.webDevContainer .secondWebCont .leftCount p {
+  align-self: flex-start;
+  width: 80%;
+  margin: 10px 0;
+}
+
+.webDevContainer .secondWebCont .rightCount {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.webDevContainer .secondWebCont .rightCount img {
+  width: 450px;
+}
+
+@media only screen and (max-width: 890px) {
+  .webDevContainer .secondWebCont {
+    flex-direction: column;
+  }
+  .webDevContainer .secondWebCont .leftCount,
+  .webDevContainer .secondWebCont .rightCount {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .webDevContainer .secondWebCont .leftCount h2 {
+    width: 100%;
+    align-self: center;
+  }
+
+  .webDevContainer .secondWebCont .leftCount p {
+    width: 100%;
+    align-self: center;
+  }
+
+  .webDevContainer .secondWebCont .rightCount img {
+    width: 100%;
+  }
+}
+
+.webDevContainer .thirdWebCont {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 30px 0;
+  color: #16205f;
+}
+
+.webDevContainer .thirdWebCont h2 strong {
+  background: var(
+    --Yellow-Original,
+    linear-gradient(90deg, #ed7901 0%, #fcb81f 50%)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.webDevContainer .thirdWebCont p {
+  width: 80%;
+  margin: 10px 0;
+}
+
+.webDevContainer .thirdWebCont .cardBox {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.webDevContainer .thirdWebCont .cardBox .cards {
+  width: 30%;
+  position: relative;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em,
+    rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em,
+    rgba(0, 0, 0, 0.1) 0px 0px 0px 1px inset;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.webDevContainer .thirdWebCont .cardBox .cards img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Maintain aspect ratio */
+  border-radius: 10px;
+  transform: scale(1);
+  transition: transform 0.5s ease-in-out;
+  z-index: -1;
+}
+
+.webDevContainer .thirdWebCont .cardBox .cards:hover img {
+  transform: scale(1.5);
+}
+
+.webDevContainer .thirdWebCont .cardBox .cards .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, black, rgb(0, 0, 0));
+  opacity: 0.8; /* Adjust the opacity as needed */
+  border-radius: 10px;
+  z-index: 0; /* Move the overlay below the image */
+}
+
+.webDevContainer .thirdWebCont .cardBox .cards h5,
+.webDevContainer .thirdWebCont .cardBox .cards p {
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  color: white;
+  margin: 0 auto;
+  padding: 20px 10px;
+}
+
+.webDevContainer .thirdWebCont .cardBox .cards p {
+  font-size: 13px;
+}
