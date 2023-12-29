@@ -1,9 +1,8 @@
-import React from 'react'
-import '.WebDevelopment.css'
-const WebDevelopment = () => {
-  return (
-    <div>WebDevelopment</div>
-  )
-}
+import React from "react";
+import "./WebDevelopment.css";
 
-export default WebDevelopment
+const WebDevelopment = () => {
+  return <div>WebDevelopment</div>;
+};
+
+export default WebDevelopment;

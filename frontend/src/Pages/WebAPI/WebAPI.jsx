@@ -1,5 +1,5 @@
 import React from 'react'
-import 'WebAPI'
+import './WebAPI.css'
 const WebAPI = () => {
   return (
     <div>WebAPI</div>

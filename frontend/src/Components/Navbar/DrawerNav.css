@@ -78,12 +78,12 @@
   padding: 10px;
 }
 
-.drawerNav .menuBox .menu:hover{
+.drawerNav .menuBox .menu:hover {
   border-left: 4px solid #30bcc9;
   background-color: rgb(250, 247, 247);
 }
 
-.drawerNav .menuBox .active{
+.drawerNav .menuBox .active {
   border-left: 4px solid #30bcc9;
   background-color: rgb(250, 247, 247);
   background: linear-gradient(90deg, #30bcc9 0%, #313968 100%);
