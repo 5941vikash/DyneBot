@@ -1,5 +1,5 @@
 import React from 'react'
-import 'Databases'
+import './Databases.css'
 const Databases = () => {
   return (
     <div>Databases</div>

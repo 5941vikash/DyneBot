@@ -1,5 +1,5 @@
 import React from 'react'
-import 'PWADevelopment.css'
+import './PWADevelopment.css'
 const PWADevelopment = () => {
   return (
     <div>PWADevelopment</div>

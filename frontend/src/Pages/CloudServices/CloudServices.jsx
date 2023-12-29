@@ -1,5 +1,5 @@
 import React from 'react'
-import 'CloudServices.css'
+import './CloudServices.css'
 const CloudServices = () => {
   return (
     <div>CloudServices</div>

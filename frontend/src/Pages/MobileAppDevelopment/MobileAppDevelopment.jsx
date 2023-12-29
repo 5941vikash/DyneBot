@@ -1,5 +1,5 @@
 import React from 'react'
-import 'MobileAppDevelopment'
+import './MobileAppDevelopment.css'
 const MobileAppDevelopment = () => {
   return (
     <div>MobileAppDevelopment</div>

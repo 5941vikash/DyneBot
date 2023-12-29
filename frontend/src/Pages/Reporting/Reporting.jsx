@@ -1,5 +1,5 @@
 import React from 'react'
-import 'Reporting'
+import './Reporting.css'
 const Reporting = () => {
   return (
     <div>Reporting</div>

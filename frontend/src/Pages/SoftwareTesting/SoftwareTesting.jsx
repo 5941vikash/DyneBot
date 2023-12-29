@@ -1,5 +1,5 @@
 import React from 'react'
-import 'SoftwareTesting'
+import './SoftwareTesting.css'
 const SoftwareTesting = () => {
   return (
     <div>SoftwareTesting</div>

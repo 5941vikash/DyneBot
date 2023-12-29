@@ -1,5 +1,5 @@
 import React from 'react'
-import '.UIUXDesign.css'
+import './UIUXDesign.css'
 const UIUXDesign = () => {
   return (
     <div>UIUXDesign</div>
