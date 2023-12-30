@@ -285,8 +285,11 @@ const Home = () => {
           <div className="box">
             {secondHomeBox.map((e, i) => {
               return (
-                <div className="inBox hidden"
-                data-animation-key={`homeThirdCont${i}`} key={i}>
+                <div
+                  className="inBox hidden"
+                  data-animation-key={`homeThirdCont${i}`}
+                  key={i}
+                >
                   <img src={e.img} alt="" draggable="false" />
                   <p>
                     <strong>{e.heading}</strong>
@@ -309,8 +312,11 @@ const Home = () => {
           <div className="box hide">
             {thirdHomeBox.map((e, i) => {
               return (
-                <div className="inBox hidden"
-                data-animation-key={`homeFourthCont${i}`} key={i}>
+                <div
+                  className="inBox hidden"
+                  data-animation-key={`homeFourthCont${i}`}
+                  key={i}
+                >
                   <img src={e.img} alt="" draggable="false" />
                   <span>
                     <p>{e.heading}</p>
@@ -330,8 +336,11 @@ const Home = () => {
           <div className="box hide">
             {fourthHomeBox.map((e, i) => {
               return (
-                <div className="inBox hidden"
-                data-animation-key={`homeFifthCont${i}`} key={i}>
+                <div
+                  className="inBox hidden"
+                  data-animation-key={`homeFifthCont${i}`}
+                  key={i}
+                >
                   <img src={e.img} alt="" draggable="false" />
                   <p>{e.heading}</p>
                 </div>
