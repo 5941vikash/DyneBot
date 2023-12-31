@@ -36,6 +36,11 @@ import angularlogo from "./Assets/angular-logo.png"
 import nextjslogo from "./Assets/next-logo.png"
 import nodejslogo from "./Assets/nodejs-logo.png"
 import expresslogo from "./Assets/express-logo.png"
+import dotnetlogo from "./Assets/dot-netlogo.png"
+import mongodblogo from "./Assets/mongodblogo.png"
+import awslogo from "./Assets/awslogo.png"
+import sqllogo from "./Assets/sqllogo.png"
+import azurelogo from "./Assets/azurelogo.png"
 
 import clientlogo from "./Assets/client.jpg"
 
@@ -210,6 +215,21 @@ const fifthHomeBox = [
     },
     {
         img: expresslogo,
+    },
+    {
+        img: dotnetlogo,
+    },
+    {
+        img: mongodblogo,
+    },
+    {
+        img: awslogo,
+    },
+    {
+        img: sqllogo,
+    },
+    {
+        img: azurelogo,
     },
 ]
 

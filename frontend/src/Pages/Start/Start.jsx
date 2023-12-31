@@ -1,4 +1,4 @@
-// React
+// React & UseState & UseEffect
 import React, { useState, useEffect } from "react";
 // Start CSS
 import "./Start.css";

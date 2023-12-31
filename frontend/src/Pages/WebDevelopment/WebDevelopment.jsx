@@ -1,12 +1,20 @@
 // React & UseState & UseEffect
 import React, { useState, useEffect } from "react";
+// Web Dev CSS
 import "./WebDevelopment.css";
 
+/* ------------- React Router Dom ------------- */
+// NavLink
 import { NavLink } from "react-router-dom";
 
+// Image
 import webdevImg from "./Assets/webdevImg.jpg";
 
-import { webDevServices, webDevAgency } from "./WebDev";
+// Web Pages
+import { webDevServices, webDevAgency, webDevTechStack } from "./WebDev";
+
+// Hire Component
+import Hire from "../Hire/Hire";
 
 // React Slick Slider
 import Slider from "react-slick";
@@ -14,7 +22,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-const WebDevelopment = () => {
+const WebDevelopment = (props) => {
   const [animationsShown, setAnimationsShown] = useState({});
 
   // Handle Intersection Func
@@ -62,6 +70,8 @@ const WebDevelopment = () => {
   const settings = {
     dots: true,
     infinite: false,
+    prevArrow: false,
+    nextArrow: false,
     speed: 500,
     slidesToShow: 4,
     slidesToScroll: 2,
@@ -111,6 +121,19 @@ const WebDevelopment = () => {
     </div>
   ));
 
+  // Hire Dialog UseState
+  const [openHireDialog, setOpenHireDialog] = useState(false);
+
+  // Open Hire Dialog Func
+  const handleHireOpenDialog = () => {
+    setOpenHireDialog(true);
+  };
+
+  // Close Hire Dialog Func
+  const handleHireCloseDialog = () => {
+    setOpenHireDialog(false);
+  };
+
   return (
     <>
       <div className="webDevContainer">
@@ -133,7 +156,7 @@ const WebDevelopment = () => {
               <button>Contact Us</button>
             </NavLink>
 
-            <button>Hire Now</button>
+            <button onClick={handleHireOpenDialog}>Hire Now</button>
           </div>
         </div>
 
@@ -187,9 +210,12 @@ const WebDevelopment = () => {
                   key={i}
                 >
                   <img src={e.img} alt="" />
-                  <div className="overlay"></div>
-                  <h5>{e.name}</h5>
-                  <p>{e.text}</p>
+                  <div className="down">
+                    <h5>{e.name}</h5>
+                  </div>
+                  <div className="text">
+                    <p>{e.text}</p>
+                  </div>
                 </div>
               );
             })}
@@ -212,7 +238,43 @@ const WebDevelopment = () => {
             <Slider {...settings}>{agencyList}</Slider>
           </div>
         </div>
+
+        <div className="fifthWebCont">
+          <h2>
+            <strong>Tools and Frameworks Empowering</strong> Our Dynamic Web
+            Solutions
+          </h2>
+          <p>
+            We build dynamic web solutions with a powerful stack: Node.js/Django
+            for servers, React/Angular for interfaces, and MongoDB/MySQL for
+            databases. Our approach includes Docker for containerization, CI/CD
+            for automation, and strong security measures like SSL/TLS and
+            firewalls, ensuring top-notch performance, scalability, and security
+            in modern web applications.
+          </p>
+          <div className="box">
+            {webDevTechStack.map((e, i) => {
+              return (
+                <NavLink
+                  key={i}
+                  to="/"
+                  className="inBox hidden"
+                  data-animation-key={`fifthWebCont ${i}`}
+                >
+                  <img src={e.img} alt="" />
+                  <h6>{e.heading}</h6>
+                </NavLink>
+              );
+            })}
+          </div>
+        </div>
       </div>
+
+      {/* Hire Dialog Box */}
+      <Hire
+        openHireDialog={openHireDialog}
+        handleHireCloseDialog={handleHireCloseDialog}
+      />
     </>
   );
 };

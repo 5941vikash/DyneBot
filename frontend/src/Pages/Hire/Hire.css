@@ -1,0 +1,49 @@
+.hireMainBox {
+  letter-spacing: 1px;
+  text-align: center;
+  font-family: Poppins;
+  font-style: normal;
+  color: #16205f;
+}
+
+.hireMainBox h2 {
+  margin: 20px 0 40px 0;
+}
+
+.hireMainBox h2 strong {
+  background: var(
+    --Yellow-Original,
+    linear-gradient(90deg, #ed7901 0%, #fcb81f 50%)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hireMainBox .hireBox {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.hireMainBox .hireBox .hireInput {
+  width: 100%;
+  color: #16205f;
+}
+
+.hireMainBox .hireBox p {
+  height: 20px;
+  margin: 5px 0px 15px 5px;
+  padding: 0;
+  align-self: flex-start;
+  color: rgb(187, 7, 7);
+  font-size: 13px;
+}
+
+@media only screen and (max-width: 400px) {
+  .hireMainBox .hireBox {
+    width: 100%;
+  }
+}
