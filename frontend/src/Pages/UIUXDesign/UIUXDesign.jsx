@@ -38,15 +38,15 @@ const UIUXDesign = () => {
 
   const fourthContainer = {
     heading:
-      "Elevate your Business with Our Transformative UI/UX Design Solutions",
+      "Elevate your Business with Our <strong>Transformative UI/UX Design</strong> Solutions",
     para: "Empowering businesses to craft exceptional user experiences, our UI/UX Design Services are tailored to enhance customer interactions. Collaborating closely with clients, we deliver personalized design solutions, precisely aligned with their unique needs. Our comprehensive UI/UX Design Services encompass.",
     webDevAgency,
   };
 
   const fifthContainer = {
     heading:
-      "<strong>Tools and Frameworks Empowering</strong> Our Dynamic Web Solutions",
-    para: "We build dynamic web solutions with a powerful stack: Node.js/Django for servers, React/Angular for interfaces, and MongoDB/MySQL for databases. Our approach includes Docker for containerization, CI/CD for automation, and strong security measures like SSL/TLS and firewalls, ensuring top-notch performance, scalability, and security in modern web applications.",
+      "<strong>Elevating UX</strong> with Powerful Tools and Frameworks for Dynamic Web Solutions",
+    para: "Crafting dynamic web solutions with a focus on exceptional UI/UX using Bootstrap, Tailwind, and Chakra UI, along with design collaboration in Figma.",
     webDevTechStack,
   };
 

@@ -1,105 +1,107 @@
+import researchanalysisImg from "./Assets/researchanalysis.webp"
+import brandImage from "./Assets/brand.jpg";
+import informationImg from "./Assets/information.webp"
+
+import responsivewebImg from "./Assets/responsive.jpg"
+import mobileappImg from "./Assets/mobileapp.png"
+import graphicImg from "./Assets/graphic.avif"
+import dynamicdesigImg from "./Assets/dynamic.png"
+import interactiveImg from "./Assets/interactive.png"
+
+import bootstraplogo from "./Assets/bs5logo.avif"
+import csslogo from "./Assets/csslogo.webp"
+import figmalogo from "./Assets/figmalogo.png"
+import tailwindlogo from "./Assets/tailwindlogo.png"
+import chakrauilogo from "./Assets/charkauilogo.png"
+import adobelogo from "./Assets/adobe.jpg"
+import sketchuplogo from "./Assets/sketchup.jpg"
+import blenderlogo from "./Assets/blender.jpg"
+import sasslogo from "./Assets/sasslogo.png"
+import htmllogo from "./Assets/htmllogo.webp"
+
 const webDevServices = [
     {
         name: "Research and Analysis",
         text: "We undertake thorough research and analysis to comprehend your target demographic, market dynamics, and competitors, enabling the formulation of a strategy harmonizing with your business objectives.",
-        // img: personalizeWebDevImg
+        img: researchanalysisImg
     },
 
     {
         name: "Branding and Identity",
         text: "We assist in cultivating a robust brand persona that mirrors the core values and mission of your company.",
-        // img: webAppImg
+        img: brandImage
     },
     {
         name: "Structuring Information and Organization",
         text: "We establish a coherent and user-friendly framework for your website or app, guaranteeing a smooth and intuitive user experience.",
-        // img: ecommerceImg
-    },
-    {
-        name: "Insight Craft Studios",
-        text: "Uncover market dynamics with Insight Craft Studios.",
-        // img: responsiveImg
-    },
-    {
-        name: "Stratum Identity Solutions",
-        text: "Elevate your brand with Stratum Identity Solutions. We craft compelling brand strategies and distinctive identities.",
-        // img: backendImg
-    },
-    {
-        name: "Nexus Research & Design Hub",
-        text: "Explore the nexus of research and design. We drive digital excellence through research-driven design, UX/UI solutions, and innovative strategies.",
-        // img: apiImg
+        img: informationImg
     },
 ]
 
 const webDevAgency = [
     {
         name: "Responsive Web Design",
-        // img: fullstackImg
+        img: responsivewebImg
     },
     {
         name: "Mobile App Design",
-        // img: proWebEngineersImg
+        img: mobileappImg
     },
     {
         name: "Graphic Design",
-        // img: futureTechExpertsImg
+        img: graphicImg
     },
     {
         name: "Dynamic Design Solutions Hub",
-        // img: cryptoImg
+        img: dynamicdesigImg
     },
     {
         name: "Interactive Interface Innovations",
-        // img: instanthelpImg
-    },
-    {
-        name: "Versatile Visual Experience Studio",
-        // img: personalizeWebDevImg
+        img: interactiveImg
     },
 ]
 
 const webDevTechStack = [
     {
-        // img: reactlogo,
-        heading: "React JS"
+        img: bootstraplogo,
+        heading: "Bootstrap"
 
     },
     {
-        // img: angularlogo,
-        heading: "Angular"
+        img: csslogo,
+        heading: "CSS"
     },
     {
-        // img: nextjslogo,
-        heading: "Next JS"
+        img: figmalogo,
+        heading: "Figma"
     },
     {
-        // img: nodejslogo,
-        heading: "Node JS"
+        img: tailwindlogo,
+        heading: "Tailwind CSS"
     },
     {
-        // img: expresslogo,
-        heading: "Express JS"
+        img: chakrauilogo,
+        heading: "Chakra UI"
     },
     {
-        // img: dotnetlogo,
-        heading: "Dot Net"
+        img: adobelogo,
+        heading: "Adobe Illustrator"
     },
     {
-        // img: mongodblogo,
-        heading: "Mongo DB"
+        img: sketchuplogo,
+        heading: "SketchUp"
     },
     {
-        // img: awslogo,
-        heading: "Amazon Web Services"
+        img: blenderlogo,
+        heading: "Blender"
     },
     {
-        // img: sqllogo,
-        heading: "SQL"
+        img: sasslogo,
+        heading: "SASS"
     },
     {
-        // img: azurelogo,
-        heading: "Azure"
+        img: htmllogo,
+        heading: "HTML"
     },
 ]
 

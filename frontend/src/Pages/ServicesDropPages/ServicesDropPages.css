@@ -272,9 +272,9 @@
     to bottom,
     rgba(0, 0, 0, 0),
     rgba(0, 0, 0, 0.473),
-    rgb(0, 0, 0)
+    rgba(0, 0, 0, 0.479)
   );
-  filter: drop-shadow(0 -19mm 4mm rgb(0, 0, 0));
+  filter: drop-shadow(0 -16mm 8mm rgb(0, 0, 0));
 }
 
 .serviceDropContainer .thirdServiceDropCont .cardBox .cards .down h5 {
@@ -301,7 +301,7 @@
     rgba(0, 0, 0, 0.795),
     rgb(0, 0, 0)
   );
-  filter: drop-shadow(0 -19mm 4mm rgb(0, 0, 0));
+  filter: drop-shadow(0 -19mm 8mm rgb(0, 0, 0));
 }
 
 .serviceDropContainer .thirdServiceDropCont .cardBox .cards:hover .text {
