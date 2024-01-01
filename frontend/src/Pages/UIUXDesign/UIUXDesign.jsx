@@ -38,8 +38,8 @@ const UIUXDesign = () => {
 
   const fourthContainer = {
     heading:
-      "Collaborate with a <strong>Leading Web Development</strong> Agency to Fast-track Your Digital Expansion",
-    para: "Web Duality is committed to delivering customized web solutions for diverse industries, including education, healthcare, hospitality, food & beverage, and more. Instead of employing a one-size-fits-all strategy, we meticulously assess individual business goals and craft a personalized development roadmap accordingly.",
+      "Elevate your Business with Our Transformative UI/UX Design Solutions",
+    para: "Empowering businesses to craft exceptional user experiences, our UI/UX Design Services are tailored to enhance customer interactions. Collaborating closely with clients, we deliver personalized design solutions, precisely aligned with their unique needs. Our comprehensive UI/UX Design Services encompass.",
     webDevAgency,
   };
 

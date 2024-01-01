@@ -1,60 +1,60 @@
 const webDevServices = [
     {
-        name: "Personalized Web Development",
-        text: "Move from traditional stores to the online world with a user-friendly website full of advanced features. We create extensive websites using various platforms, giving your business an edge and making it easier to grow your customer base.",
+        name: "Research and Analysis",
+        text: "We undertake thorough research and analysis to comprehend your target demographic, market dynamics, and competitors, enabling the formulation of a strategy harmonizing with your business objectives.",
         // img: personalizeWebDevImg
     },
 
     {
-        name: "Web App Development",
-        text: "Bring in skilled web app developers from Web Duality to create a dynamic web application, streamlining complex operations for an interactive user experience. Our team develops high-performance web applications with specialized API integration, ensuring a consistent user experience across all platforms for your customers.",
+        name: "Branding and Identity",
+        text: "We assist in cultivating a robust brand persona that mirrors the core values and mission of your company.",
         // img: webAppImg
     },
     {
-        name: "Ecommerce Development",
-        text: "E-commerce, a rapidly growing global industry, can transform your retail business. Boost overall sales with a sales-centric digital store. Our expertise in cutting-edge e-commerce platforms enables us to construct fully operational online stores, ensuring an exceptional shopping experience and empowering merchants to enhance their Return on Investment (ROI).",
+        name: "Structuring Information and Organization",
+        text: "We establish a coherent and user-friendly framework for your website or app, guaranteeing a smooth and intuitive user experience.",
         // img: ecommerceImg
     },
     {
-        name: "Responsive Web Designing",
-        text: "As a respected web development entity, we value adaptability in the digital era dominated by mobile devices. Our portfolio ensures a consistent user experience across diverse devices with responsive frameworks for every website and web application. Responsive design attracts premium traffic from both mobile and desktop platforms.",
+        name: "Insight Craft Studios",
+        text: "Uncover market dynamics with Insight Craft Studios.",
         // img: responsiveImg
     },
     {
-        name: "Backend Development",
-        text: "Recognizing the crucial role of a robust website or web application backend, our skilled developers leverage top frameworks and libraries to create powerful solutions, ensuring smooth data flow. These flexible backends support ongoing enterprise growth and facilitate seamless third-party integrations.",
+        name: "Stratum Identity Solutions",
+        text: "Elevate your brand with Stratum Identity Solutions. We craft compelling brand strategies and distinctive identities.",
         // img: backendImg
     },
     {
-        name: "API Integration",
-        text: "At Web Duality, we focus on making feature-packed websites. That's why we include APIs in our web development process. With API integration, we smoothly add external digital systems to your website or web app, giving it essential functions. This not only boosts your product's overall capability but also speeds up the launch process for quick deployment.",
+        name: "Nexus Research & Design Hub",
+        text: "Explore the nexus of research and design. We drive digital excellence through research-driven design, UX/UI solutions, and innovative strategies.",
         // img: apiImg
     },
 ]
 
 const webDevAgency = [
     {
-        name: "FullStack Web Dynamics",
+        name: "Responsive Web Design",
         // img: fullstackImg
     },
     {
-        name: "ProWeb Engineers",
+        name: "Mobile App Design",
         // img: proWebEngineersImg
     },
     {
-        name: "FutureTech Experts",
+        name: "Graphic Design",
         // img: futureTechExpertsImg
     },
     {
-        name: "CryptoGuard Solutions",
+        name: "Dynamic Design Solutions Hub",
         // img: cryptoImg
     },
     {
-        name: "Instant Help 24/7",
+        name: "Interactive Interface Innovations",
         // img: instanthelpImg
     },
     {
-        name: "Personalized Web Development",
+        name: "Versatile Visual Experience Studio",
         // img: personalizeWebDevImg
     },
 ]
