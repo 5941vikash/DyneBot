@@ -1,4 +1,4 @@
-.webDevContainer {
+.serviceDropContainer {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -10,39 +10,36 @@
   font-style: normal;
 }
 
-.webDevContainer .firstWebCont {
+.serviceDropContainer .firstServiceDropCont {
   width: 100%;
   height: 450px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background: linear-gradient(rgba(0, 0, 0, 0.404), rgba(0, 0, 0, 0.5)),
-    url("./Assets/webback.jpg") no-repeat;
-  background-size: 100% 100%;
   color: #fff;
   padding: 20px 0;
 }
 
-.webDevContainer .firstWebCont h2 {
+.serviceDropContainer .firstServiceDropCont h2 {
   font-weight: 600;
   font-size: 2.5rem;
 }
 
-.webDevContainer .firstWebCont p {
+.serviceDropContainer .firstServiceDropCont p {
   width: 50%;
   margin: 15px 0;
   font-weight: 400;
   font-size: 15px;
 }
 
-.webDevContainer .firstWebCont .buttonBox {
+.serviceDropContainer .firstServiceDropCont .buttonBox {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.webDevContainer .firstWebCont .buttonBox button {
+.serviceDropContainer .firstServiceDropCont .buttonBox button {
   border-style: none;
   margin: 10px;
   padding: 10px 20px;
@@ -52,41 +49,47 @@
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-.webDevContainer .firstWebCont .buttonBox button:nth-child(1) {
+.serviceDropContainer .firstServiceDropCont .buttonBox button:nth-child(1) {
   background: linear-gradient(90deg, #ed7901 0%, #fcb81f 50%);
 }
 
-.webDevContainer .firstWebCont .buttonBox button:nth-child(1):hover {
+.serviceDropContainer
+  .firstServiceDropCont
+  .buttonBox
+  button:nth-child(1):hover {
   background: white;
 }
 
-.webDevContainer .firstWebCont .buttonBox button:nth-child(2) {
+.serviceDropContainer .firstServiceDropCont .buttonBox button:nth-child(2) {
   background-color: white;
 }
 
-.webDevContainer .firstWebCont .buttonBox button:nth-child(2):hover {
+.serviceDropContainer
+  .firstServiceDropCont
+  .buttonBox
+  button:nth-child(2):hover {
   background: linear-gradient(90deg, #ed7901 0%, #fcb81f 50%);
 }
 
 @media only screen and (max-width: 1130px) {
-  .webDevContainer .firstWebCont p {
+  .serviceDropContainer .firstServiceDropCont p {
     width: 80%;
   }
 }
 
 @media only screen and (max-width: 600px) {
-  .webDevContainer .firstWebCont {
+  .serviceDropContainer .firstServiceDropCont {
     height: fit-content;
     padding: 50px 0;
     background-size: cover;
   }
 
-  .webDevContainer .firstWebCont h2 {
+  .serviceDropContainer .firstServiceDropCont h2 {
     font-size: 1.6rem;
   }
 }
 
-.webDevContainer .secondWebCont {
+.serviceDropContainer .secondServiceDropCont {
   width: 90%;
   display: flex;
   justify-content: space-between;
@@ -95,7 +98,7 @@
   margin: 50px 0;
 }
 
-.webDevContainer .secondWebCont .leftCount {
+.serviceDropContainer .secondServiceDropCont .leftCount {
   width: 60%;
   display: flex;
   justify-content: center;
@@ -104,7 +107,7 @@
   text-align: start;
 }
 
-.webDevContainer .secondWebCont .leftCount h2 strong {
+.serviceDropContainer .secondServiceDropCont .leftCount h2 strong {
   background: var(
     --Yellow-Original,
     linear-gradient(90deg, #ed7901 0%, #fcb81f 50%)
@@ -114,18 +117,18 @@
   -webkit-text-fill-color: transparent;
 }
 
-.webDevContainer .secondWebCont .leftCount h2 {
+.serviceDropContainer .secondServiceDropCont .leftCount h2 {
   align-self: flex-start;
   margin: 10px 0;
 }
 
-.webDevContainer .secondWebCont .leftCount p {
+.serviceDropContainer .secondServiceDropCont .leftCount p {
   align-self: flex-start;
   width: 80%;
   margin: 10px 0;
 }
 
-.webDevContainer .secondWebCont .rightCount {
+.serviceDropContainer .secondServiceDropCont .rightCount {
   width: 40%;
   display: flex;
   justify-content: center;
@@ -133,11 +136,11 @@
   flex-direction: column;
 }
 
-.webDevContainer .secondWebCont .rightCount img {
+.serviceDropContainer .secondServiceDropCont .rightCount img {
   width: 450px;
 }
 
-.webDevContainer .secondWebCont .hidden {
+.serviceDropContainer .secondServiceDropCont .hidden {
   opacity: 0;
   filter: blur(1px);
   visibility: hidden;
@@ -145,7 +148,7 @@
   transition: all linear 1s; /* Delay visibility change */
 }
 
-.webDevContainer .secondWebCont .show {
+.serviceDropContainer .secondServiceDropCont .show {
   opacity: 1;
   filter: blur(0);
   visibility: visible;
@@ -153,33 +156,33 @@
 }
 
 @media only screen and (max-width: 890px) {
-  .webDevContainer .secondWebCont {
+  .serviceDropContainer .secondServiceDropCont {
     flex-direction: column;
   }
-  .webDevContainer .secondWebCont .leftCount,
-  .webDevContainer .secondWebCont .rightCount {
+  .serviceDropContainer .secondServiceDropCont .leftCount,
+  .serviceDropContainer .secondServiceDropCont .rightCount {
     width: 100%;
     margin: 10px 0;
   }
 
-  .webDevContainer .secondWebCont .leftCount h2 {
+  .serviceDropContainer .secondServiceDropCont .leftCount h2 {
     width: 100%;
     align-self: center;
   }
 
-  .webDevContainer .secondWebCont .leftCount p {
+  .serviceDropContainer .secondServiceDropCont .leftCount p {
     width: 100%;
     align-self: center;
   }
 
-  .webDevContainer .secondWebCont .rightCount img {
+  .serviceDropContainer .secondServiceDropCont .rightCount img {
     width: 100%;
   }
 }
 
-.webDevContainer .thirdWebCont,
-.webDevContainer .fourthWebCont,
-.webDevContainer .fifthWebCont {
+.serviceDropContainer .thirdServiceDropCont,
+.serviceDropContainer .fourthServiceDropCont,
+.serviceDropContainer .fifthServiceDropCont {
   width: 90%;
   display: flex;
   justify-content: center;
@@ -189,9 +192,9 @@
   color: #16205f;
 }
 
-.webDevContainer .thirdWebCont h2 strong,
-.webDevContainer .fourthWebCont h2 strong,
-.webDevContainer .fifthWebCont h2 strong {
+.serviceDropContainer .thirdServiceDropCont h2 strong,
+.serviceDropContainer .fourthServiceDropCont h2 strong,
+.serviceDropContainer .fifthServiceDropCont h2 strong {
   background: var(
     --Yellow-Original,
     linear-gradient(90deg, #ed7901 0%, #fcb81f 50%)
@@ -201,14 +204,14 @@
   -webkit-text-fill-color: transparent;
 }
 
-.webDevContainer .thirdWebCont p,
-.webDevContainer .fourthWebCont p,
-.webDevContainer .fifthWebCont p {
+.serviceDropContainer .thirdServiceDropCont p,
+.serviceDropContainer .fourthServiceDropCont p,
+.serviceDropContainer .fifthServiceDropCont p {
   width: 80%;
   margin: 10px 0;
 }
 
-.webDevContainer .thirdWebCont .cardBox {
+.serviceDropContainer .thirdServiceDropCont .cardBox {
   width: 100%;
   display: flex;
   justify-content: space-evenly;
@@ -217,7 +220,7 @@
   margin-top: 30px;
 }
 
-.webDevContainer .thirdWebCont .cardBox .cards {
+.serviceDropContainer .thirdServiceDropCont .cardBox .cards {
   width: 30%;
   height: 400px;
   display: flex;
@@ -240,7 +243,7 @@
     rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
 }
 
-.webDevContainer .thirdWebCont .cardBox .cards img {
+.serviceDropContainer .thirdServiceDropCont .cardBox .cards img {
   width: 100%;
   height: 100%;
   border-radius: 5px;
@@ -249,11 +252,11 @@
   opacity: 0.8;
 }
 
-.webDevContainer .thirdWebCont .cardBox .cards:hover img {
+.serviceDropContainer .thirdServiceDropCont .cardBox .cards:hover img {
   transform: scale(1.2);
 }
 
-.webDevContainer .thirdWebCont .cardBox .cards .down {
+.serviceDropContainer .thirdServiceDropCont .cardBox .cards .down {
   width: 100%;
   position: absolute;
   z-index: 1;
@@ -274,13 +277,13 @@
   filter: drop-shadow(0 -19mm 4mm rgb(0, 0, 0));
 }
 
-.webDevContainer .thirdWebCont .cardBox .cards .down h5 {
+.serviceDropContainer .thirdServiceDropCont .cardBox .cards .down h5 {
   width: 100%;
   text-align: start;
   margin: 15px;
 }
 
-.webDevContainer .thirdWebCont .cardBox .cards .text {
+.serviceDropContainer .thirdServiceDropCont .cardBox .cards .text {
   transform: translateY(100%);
   position: absolute;
   top: 30%;
@@ -301,18 +304,18 @@
   filter: drop-shadow(0 -19mm 4mm rgb(0, 0, 0));
 }
 
-.webDevContainer .thirdWebCont .cardBox .cards:hover .text {
+.serviceDropContainer .thirdServiceDropCont .cardBox .cards:hover .text {
   transform: translateY(0);
 }
 
-.webDevContainer .thirdWebCont .cardBox .cards p {
+.serviceDropContainer .thirdServiceDropCont .cardBox .cards p {
   font-size: 13px;
   color: white;
 }
 
 /* Hidden Animation */
-.webDevContainer .thirdWebCont .cardBox .hidden,
-.webDevContainer .fifthWebCont .box .hidden {
+.serviceDropContainer .thirdServiceDropCont .cardBox .hidden,
+.serviceDropContainer .fifthServiceDropCont .box .hidden {
   opacity: 0;
   filter: blur(1px);
   visibility: hidden;
@@ -321,8 +324,8 @@
 }
 
 /* Show Animation */
-.webDevContainer .thirdWebCont .cardBox .show,
-.webDevContainer .fifthWebCont .box .show {
+.serviceDropContainer .thirdServiceDropCont .cardBox .show,
+.serviceDropContainer .fifthServiceDropCont .box .show {
   opacity: 1;
   filter: blur(0);
   visibility: visible;
@@ -330,35 +333,35 @@
 }
 
 @media only screen and (max-width: 1306px) {
-  .webDevContainer .thirdWebCont .cardBox .cards {
+  .serviceDropContainer .thirdServiceDropCont .cardBox .cards {
     width: 40%;
   }
 }
 
 @media only screen and (max-width: 930px) {
-  .webDevContainer .thirdWebCont .cardBox .cards {
+  .serviceDropContainer .thirdServiceDropCont .cardBox .cards {
     width: 90%;
     margin: 20px 0;
   }
 }
 
 @media only screen and (max-width: 400px) {
-  .webDevContainer .thirdWebCont .cardBox .cards {
+  .serviceDropContainer .thirdServiceDropCont .cardBox .cards {
     width: 90%;
     margin: 20px 0;
     height: 380px;
     justify-content: center;
   }
 
-  .webDevContainer .thirdWebCont p,
-  .webDevContainer .fourthWebCont p,
-  .webDevContainer .fifthWebCont p {
+  .serviceDropContainer .thirdServiceDropCont p,
+  .serviceDropContainer .fourthServiceDropCont p,
+  .serviceDropContainer .fifthServiceDropCont p {
     width: 100%;
     margin: 10px 0;
   }
 }
 
-.webDevContainer .fourthWebCont .box {
+.serviceDropContainer .fourthServiceDropCont .box {
   width: 95%;
   justify-content: center;
   align-items: center;
@@ -366,18 +369,26 @@
   margin: 40px 0 20px 0;
 }
 
-.webDevContainer .fourthWebCont .box .slick-slider .slick-prev::before,
-.webDevContainer .fourthWebCont .box .slick-slider .slick-next::before {
+.serviceDropContainer
+  .fourthServiceDropCont
+  .box
+  .slick-slider
+  .slick-prev::before,
+.serviceDropContainer
+  .fourthServiceDropCont
+  .box
+  .slick-slider
+  .slick-next::before {
   display: none;
 }
 
-.webDevContainer .fourthWebCont .agencyBox {
+.serviceDropContainer .fourthServiceDropCont .agencyBox {
   cursor: pointer;
   color: #16205f;
   margin-bottom: 20px;
 }
 
-.webDevContainer .fourthWebCont .agencyBox .innerAgencyBox {
+.serviceDropContainer .fourthServiceDropCont .agencyBox .innerAgencyBox {
   width: 200px;
   height: 200px;
   display: flex;
@@ -391,7 +402,7 @@
   position: relative;
 }
 
-.webDevContainer .fourthWebCont .agencyBox .innerAgencyBox img {
+.serviceDropContainer .fourthServiceDropCont .agencyBox .innerAgencyBox img {
   width: 150px;
   height: 130px;
   margin: 0 auto;
@@ -400,7 +411,7 @@
   box-shadow: rgba(17, 17, 26, 0.212) 0px 0px 16px;
 }
 
-.webDevContainer .fourthWebCont .agencyBox .innerAgencyBox h6 {
+.serviceDropContainer .fourthServiceDropCont .agencyBox .innerAgencyBox h6 {
   margin: 10px;
   width: 100%;
   align-self: center;
@@ -416,11 +427,15 @@
     rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 }
 
-.webDevContainer .fourthWebCont .agencyBox .innerAgencyBox:hover h6 {
+.serviceDropContainer
+  .fourthServiceDropCont
+  .agencyBox
+  .innerAgencyBox:hover
+  h6 {
   background: linear-gradient(90deg, #ed7901 0%, #fcb81f 50%);
 }
 
-.webDevContainer .fifthWebCont .box {
+.serviceDropContainer .fifthServiceDropCont .box {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -429,7 +444,7 @@
   margin-top: 20px;
 }
 
-.webDevContainer .fifthWebCont .box .inBox {
+.serviceDropContainer .fifthServiceDropCont .box .inBox {
   width: 25%;
   display: flex;
   align-self: flex-start;
@@ -439,7 +454,7 @@
   margin: 20px 0;
 }
 
-.webDevContainer .fifthWebCont .box .inBox img {
+.serviceDropContainer .fifthServiceDropCont .box .inBox img {
   width: 100px;
   height: 100px;
   border-radius: 50%;
@@ -449,33 +464,33 @@
   padding: 2px;
 }
 
-.webDevContainer .fifthWebCont .box .inBox h6 {
+.serviceDropContainer .fifthServiceDropCont .box .inBox h6 {
   font-weight: 600;
   font-size: 17px;
   margin-top: 15px;
 }
 
-.webDevContainer .fifthWebCont .box .inBox:hover img {
+.serviceDropContainer .fifthServiceDropCont .box .inBox:hover img {
   background: linear-gradient(90deg, #ed7901 0%, #fcb81f 50%);
 }
 
 @media only screen and (max-width: 500px) {
-  .webDevContainer .fifthWebCont .box .inBox {
+  .serviceDropContainer .fifthServiceDropCont .box .inBox {
     width: 50%;
   }
 }
 
 @media only screen and (max-width: 250px) {
-  .webDevContainer .fifthWebCont .box .inBox {
+  .serviceDropContainer .fifthServiceDropCont .box .inBox {
     width: 100%;
   }
 }
 
 @media only screen and (max-width: 814px) {
-  .webDevContainer .secondWebCont,
-  .webDevContainer .thirdWebCont,
-  .webDevContainer .fourthWebCont,
-  .webDevContainer .fifthWebCont {
+  .serviceDropContainer .secondServiceDropCont,
+  .serviceDropContainer .thirdServiceDropCont,
+  .serviceDropContainer .fourthServiceDropCont,
+  .serviceDropContainer .fifthServiceDropCont {
     margin: 20px 0;
   }
 }

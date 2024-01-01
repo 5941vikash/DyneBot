@@ -31,7 +31,7 @@ import MuiAlert from "@mui/material/Alert";
 
 const Hire = (props) => {
   // Props
-  const { openHireDialog, handleHireCloseDialog } = props;
+  const { openHireDialog, handleHireCloseDialog, heading } = props;
 
   // hire UseState
   const [hire, setHire] = useState({
@@ -135,9 +135,7 @@ const Hire = (props) => {
             }}
             className="hireMainBox"
           >
-            <h2>
-              Hire for <strong>Web Development</strong>
-            </h2>
+            <h2 dangerouslySetInnerHTML={{ __html: heading }} />
             {/* First Name Box */}
             <Box className="hireBox">
               {/* Text Field */}

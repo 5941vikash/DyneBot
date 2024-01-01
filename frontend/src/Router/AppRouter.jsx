@@ -17,6 +17,7 @@ import Technology from "../Pages/Technology/Technology";
 import Careers from "../Pages/Careers/Careers";
 import Contact from "../Pages/Contact/Contact";
 import WebDevelopment from "../Pages/WebDevelopment/WebDevelopment";
+import UIUXDesign from "../Pages/UIUXDesign/UIUXDesign";
 
 const AppRouter = () => {
   return (
@@ -29,6 +30,7 @@ const AppRouter = () => {
           <Route exact path="/services" element={<Services />} />
 
           <Route exact path="/web-development" element={<WebDevelopment />} />
+          <Route exact path="/uiux-design" element={<UIUXDesign />} />
 
           <Route exact path="/technologies" element={<Technology />} />
           <Route exact path="/careers" element={<Careers />} />
