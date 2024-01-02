@@ -144,7 +144,7 @@ const Hire = (props) => {
                 color="warning"
                 type="text"
                 name="fullname"
-                value={hire.fullname ? hire.fullname.trim("") : hire.fullname}
+                value={hire.fullname}
                 onChange={handleHireChange}
                 className="hireInput"
                 variant="outlined"
