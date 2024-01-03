@@ -14,25 +14,25 @@ import { webDevServices, webDevAgency, webDevTechStack } from "./Database";
 
 const Databases = () => {
   const firstContainer = {
-    heading: "Mobile App Development",
-    para: "Web Duality is a top-rated mobile app development firm, committed to reshaping global businesses' digital presence. With expertise in both native and cross-platform mobile app development, we empower entrepreneurs to establish a robust mobile footprint and lead in their industries. Our focus on innovation and client satisfaction ensures that our solutions drive success and growth for partners.",
+    heading: "End-to-End Database Solutions",
+    para: "Web Duality delivers extensive database management and integration services, constructing robust database solutions tailored for web and mobile applications. Our proficient team specializes in expert database management for both mobile and web app development.",
     // backimg: mobileappbackImg,
   };
 
   const secondContainer = {
     heading:
-      "Comprehensive <strong>Mobile App Development Solutions</strong> Tailored for Various Industries",
+      "Versatile Database Management Solutions Across Multiple Platforms",
     para1:
-      "Mobile applications have become an indispensable component of today's digital landscape. From startups to large-scale enterprises, businesses of all sizes can invest in mobile app development to capitalize on the advantages of establishing a robust mobile presence and connecting with their potential customer base.",
+      "Our team comprises highly skilled experts in database management, proficient in a range of technologies such as MySQL, MS SQL, PostgreSQL, MongoDB, Amazon DynamoDB, Azure CosmosDB, Indexed Database API, and Google Firebase.",
     para2:
-      "At Web Duality, we stand at the forefront of crafting comprehensive mobile solutions for both Android and iOS platforms. Our commitment lies in assisting businesses to take significant strides in their digital transformation journey, designing full-scale mobile apps that enhance their brand visibility and engagement.",
+      "In conjunction with these technologies, our team employs cutting-edge database engineering techniques to streamline database management and integrate scalable solutions for your digital platform. We extend our support to startups, enterprises, and established businesses, ensuring a seamless integration of databases and cloud services for enhanced and efficient data analysis.",
     // img: mobileappImg,
   };
 
   const thirdContainer = {
     heading:
-      "Empower Your Business Growth Through Our Comprehensive <strong>Mobile App Development</strong> Solutions",
-    para: "As a full-service mobile app development firm, we offer a range of tailored services to meet diverse business objectives. Our dedicated team provides end-to-end support, guiding you from ideation to seamless market entry with a standout solution.",
+      "Comprehensive Database Management and Integration Solutions",
+    para: "As a holistic provider of database solutions, we present a variety of services to our global clientele. This flexibility empowers businesses to select services aligned with their individual business objectives.",
     webDevServices,
   };
 
@@ -45,8 +45,8 @@ const Databases = () => {
 
   const fifthContainer = {
     heading:
-      "<strong>Enhancing Mobile App</strong> User Experience through Robust Tools and Frameworks",
-    para: "Crafting dynamic mobile solutions with a focus on exceptional user interfaces using React Native, Java, and Kotlin.",
+      "Expertise in Database Technologies",
+    para: "Web Duality excels in a broad spectrum of database technologies tailored to diverse business needs. Our database consultants, in alignment with your project requirements, guide you in selecting the most suitable database technology for constructing a scalable digital solution.",
     webDevTechStack,
   };
 

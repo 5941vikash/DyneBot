@@ -1,21 +1,33 @@
 
 const webDevServices = [
     {
-        name: "IOS App Development",
-        text: "Forge connections with your audience through our expertly crafted native iOS apps. Leveraging technologies like C# and Swift, our developers ensure scalable solutions that seamlessly integrate with iPhone sensors for unparalleled functionality.",
+        name: "Database Integration",
+        text: "We possess proficiency in seamlessly integrating multiple databases to optimize business processes and minimize unforeseen data redundancy. This entails linking diverse systems and applications to establish a unified, cohesive perspective of data throughout the organization.",
         // img: iosImg
     },
 
     {
-        name: "Android App Development",
-        text: "Unleash business expansion by delivering full-scale mobile solutions for Android users. Our expert developers, proficient in Java, Kotlin, C++, construct high-performance Android apps, ensuring a seamless user experience across diverse devices and establishing a strong brand presence in the expansive smartphone market.",
+        name: "Efficient Database Migration",
+        text: "We specialize in transferring data between databases with a focus on maintaining integrity, accuracy, and completeness. Whether upgrading from legacy systems or transitioning to cloud-based databases, our team ensures a secure and streamlined migration process.",
         // img: androidImg
     },
     {
-        name: "Cross-Platform App Development",
-        text: "Tap into diverse markets efficiently with cost-effective cross-platform mobile solutions. Leveraging technologies like React Native, Flutter, and Dart, our team creates feature-packed apps for industries like healthcare, education, and hospitality.",
+        name: "Database Maintenance and Support",
+        text: "Web Duality extends comprehensive ongoing maintenance and support services, ensuring sustained optimization and efficient performance of your database. This encompasses regular tasks such as database backups, security patching, and performance tuning.",
         // img: crossplatformappImg
     },
+    {
+        name: "Database Monitoring & Management",
+        text: "We provide continuous oversight to ensure your app's backend runs smoothly. Our services include monitoring performance, resolving issues, and managing resources for optimal functionality.",
+        // img: crossplatformappImg
+    },
+    {
+        name: "Data Analytics and Reporting",
+        text: "Our expertise extends to data analytics and reporting services, enabling clients to derive valuable insights from their data. This encompasses the creation of customized reports and dashboards, along with the implementation of advanced data analysis tools such as data mining and predictive analytics.",
+        // img: crossplatformappImg
+    },
+]
+]
 ]
 
 const webDevAgency = [
@@ -56,32 +68,36 @@ const webDevAgency = [
 const webDevTechStack = [
     {
         // img: javalogo,
-        heading: "JAVA"
+        heading: "MySQL"
 
     },
     {
         // img: kotlinlogo,
-        heading: "Koltin"
+        heading: "PostgreSQL"
     },
     {
         // img: cpplogo,
-        heading: "C++"
+        heading: "Amazon DynamoDB"
     },
     {
         // img: swiftlogo,
-        heading: "Swift"
+        heading: "Indexed Database API"
     },
     {
         // img: flutterlogo,
-        heading: "Flutter"
+        heading: "MS SQL"
     },
     {
         // img: dartlogo,
-        heading: "Dart"
+        heading: "MongoDB"
     },
     {
         // img: reactnativelogo,
-        heading: "React Native"
+        heading: "Azure CosmosDB"
+    }
+    {
+        // img: reactnativelogo,
+        heading: "Google Firebase"
     }
 ]
 
