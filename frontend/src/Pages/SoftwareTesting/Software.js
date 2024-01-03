@@ -13,6 +13,13 @@ import securetestImg from "./Assets/securitytestImg.jpg"
 import compatibilitytestImg from "./Assets/compatibilitytestImg.jpg"
 import reliabilitytestImg from "./Assets/reliabletestImg.avif"
 
+import jiralogo from "./Assets/jiralogo.png"
+import seleniumlogo from "./Assets/seleniumlogo.jpg"
+import loadrunnerlogo from './Assets/loadrunnerlogo.png'
+import jmeterlogo from "./Assets/jmeterlogo.png"
+import appiumlogo from "./Assets/appiumlogo.png"
+import owsapzaplogo from "./Assets/owsaplogo.png"
+
 const webDevServices = [
     {
         name: "Expert Manual Testing",
@@ -79,28 +86,28 @@ const webDevAgency = [
 
 const webDevTechStack = [
     {
-        // img: javalogo,
+        img: jiralogo,
         heading: "Jira Software"
 
     },
     {
-        // img: kotlinlogo,
+        img: seleniumlogo,
         heading: "Selenium"
     },
     {
-        // img: cpplogo,
+        img: loadrunnerlogo,
         heading: "LoadRunner"
     },
     {
-        // img: swiftlogo,
+        img: jmeterlogo,
         heading: "Jmeter"
     },
     {
-        // img: flutterlogo,
+        img: appiumlogo,
         heading: "Appium"
     },
     {
-        // img: flutterlogo,
+        img: owsapzaplogo,
         heading: "OWASP ZAP"
     }
 ]
