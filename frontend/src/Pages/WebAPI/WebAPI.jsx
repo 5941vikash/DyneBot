@@ -13,39 +13,39 @@ import ServicesDropPages from "../ServicesDropPages/ServicesDropPages";
 import { webDevServices, webDevAgency, webDevTechStack } from "./Web";
 const WebAPI = () => {
   const firstContainer = {
-    heading: "Mobile App Development",
-    para: "Web Duality is a top-rated mobile app development firm, committed to reshaping global businesses' digital presence. With expertise in both native and cross-platform mobile app development, we empower entrepreneurs to establish a robust mobile footprint and lead in their industries. Our focus on innovation and client satisfaction ensures that our solutions drive success and growth for partners.",
+    heading: "Web Duality's Expertise in ASP.NET Core API Development & Integration Solutions",
+    para: "At Web Duality, we specialize in ASP.NET Core Web API development, crafting tailored solutions for diverse industries. Our experienced team ensures seamless integration with existing systems, meeting each client's unique requirements.",
     // backimg: mobileappbackImg,
   };
 
   const secondContainer = {
     heading:
-      "Comprehensive <strong>Mobile App Development Solutions</strong> Tailored for Various Industries",
+      "Tailored Web API Solutions Across Industries",
     para1:
-      "Mobile applications have become an indispensable component of today's digital landscape. From startups to large-scale enterprises, businesses of all sizes can invest in mobile app development to capitalize on the advantages of establishing a robust mobile presence and connecting with their potential customer base.",
+      "In today's digital era, Web APIs play a pivotal role in facilitating seamless communication between various applications and platforms. Businesses, regardless of their size, can leverage the power of Web API development to enhance connectivity and streamline processes.",
     para2:
-      "At Web Duality, we stand at the forefront of crafting comprehensive mobile solutions for both Android and iOS platforms. Our commitment lies in assisting businesses to take significant strides in their digital transformation journey, designing full-scale mobile apps that enhance their brand visibility and engagement.",
+    "At Web Duality, we lead the way in providing tailored Web API solutions, catering to the unique requirements of diverse industries. Our expertise extends to crafting robust APIs for effective communication and integration, fostering digital transformation for businesses seeking enhanced connectivity and efficiency.",
     // img: mobileappImg,
   };
 
   const thirdContainer = {
     heading:
-      "Empower Your Business Growth Through Our Comprehensive <strong>Mobile App Development</strong> Solutions",
-    para: "As a full-service mobile app development firm, we offer a range of tailored services to meet diverse business objectives. Our dedicated team provides end-to-end support, guiding you from ideation to seamless market entry with a standout solution.",
+      "Partner with Us for Outsourcing",
+    para: "Choose Web Duality as your outsourcing destination for comprehensive Web API development solutions. Explore the advantages we provide for your project, including.",
     webDevServices,
   };
 
   const fourthContainer = {
     heading:
-      "<strong>Versatile Mobile App Development</strong> Solutions for Every Sector",
-    para: "With our mobile app development expertise, we ensure a seamless digital transition for businesses across different sectors. Web Duality has partnered with businesses of all sizes, crafting bespoke apps that align with specific industry goals.",
+      "Advantages of ASP.NET Core Web API Development",
+    para: "Explore the numerous advantages offered by ASP.NET Core Web API Development.",
     webDevAgency,
   };
 
   const fifthContainer = {
     heading:
-      "<strong>Enhancing Mobile App</strong> User Experience through Robust Tools and Frameworks",
-    para: "Crafting dynamic mobile solutions with a focus on exceptional user interfaces using React Native, Java, and Kotlin.",
+      "Tools and Technologies for ASP.NET Core API Development",
+    para: "Web Duality employs a variety of cutting-edge tools and technologies to craft high-performing ASP.NET Core Web APIs.",
     webDevTechStack,
   };
 

@@ -1,88 +1,86 @@
 
 const webDevServices = [
     {
-        name: "IOS App Development",
-        text: "Forge connections with your audience through our expertly crafted native iOS apps. Leveraging technologies like C# and Swift, our developers ensure scalable solutions that seamlessly integrate with iPhone sensors for unparalleled functionality.",
+        name: "Agile Development Methodology",
+        text: "Embracing an agile development methodology, we accelerate project delivery with enhanced efficiency. Our commitment to agility ensures responsiveness to your evolving needs and requirements.",
         // img: iosImg
     },
 
     {
-        name: "Android App Development",
-        text: "Unleash business expansion by delivering full-scale mobile solutions for Android users. Our expert developers, proficient in Java, Kotlin, C++, construct high-performance Android apps, ensuring a seamless user experience across diverse devices and establishing a strong brand presence in the expansive smartphone market.",
+        name: "Years of Expertise",
+        text: "With more than a Years of proficiency in Web API development, our team is adept at managing projects of varying sizes and complexities.",
         // img: androidImg
     },
     {
-        name: "Cross-Platform App Development",
-        text: "Tap into diverse markets efficiently with cost-effective cross-platform mobile solutions. Leveraging technologies like React Native, Flutter, and Dart, our team creates feature-packed apps for industries like healthcare, education, and hospitality.",
+        name: "Prioritizing Security",
+        text: "Our commitment to security is paramount, and we adhere to industry best practices to safeguard your APIs, preventing unauthorized access and fortifying protection against potential attacks.",
+        // img: crossplatformappImg
+    },
+    {
+        name: "Strategic Client Partnerships",
+        text: "At the core of our approach is the belief in fostering robust relationships with our clients. We actively collaborate, ensuring their needs are not just met but surpassed.",
+        // img: crossplatformappImg
+    },
+    {
+        name: "Flexible Scaling Options",
+        text: "Tailoring our team size to match your project needs, we offer the flexibility to scale up or down. This ensures cost-effectiveness, allowing you to pay only for the resources essential to your requirements.",
+        // img: crossplatformappImg
+    },
+    {
+        name: " Development with DevOps",
+        text: "Our adoption of DevOps practices ensures the efficient and effective construction, testing, and deployment of ASP.NET Core Web APIs. Employing automated testing, continuous integration and delivery, along with various tools and methodologies, we guarantee the highest quality for your Web APIs.",
+        // img: crossplatformappImg
+    },
+     {
+        name: "Affordable Excellence with Top-notch Talent",
+        text: "Harnessing the skills of top-tier ASP.NET Core developers, our team delivers exceptional services at a competitive cost. Outsourcing your Web API development to us ensures high-quality solutions without breaking the bank.",
         // img: crossplatformappImg
     },
 ]
 
 const webDevAgency = [
     {
-        name: "Medical Sector",
+        name: "Performance",
         // img: medicalsectorImg
     },
     {
-        name: "Travel & Tourism",
+        name: "Security",
         // img: travelImg
     },
     {
-        name: "Education",
+        name: "Flexibility",
         // img: educationImg
     },
     {
-        name: "Fintech",
+        name: "Scalability",
         // img: fintechImg
     },
-    {
-        name: "Fitness",
-        // img: fitnessImg
-    },
-    {
-        name: "Banking",
-        // img: bankingImg
-    },
-    {
-        name: "Media",
-        // img: mediaImg
-    },
-    {
-        name: "Ecommerce",
-        // img: ecommerceImg
-    },
+    
 ]
 
 const webDevTechStack = [
     {
         // img: javalogo,
-        heading: "JAVA"
+        heading: "Git"
 
     },
     {
         // img: kotlinlogo,
-        heading: "Koltin"
+        heading: "Firecamp"
     },
     {
         // img: cpplogo,
-        heading: "C++"
+        heading: "Postman"
     },
     {
         // img: swiftlogo,
-        heading: "Swift"
+        heading: "Swagger"
     },
     {
         // img: flutterlogo,
-        heading: "Flutter"
+        heading: "Visual Studio"
     },
-    {
-        // img: dartlogo,
-        heading: "Dart"
-    },
-    {
-        // img: reactnativelogo,
-        heading: "React Native"
-    }
+   
 ]
 
 
