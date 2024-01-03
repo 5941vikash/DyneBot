@@ -27,8 +27,6 @@ const webDevServices = [
         // img: crossplatformappImg
     },
 ]
-]
-]
 
 const webDevAgency = [
     {
@@ -94,7 +92,7 @@ const webDevTechStack = [
     {
         // img: reactnativelogo,
         heading: "Azure CosmosDB"
-    }
+    },
     {
         // img: reactnativelogo,
         heading: "Google Firebase"
