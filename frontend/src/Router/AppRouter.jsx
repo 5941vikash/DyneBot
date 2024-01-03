@@ -20,6 +20,7 @@ import WebDevelopment from "../Pages/WebDevelopment/WebDevelopment";
 import UIUXDesign from "../Pages/UIUXDesign/UIUXDesign";
 import CloudServices from "../Pages/CloudServices/CloudServices";
 import PWADevelopment from "../Pages/PWADevelopment/PWADevelopment";
+import MobileAppDevelopment from "../Pages/MobileAppDevelopment/MobileAppDevelopment";
 
 const AppRouter = () => {
   return (
@@ -35,6 +36,11 @@ const AppRouter = () => {
           <Route exact path="/uiux-design" element={<UIUXDesign />} />
           <Route exact path="/cloud-services" element={<CloudServices />} />
           <Route exact path="/pwa-development" element={<PWADevelopment />} />
+          <Route
+            exact
+            path="/mobile-app-development"
+            element={<MobileAppDevelopment />}
+          />
 
           <Route exact path="/technologies" element={<Technology />} />
           <Route exact path="/careers" element={<Careers />} />
