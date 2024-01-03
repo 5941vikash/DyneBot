@@ -21,6 +21,11 @@ import UIUXDesign from "../Pages/UIUXDesign/UIUXDesign";
 import CloudServices from "../Pages/CloudServices/CloudServices";
 import PWADevelopment from "../Pages/PWADevelopment/PWADevelopment";
 import MobileAppDevelopment from "../Pages/MobileAppDevelopment/MobileAppDevelopment";
+import ProductDevelopment from "../Pages/ProductDevelopment/ProductDevelopment";
+import SoftwareTesting from "../Pages/SoftwareTesting/SoftwareTesting";
+import WebAPI from "../Pages/WebAPI/WebAPI";
+import Databases from "../Pages/Databases/Databases";
+import Reporting from "../Pages/Reporting/Reporting";
 
 const AppRouter = () => {
   return (
@@ -41,6 +46,15 @@ const AppRouter = () => {
             path="/mobile-app-development"
             element={<MobileAppDevelopment />}
           />
+          <Route
+            exact
+            path="/product-development"
+            element={<ProductDevelopment />}
+          />
+          <Route exact path="/software-testing" element={<SoftwareTesting />} />
+          <Route exact path="/web-api" element={<WebAPI />} />
+          <Route exact path="/databases" element={<Databases />} />
+          <Route exact path="/reporting" element={<Reporting />} />
 
           <Route exact path="/technologies" element={<Technology />} />
           <Route exact path="/careers" element={<Careers />} />
