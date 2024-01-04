@@ -3,6 +3,8 @@ import React, { useState } from "react";
 // Hire CSS
 import "./Hire.css";
 
+import pdflogo from "./Assets/pdflogo.png";
+
 /* ------------------- MUI Component ------------------- */
 // Dialog
 import Dialog from "@mui/material/Dialog";
@@ -45,6 +47,7 @@ const Hire = (props) => {
     fullnameAlert: "",
     mailAlert: "",
     phoneAlert: "",
+    fileAlert: "",
   });
 
   // Handle hire Change Func
@@ -54,6 +57,30 @@ const Hire = (props) => {
       ...hire,
       [name]: value,
     });
+  };
+
+  const [selectedFile, setSelectedFile] = useState();
+
+  const handleFileChange = (e) => {
+    const val = e.target.files[0];
+    if (val && val.type === "application/pdf") {
+      setSelectedFile(val);
+      setAlert({
+        ...alert,
+        fileAlert: "",
+      });
+    } else if (val) {
+      setSelectedFile();
+      setAlert({
+        ...alert,
+        fileAlert: "Only Pdf are supported!!",
+      });
+    }
+  };
+
+  const fileNameFormat = (f) => {
+    const text = f.split(".");
+    return `${text[0].substring(0, 3)}...${text[1]}`;
   };
 
   // Snackbar Alert UseState
@@ -87,7 +114,9 @@ const Hire = (props) => {
       hire.email !== "" &&
       alert.mailAlert === "" &&
       hire.phone !== "" &&
-      alert.phoneAlert === ""
+      alert.phoneAlert === "" &&
+      selectedFile &&
+      alert.fileAlert === ""
     ) {
       // Post Request
       axios
@@ -109,6 +138,8 @@ const Hire = (props) => {
     }
   };
 
+  const isMobile = window.innerWidth <= 600;
+
   return (
     <>
       {/* Hire Dialog Box */}
@@ -120,7 +151,8 @@ const Hire = (props) => {
         {/* Dialog Content */}
         <DialogContent
           style={{
-            width: "100%",
+            minWidth: isMobile ? "100%" : "500px",
+            maxWidth: isMobile ? "100%" : "auto",
           }}
         >
           <Box
@@ -275,7 +307,83 @@ const Hire = (props) => {
               <p>{alert.phoneAlert}</p>
             </Box>
 
-            <div className="btnGrp">
+            {/* Phone Box */}
+            <Box
+              className="hireBox"
+              sx={{
+                boxShadow:
+                  "rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px",
+                p: 1,
+                borderRadius: "5px",
+                position: "relative",
+                height: "100px",
+              }}
+            >
+              <div className="resume">
+                <div className="first">
+                  <h6>Import your CV</h6>
+                  <input
+                    type="file"
+                    name="file"
+                    id="file"
+                    style={{
+                      display: "none",
+                    }}
+                    onChange={handleFileChange}
+                  />
+                  <label
+                    htmlFor="file"
+                    style={{
+                      background:
+                        "linear-gradient(90deg, #30bcc9 0%, #313968 100%)",
+                      color: "white",
+                      marginTop: "10px",
+                      marginLeft: "5px",
+                      padding: "2px 15px",
+                      borderRadius: "5px",
+                      borderStyle: "none",
+                      cursor: "pointer",
+                      boxShadow:
+                        "rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px",
+                    }}
+                  >
+                    Upload
+                  </label>
+                </div>
+
+                <div className="last">
+                  {selectedFile && (
+                    <>
+                      <img
+                        src={pdflogo}
+                        alt=""
+                        draggable="false"
+                        style={{
+                          width: "50px",
+                        }}
+                      />
+                      <p>{fileNameFormat(selectedFile.name)}</p>
+                    </>
+                  )}
+                </div>
+              </div>
+
+              {/* File Alert */}
+              <p
+                style={{
+                  marginBottom: "0",
+                }}
+              >
+                {alert.fileAlert}
+              </p>
+            </Box>
+
+            <div
+              className="btnGrp"
+              style={{
+                marginTop: "10px",
+              }}
+            >
               <Button
                 color="success"
                 variant="contained"

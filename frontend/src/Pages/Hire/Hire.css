@@ -28,6 +28,12 @@
   flex-direction: column;
 }
 
+.hireMainBox .hireBox h6 {
+  align-self: flex-start;
+  margin-left: 5px;
+  margin-top: 0px;
+}
+
 .hireMainBox .hireBox .hireInput {
   width: 100%;
   color: #16205f;
@@ -35,11 +41,42 @@
 
 .hireMainBox .hireBox p {
   height: 20px;
-  margin: 5px 0px 15px 5px;
+  margin: 5px 0px 10px 5px;
   padding: 0;
   align-self: flex-start;
   color: rgb(187, 7, 7);
   font-size: 13px;
+}
+
+.hireMainBox .hireBox .resume {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hireMainBox .hireBox .resume .first {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  margin: 5px;
+}
+
+.hireMainBox .hireBox .resume .last {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-direction: column;
+  margin: 5px;
+}
+
+.hireMainBox .hireBox .resume .last p {
+  align-self: flex-end;
+  margin: 0;
+  margin-top: 5px;
 }
 
 @media only screen and (max-width: 400px) {

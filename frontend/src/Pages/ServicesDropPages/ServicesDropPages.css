@@ -10,6 +10,10 @@
   font-style: normal;
 }
 
+.serviceDropContainer h2 {
+  text-transform: capitalize;
+}
+
 .serviceDropContainer .firstServiceDropCont {
   width: 100%;
   height: 450px;
@@ -95,7 +99,7 @@
   justify-content: space-between;
   align-items: center;
   color: #16205f;
-  margin: 50px 0;
+  padding: 50px 0;
 }
 
 .serviceDropContainer .secondServiceDropCont .leftCount {

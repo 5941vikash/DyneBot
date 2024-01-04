@@ -1,5 +1,5 @@
 // React & UseState
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 // Navbar CSS
 import "./Navbar.css";
 
@@ -8,7 +8,7 @@ import Logo from "./Assets/Logo.png";
 
 /* ------------- React Router Dom ------------- */
 // NavLink
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 
 /* ------------------- MUI Icons ------------------- */
 // Down Arrow Icon
@@ -31,6 +31,11 @@ import DrawerNav from "./DrawerNav";
 import { navServicesPages, navTechnologyPages } from "./NavPages";
 
 const Navbar = () => {
+  const { pathname } = useLocation();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+  
   // Menu Anchor
   const [anchorEl, setAnchorEl] = useState([null, null]); // Initialize with null for each icon
 
