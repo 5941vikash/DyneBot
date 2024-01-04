@@ -20,15 +20,15 @@ const webDevServices = [
 
 const webDevAgency = [
     {
-        name: "Medical Sector",
+        name: "Healthcare",
         // img: medicalsectorImg
     },
     {
-        name: "Travel & Tourism",
+        name: "Ecommerce",
         // img: travelImg
     },
     {
-        name: "Education",
+        name: "Ed-Tech",
         // img: educationImg
     },
     {
@@ -36,52 +36,45 @@ const webDevAgency = [
         // img: fintechImg
     },
     {
-        name: "Fitness",
+        name: "Insurance",
         // img: fitnessImg
     },
     {
-        name: "Banking",
+        name: "Logistics",
         // img: bankingImg
     },
-    {
-        name: "Media",
-        // img: mediaImg
-    },
-    {
-        name: "Ecommerce",
-        // img: ecommerceImg
-    },
+   
 ]
 
 const webDevTechStack = [
     {
         // img: javalogo,
-        heading: "JAVA"
+        heading: "SQL Server Reporting Services"
 
     },
     {
         // img: kotlinlogo,
-        heading: "Koltin"
+        heading: "Jasper Reports"
     },
     {
         // img: cpplogo,
-        heading: "C++"
+        heading: "Crystal Reports"
     },
     {
         // img: swiftlogo,
-        heading: "Swift"
+        heading: "Datapine"
     },
     {
         // img: flutterlogo,
-        heading: "Flutter"
+        heading: "DevExpress"
     },
     {
         // img: dartlogo,
-        heading: "Dart"
+        heading: "Telerik"
     },
     {
         // img: reactnativelogo,
-        heading: "React Native"
+        heading: "PowerBI"
     }
 ]
 

@@ -13,39 +13,39 @@ import ServicesDropPages from "../ServicesDropPages/ServicesDropPages";
 import { webDevServices, webDevAgency, webDevTechStack } from "./Report";
 const Reporting = () => {
   const firstContainer = {
-    heading: "Mobile App Development",
-    para: "Web Duality is a top-rated mobile app development firm, committed to reshaping global businesses' digital presence. With expertise in both native and cross-platform mobile app development, we empower entrepreneurs to establish a robust mobile footprint and lead in their industries. Our focus on innovation and client satisfaction ensures that our solutions drive success and growth for partners.",
+    heading: "Advanced Project Analysis through Comprehensive Reporting",
+    para: "Web Duality delivers exceptional project reporting services worldwide, empowering businesses to assess the real-time status of their projects and utilize analytics for informed decision-making. Leveraging cutting-edge reporting and analytic tools, our team facilitates businesses in visualizing and crafting detailed reports for enhanced project insights.",
     // backimg: mobileappbackImg,
   };
 
   const secondContainer = {
     heading:
-      "Comprehensive <strong>Mobile App Development Solutions</strong> Tailored for Various Industries",
+      "Driving Business Growth Through Data Visualization Mastery",
     para1:
-      "Mobile applications have become an indispensable component of today's digital landscape. From startups to large-scale enterprises, businesses of all sizes can invest in mobile app development to capitalize on the advantages of establishing a robust mobile presence and connecting with their potential customer base.",
+      "As a prominent digital solutions provider, we recognize the pivotal role of data visualization in propelling contemporary businesses forward. Our comprehensive data visualization and reporting services are designed to catalyze revenue growth, attract high-quality leads, and facilitate informed marketing decisions.",
     para2:
-      "At Web Duality, we stand at the forefront of crafting comprehensive mobile solutions for both Android and iOS platforms. Our commitment lies in assisting businesses to take significant strides in their digital transformation journey, designing full-scale mobile apps that enhance their brand visibility and engagement.",
+      "Our team of seasoned data analytics professionals specializes in utilizing a diverse set of reporting and data analytics tools, including PowerBI, Tableau, and Bold Reports. We acknowledge the critical importance of accurate and timely project reporting for effective decision-making. Therefore, our tailored services ensure that clients have access to the essential information required for making well-informed, data-driven decisions.",
     // img: mobileappImg,
   };
 
   const thirdContainer = {
     heading:
-      "Empower Your Business Growth Through Our Comprehensive <strong>Mobile App Development</strong> Solutions",
-    para: "As a full-service mobile app development firm, we offer a range of tailored services to meet diverse business objectives. Our dedicated team provides end-to-end support, guiding you from ideation to seamless market entry with a standout solution.",
+      "Fuel Your Business Expansion with Our Advanced Reporting Solutions",
+    para: "As a comprehensive reporting development firm, we provide a spectrum of customized services to fulfill diverse business objectives. Our committed team delivers comprehensive support, leading you from conceptualization to a seamless market presence with an exceptional reporting solution.",
     webDevServices,
   };
 
   const fourthContainer = {
     heading:
-      "<strong>Versatile Mobile App Development</strong> Solutions for Every Sector",
-    para: "With our mobile app development expertise, we ensure a seamless digital transition for businesses across different sectors. Web Duality has partnered with businesses of all sizes, crafting bespoke apps that align with specific industry goals.",
+      "Versatile Reporting and Analytics Across Industries",
+    para: "We provide tailored reporting and analytics services suitable for businesses in various industries. Leveraging detailed data visualization, we empower global enterprises to enhance their brand presence, make informed marketing and financial decisions, and foster strategic business growth.",
     webDevAgency,
   };
 
   const fifthContainer = {
     heading:
-      "<strong>Enhancing Mobile App</strong> User Experience through Robust Tools and Frameworks",
-    para: "Crafting dynamic mobile solutions with a focus on exceptional user interfaces using React Native, Java, and Kotlin.",
+      "Utilized Reporting Technologies",
+    para: "Collaborating with Web Duality for your reporting and data analysis needs grants your brand access to specialists proficient in contemporary reporting tools. Our team harnesses these technologies to craft tailored, visually engaging reports that align with and foster your business expansion.",
     webDevTechStack,
   };
 

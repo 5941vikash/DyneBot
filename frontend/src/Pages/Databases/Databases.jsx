@@ -38,8 +38,8 @@ const Databases = () => {
 
   const fourthContainer = {
     heading:
-      "<strong>Versatile Mobile App Development</strong> Solutions for Every Sector",
-    para: "With our mobile app development expertise, we ensure a seamless digital transition for businesses across different sectors. Web Duality has partnered with businesses of all sizes, crafting bespoke apps that align with specific industry goals.",
+      "Databases in Digital Infrastructure",
+    para: "Databases serve as the backbone of modern digital ecosystems, enabling efficient data storage, retrieval, and management. They play a pivotal role in diverse applications, ensuring seamless functioning across various industries.",
     webDevAgency,
   };
 

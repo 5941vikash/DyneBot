@@ -30,37 +30,34 @@ const webDevServices = [
 
 const webDevAgency = [
     {
-        name: "Medical Sector",
+        name: "Data Storage",
         // img: medicalsectorImg
     },
     {
-        name: "Travel & Tourism",
+        name: "Data Retrieval",
         // img: travelImg
     },
     {
-        name: "Education",
+        name: "Data Management",
         // img: educationImg
     },
     {
-        name: "Fintech",
+        name: "Application Support",
         // img: fintechImg
     },
     {
-        name: "Fitness",
+        name: "Security",
         // img: fitnessImg
     },
     {
-        name: "Banking",
+        name: "Scalability",
         // img: bankingImg
     },
     {
-        name: "Media",
+        name: "Business Intelligence",
         // img: mediaImg
     },
-    {
-        name: "Ecommerce",
-        // img: ecommerceImg
-    },
+  
 ]
 
 const webDevTechStack = [
