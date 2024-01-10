@@ -42,7 +42,7 @@ import "slick-carousel/slick/slick-theme.css";
 const SlickArrowLeft = ({ currentSlide, slideCount, ...props }) => (
   <ArrowBackIosIcon
     sx={{
-      color: "#16205f",
+      color: "var(--main-text-color)",
     }}
     {...props}
     className={
@@ -58,7 +58,7 @@ const SlickArrowLeft = ({ currentSlide, slideCount, ...props }) => (
 const SlickArrowRight = ({ currentSlide, slideCount, ...props }) => (
   <ArrowForwardIosIcon
     sx={{
-      color: "#16205f",
+      color: "var(--main-text-color)",
     }}
     {...props}
     className={

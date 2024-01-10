@@ -4,7 +4,7 @@ import React, { useState, useEffect } from "react";
 import "./Navbar.css";
 
 // Logo
-import Logo from "./Assets/Logo.png";
+import Logo from "./Assets/Logo.jpg";
 
 /* ------------- React Router Dom ------------- */
 // NavLink
@@ -35,7 +35,7 @@ const Navbar = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [pathname]);
-  
+
   // Menu Anchor
   const [anchorEl, setAnchorEl] = useState([null, null]); // Initialize with null for each icon
 

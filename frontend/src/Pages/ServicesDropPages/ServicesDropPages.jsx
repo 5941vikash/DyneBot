@@ -15,6 +15,8 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
+import thirdBackImg from "./Assets/thirdBackImg.jpg";
+
 const ServicesDropPages = (props) => {
   const {
     firstContainer,
@@ -26,6 +28,7 @@ const ServicesDropPages = (props) => {
   } = props;
 
   const [animationsShown, setAnimationsShown] = useState({});
+  const [scrolledDown, setScrolledDown] = useState(false);
 
   // Handle Intersection Func
   const handleIntersection = (entries) => {
@@ -43,30 +46,53 @@ const ServicesDropPages = (props) => {
   };
 
   useEffect(() => {
-    const observer = new IntersectionObserver(handleIntersection, {
-      threshold: 0.5,
-    });
+    const handleScroll = () => {
+      // Get the scroll position
+      const scrollPosition =
+        window.scrollY || document.documentElement.scrollTop;
 
-    const targetRefs = document.querySelectorAll(".hidden");
-
-    targetRefs.forEach((targetRef) => {
-      const animationKey = targetRef.dataset.animationKey;
-
-      // Check if the animation for this box has already been shown
-      if (!animationsShown[animationKey]) {
-        observer.observe(targetRef);
-      } else {
-        // If the animation has already been shown, add the 'show' class immediately
-        targetRef.classList.add("show");
+      // Check if the user has scrolled down
+      if (scrollPosition > 0) {
+        setScrolledDown(true);
       }
-    });
-
-    return () => {
-      targetRefs.forEach((targetRef) => {
-        observer.unobserve(targetRef);
-      });
     };
-  }, [animationsShown]); // Add animationsShown to the dependency array
+
+    // Attach the scroll event listener
+    window.addEventListener("scroll", handleScroll);
+
+    // Clean up the event listener on component unmount
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  useEffect(() => {
+    if (scrolledDown) {
+      const observer = new IntersectionObserver(handleIntersection, {
+        threshold: 0.5,
+      });
+
+      const targetRefs = document.querySelectorAll(".hidden");
+
+      targetRefs.forEach((targetRef) => {
+        const animationKey = targetRef.dataset.animationKey;
+
+        // Check if the animation for this box has already been shown
+        if (!animationsShown[animationKey]) {
+          observer.observe(targetRef);
+        } else {
+          // If the animation has already been shown, add the 'show' class immediately
+          targetRef.classList.add("show");
+        }
+      });
+
+      return () => {
+        targetRefs.forEach((targetRef) => {
+          observer.unobserve(targetRef);
+        });
+      };
+    }
+  }, [scrolledDown, animationsShown]); // Add animationsShown to the dependency array
 
   // Slider Responsive
   const settings = {
@@ -122,6 +148,11 @@ const ServicesDropPages = (props) => {
     setOpenHireDialog(false);
   };
 
+  const [btnColor, setBtnColor] = useState({
+    btn1: true,
+    btn2: false,
+  });
+
   return (
     <>
       <div className="serviceDropContainer">
@@ -139,10 +170,45 @@ const ServicesDropPages = (props) => {
           <div className="buttonBox">
             <NavLink to="/contact">
               {" "}
-              <button>Contact Us</button>
+              <button
+                onMouseOver={() => {
+                  setBtnColor({
+                    btn1: true,
+                    btn2: false,
+                  });
+                }}
+                style={{
+                  color: btnColor.btn1
+                    ? "var(--main-textSecond-color)"
+                    : "var(--main-text-color)",
+                  background: btnColor.btn1
+                    ? "var(--main-backGradient-color)"
+                    : "var(--main-background-color)",
+                }}
+              >
+                Contact Us
+              </button>
             </NavLink>
 
-            <button onClick={handleHireOpenDialog}>Hire Now</button>
+            <button
+              onClick={handleHireOpenDialog}
+              onMouseOver={() => {
+                setBtnColor({
+                  btn1: false,
+                  btn2: true,
+                });
+              }}
+              style={{
+                color: btnColor.btn2
+                  ? "var(--main-textSecond-color)"
+                  : "var(--main-text-color)",
+                background: btnColor.btn2
+                  ? "var(--main-backGradient-color)"
+                  : "var(--main-background-color)",
+              }}
+            >
+              Hire Now
+            </button>
           </div>
         </div>
 
@@ -163,27 +229,40 @@ const ServicesDropPages = (props) => {
           </div>
         </div>
 
-        <div className="thirdServiceDropCont">
-          <h2 dangerouslySetInnerHTML={{ __html: thirdContainer.heading }} />
-          <p>{thirdContainer.para}</p>
-          <div className="cardBox">
-            {thirdContainer.webDevServices.map((e, i) => {
-              return (
-                <div
-                  className="cards hidden"
-                  data-animation-key={`thirdServiceDropCont ${i}`}
-                  key={i}
-                >
-                  <img src={e.img} alt="" />
-                  <div className="down">
-                    <h5>{e.name}</h5>
+        <div
+          style={{
+            width: "100%",
+            background: `url("${thirdBackImg}") no-repeat`,
+            backgroundSize: "100% 100%",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            boxShadow: "rgba(149, 157, 165, 0.2) 0px 8px 24px",
+          }}
+        >
+          <div className="thirdServiceDropCont">
+            <h2 dangerouslySetInnerHTML={{ __html: thirdContainer.heading }} />
+            <p>{thirdContainer.para}</p>
+            <div className="cardBox">
+              {thirdContainer.webDevServices.map((e, i) => {
+                return (
+                  <div
+                    className="cards hidden"
+                    data-animation-key={`thirdServiceDropCont ${i}`}
+                    key={i}
+                  >
+                    <img src={e.img} alt="" />
+                    <div className="down">
+                      <h4>{e.name}</h4>
+                    </div>
+                    <div className="text">
+                      <h4>{e.name}</h4>
+                      <p>{e.text}</p>
+                    </div>
                   </div>
-                  <div className="text">
-                    <p>{e.text}</p>
-                  </div>
-                </div>
-              );
-            })}
+                );
+              })}
+            </div>
           </div>
         </div>
 

@@ -3,7 +3,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #ffff;
+  background-color: var(--main-background-color);
   border-bottom: 1px solid #e1e1e1;
   position: sticky;
   top: 0;
@@ -15,7 +15,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #ffff;
+  background-color: var(--main-background-color);
 }
 
 .navbar .innerNav .hide {
@@ -29,8 +29,8 @@
 }
 
 .navbar .innerNav .box img {
-  width: 161px;
-  height: 85px;
+  width: 70px;
+  /* height: 85px; */
   margin: 1px 0;
   cursor: pointer;
   user-select: none;
@@ -39,7 +39,7 @@
 .navbar .innerNav .box li {
   list-style: none;
   cursor: pointer;
-  color: var(--Black, #16205f);
+  color: var(--main-text-color);
   font-family: Poppins;
   font-size: 18px;
   font-style: normal;
@@ -52,7 +52,7 @@
 
 .navbar .innerNav .box li .navLink {
   text-decoration: none;
-  color: var(--Black, #16205f);
+  color: var(--main-text-color);
   font-family: Poppins;
   font-size: 18px;
   font-style: normal;
@@ -61,26 +61,20 @@
 }
 
 .navbar .innerNav .box li:hover {
-  background: var(
-    --Yellow-Original,
-    linear-gradient(90deg, #ed7901 0%, #fcb81f 50%)
-  );
+  background: var(--main-second-backGradient-color);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .navbar .innerNav .box li .active {
-  background: var(
-    --Yellow-Original,
-    linear-gradient(90deg, #ed7901 0%, #fcb81f 50%)
-  );
+  background: var(--main-second-backGradient-color);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-#basic-menu .active .MuiMenuItem-root{
+#basic-menu .active .MuiMenuItem-root {
   background-color: rgb(243, 243, 243);
   border-left: 4px solid #fcb81f;
 }
@@ -89,18 +83,24 @@
   width: 189px;
   height: 41px;
   display: flex;
+  color: var(--main-text-color);
   justify-content: center;
   align-items: center;
   flex-shrink: 0;
+  border-style: none;
   border-radius: 8px;
-  border: 2px solid var(--Dark, #16205f);
-  box-shadow: 0px 4px 22px 0px rgba(0, 0, 0, 0.12);
-  background-color: #ffff;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  background-color: var(--main-background-color);
   cursor: pointer;
 }
 
+.navbar .innerNav .box button:hover {
+  color: var(--main-textSecond-color);
+  background: var(--main-backGradient-color);
+}
+
 .navbar .innerNav .box button span {
-  color: var(--Dark, #16205f);
   text-align: center;
   font-family: Poppins;
   font-size: 18px;

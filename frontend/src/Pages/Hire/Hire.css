@@ -56,7 +56,7 @@
 }
 
 .hireMainBox .hireBox .resume .first {
-  width: 40%;
+  width: 50%;
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -65,7 +65,7 @@
 }
 
 .hireMainBox .hireBox .resume .last {
-  width: 40%;
+  width: 50%;
   display: flex;
   justify-content: center;
   align-items: flex-end;

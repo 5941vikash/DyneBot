@@ -21,7 +21,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  color: #fff;
+  color: var(--main-textSecond-color);
   padding: 20px 0;
 }
 
@@ -48,31 +48,8 @@
   margin: 10px;
   padding: 10px 20px;
   border-radius: 25px;
-  color: #16205f;
   font-weight: 600;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-}
-
-.serviceDropContainer .firstServiceDropCont .buttonBox button:nth-child(1) {
-  background: linear-gradient(90deg, #ed7901 0%, #fcb81f 50%);
-}
-
-.serviceDropContainer
-  .firstServiceDropCont
-  .buttonBox
-  button:nth-child(1):hover {
-  background: white;
-}
-
-.serviceDropContainer .firstServiceDropCont .buttonBox button:nth-child(2) {
-  background-color: white;
-}
-
-.serviceDropContainer
-  .firstServiceDropCont
-  .buttonBox
-  button:nth-child(2):hover {
-  background: linear-gradient(90deg, #ed7901 0%, #fcb81f 50%);
 }
 
 @media only screen and (max-width: 1130px) {
@@ -98,7 +75,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: #16205f;
+  color: var(--main-text-color);
   padding: 50px 0;
 }
 
@@ -112,10 +89,7 @@
 }
 
 .serviceDropContainer .secondServiceDropCont .leftCount h2 strong {
-  background: var(
-    --Yellow-Original,
-    linear-gradient(90deg, #ed7901 0%, #fcb81f 50%)
-  );
+  background: var(--main-second-backGradient-color);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -162,6 +136,7 @@
 @media only screen and (max-width: 890px) {
   .serviceDropContainer .secondServiceDropCont {
     flex-direction: column;
+    padding: 0;
   }
   .serviceDropContainer .secondServiceDropCont .leftCount,
   .serviceDropContainer .secondServiceDropCont .rightCount {
@@ -193,16 +168,13 @@
   align-items: center;
   flex-direction: column;
   margin: 50px 0;
-  color: #16205f;
+  color: var(--main-text-color);
 }
 
 .serviceDropContainer .thirdServiceDropCont h2 strong,
 .serviceDropContainer .fourthServiceDropCont h2 strong,
 .serviceDropContainer .fifthServiceDropCont h2 strong {
-  background: var(
-    --Yellow-Original,
-    linear-gradient(90deg, #ed7901 0%, #fcb81f 50%)
-  );
+  background: var(--main-second-backGradient-color);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -225,26 +197,20 @@
 }
 
 .serviceDropContainer .thirdServiceDropCont .cardBox .cards {
-  width: 30%;
-  height: 400px;
+  width: 45%;
+  height: 325px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   position: relative;
-  border-radius: 5px;
+  border-radius: 10px;
   overflow: hidden;
   cursor: pointer;
   margin: 20px;
-  background: linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, 0.918),
-    rgba(0, 0, 0, 0.973),
-    #000000
-  );
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em,
-    rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em,
-    rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  color: var(--main-textSecond-color);
 }
 
 .serviceDropContainer .thirdServiceDropCont .cardBox .cards img {
@@ -253,7 +219,6 @@
   border-radius: 5px;
   transform: scale(1);
   transition: transform 1s ease-in-out;
-  opacity: 0.8;
 }
 
 .serviceDropContainer .thirdServiceDropCont .cardBox .cards:hover img {
@@ -264,48 +229,44 @@
   width: 100%;
   position: absolute;
   z-index: 1;
-  color: white;
-  top: 70%;
+  color: var(--main-textSecond-color);
+  top: 60%;
   bottom: 0;
   padding: 10px;
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
   flex-direction: column;
-  background: linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, 0),
-    rgba(0, 0, 0, 0.473),
-    rgba(0, 0, 0, 0.479)
-  );
-  filter: drop-shadow(0 -16mm 8mm rgb(0, 0, 0));
+  background-color: var(--main-card-back-color);
+  transform: translateY(0);
+  transition: transform 0.4s linear;
+  padding: 15px;
 }
 
-.serviceDropContainer .thirdServiceDropCont .cardBox .cards .down h5 {
+.serviceDropContainer .thirdServiceDropCont .cardBox .cards:hover .down {
+  transform: translateY(100%);
+}
+
+.serviceDropContainer .thirdServiceDropCont .cardBox .cards .down h4 {
   width: 100%;
   text-align: start;
-  margin: 15px;
 }
 
 .serviceDropContainer .thirdServiceDropCont .cardBox .cards .text {
   transform: translateY(100%);
   position: absolute;
-  top: 30%;
+  top: 0;
   z-index: 1;
   bottom: 0;
   width: 100%;
-  padding: 10px;
+  padding: 15px;
   display: flex;
   justify-content: center;
-  align-items: center;
-  transition: transform 0.5s linear;
-  background: linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, 0.158),
-    rgba(0, 0, 0, 0.795),
-    rgb(0, 0, 0)
-  );
-  filter: drop-shadow(0 -19mm 8mm rgb(0, 0, 0));
+  align-items: flex-start;
+  flex-direction: column;
+  text-align: start;
+  transition: transform 0.4s linear;
+  background-color: var(--main-card-back-color);
 }
 
 .serviceDropContainer .thirdServiceDropCont .cardBox .cards:hover .text {
@@ -313,8 +274,8 @@
 }
 
 .serviceDropContainer .thirdServiceDropCont .cardBox .cards p {
-  font-size: 13px;
-  color: white;
+  font-size: 16px;
+  width: 100%;
 }
 
 /* Hidden Animation */
@@ -388,7 +349,7 @@
 
 .serviceDropContainer .fourthServiceDropCont .agencyBox {
   cursor: pointer;
-  color: #16205f;
+  color: var(--main-text-color);
   margin-bottom: 20px;
 }
 
@@ -400,7 +361,7 @@
   align-items: center;
   cursor: pointer;
   flex-direction: column;
-  color: #16205f;
+  color: var(--main-text-color);
   margin: 0 auto;
   margin-bottom: 10px;
   position: relative;
@@ -449,7 +410,7 @@
   .agencyBox
   .innerAgencyBox:hover
   h6 {
-  background: linear-gradient(90deg, #ed7901 0%, #fcb81f 50%);
+  background: var(--main-second-backGradient-color);
 }
 
 .serviceDropContainer .fifthServiceDropCont .box {
@@ -488,7 +449,7 @@
 }
 
 .serviceDropContainer .fifthServiceDropCont .box .inBox:hover img {
-  background: linear-gradient(90deg, #ed7901 0%, #fcb81f 50%);
+  background: var(--main-second-backGradient-color);
 }
 
 @media only screen and (max-width: 500px) {
