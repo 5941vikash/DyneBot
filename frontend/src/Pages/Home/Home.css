@@ -74,43 +74,41 @@
 /* First Container */
 .homeContainer .homeFirstCont {
   width: 100%;
+  min-height: 100vh;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  padding: 50px 80px;
-  background-color: var(--main-background-color);
+  background: linear-gradient(rgba(0, 0, 0, 0.555), rgba(0, 0, 0, 0.582)),
+    url("./Assets//LandingBack.jpg") no-repeat;
+  background-size: 100% 100%;
 }
 
 .homeContainer .homeFirstCont .box {
-  width: 40%;
-  border-radius: 0px 80px 0px 0px;
-  background-color: var(--main-background-color);
+  width: 90%;
+  color: var(--main-textSecond-color);
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: flex-start;
   flex-direction: column;
-  padding: 40px 140px 40px 15px;
-  margin-right: -150px;
-  z-index: 1;
-}
-
-.homeContainer .homeFirstCont img {
-  width: 80%;
-  height: 520px;
-  z-index: 0;
+  margin-top: 60px;
+  text-shadow: 1px 1px 2px rgb(255, 255, 255), 0 0 1em #16205f,
+    0 0 0.2em #16205f;
 }
 
 .homeContainer .homeFirstCont .box h2 {
   font-weight: 600;
-  height: 150px;
+  width: 40%;
+  height: 120px;
   margin-bottom: 40px;
 }
 
 .homeContainer .homeFirstCont .box p {
+  width: 40%;
   font-weight: 400;
 }
 
 .homeContainer .homeFirstCont .box button {
+  margin-top: 15px;
   padding: 10px 20px;
   border-radius: 8px;
   border-style: none;
@@ -122,33 +120,27 @@
   font-weight: 600;
   line-height: normal;
   background: var(--main-backGradient-color);
-  box-shadow: 0px 4px 22px 0px rgba(0, 0, 0, 0.12);
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  box-shadow: rgba(241, 238, 238, 0.158) 0px 5px 15px;
 }
 
 @media only screen and (max-width: 1040px) {
   .homeContainer .homeFirstCont {
     width: 100%;
+    min-height: 80vh;
+    max-height: fit-content;
     justify-content: center;
-    flex-direction: column-reverse;
-    margin-top: 0px;
-    padding: 0px;
-    padding-bottom: 30px;
   }
 
-  .homeContainer .homeFirstCont img {
+  .homeContainer .homeFirstCont .box{
+    margin: 60px 0;
+  }
+
+  .homeContainer .homeFirstCont .box p {
     width: 100%;
-    height: auto;
-  }
-
-  .homeContainer .homeFirstCont .box {
-    width: 90%;
-    margin-right: 0px;
-    padding: 0;
-    padding-top: 40px;
   }
 
   .homeContainer .homeFirstCont .box h2 {
+    width: 100%;
     height: 60px;
   }
 }

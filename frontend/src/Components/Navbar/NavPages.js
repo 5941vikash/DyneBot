@@ -1,79 +1,90 @@
 const navServicesPages = [
     {
-        "name": "Web Development",
-        "link": "web-development"
+        name: "Web Development",
+        link: "web-development"
     },
     {
-        "name": "UI UX Design",
-        "link": "uiux-design"
+        name: "UI UX Design",
+        link: "uiux-design"
     },
     {
-        "name": "Cloud Services",
-        "link": "cloud-services"
+        name: "Cloud Services",
+        link: "cloud-services"
     },
     {
-        "name": "PWA Development",
-        "link": "pwa-development"
+        name: "PWA Development",
+        link: "pwa-development"
     },
     {
-        "name": "Mobile App Development",
-        "link": "mobile-app-development"
+        name: "Mobile App Development",
+        link: "mobile-app-development"
     },
     {
-        "name": "Product Development",
-        "link": "product-development"
+        name: "Product Development",
+        link: "product-development"
     },
     {
-        "name": "Software Testing",
-        "link": "software-testing"
+        name: "Software Testing",
+        link: "software-testing"
     },
     {
-        "name": "Web API",
-        "link": "web-api"
+        name: "Web API",
+        link: "web-api"
     },
     {
-        "name": "Databases",
-        "link": "databases"
+        name: "Databases",
+        link: "databases"
     },
     {
-        "name": "Reporting",
-        "link": "reporting"
+        name: "Reporting",
+        link: "reporting"
     },
 ]
 
 const navTechnologyPages = [
     {
-        "name": ".Net",
+        name: ".Net",
+        link: "dot-net"
     },
     {
-        "name": "Blazor",
+        name: "Blazor",
+        link: "blazor"
     },
     {
-        "name": "C#",
+        name: "C",
+        link: "c"
     },
     {
-        "name": "Microservices",
+        name: "Microservices",
+        link: "microservice"
     },
     {
-        "name": "Angular",
+        name: "Angular",
+        link: "angular"
     },
     {
-        "name": "React.js",
+        name: "React.js",
+        link: "react"
     },
     {
-        "name": "MEAN/MERN",
+        name: "MEAN/MERN",
+        link: "mern"
     },
     {
-        "name": "MAUI",
+        name: "MAUI",
+        link: "maui"
     },
     {
-        "name": "Javascript",
+        name: "TypeScript",
+        link: "typescript"
     },
     {
-        "name": "Vue.js",
+        name: "Vue.js",
+        link: "vue"
     },
     {
-        "name": "Node.js",
+        name: "Node.js",
+        link: "node"
     },
 ]
 export { navServicesPages, navTechnologyPages }

@@ -4,7 +4,7 @@ import React, { useState, useEffect } from "react";
 import "./Navbar.css";
 
 // Logo
-import Logo from "./Assets/Logo.jpg";
+import Logo from "./Assets/Logo Transparent.png";
 
 /* ------------- React Router Dom ------------- */
 // NavLink
@@ -66,10 +66,35 @@ const Navbar = () => {
     setOpenBuildTeamDialog(false);
   };
 
+  const [scrollNav, setScrollnav] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      // Update the scroll value when the user scrolls
+      setScrollnav(window.scrollY);
+    };
+
+    // Attach the scroll event listener when the component mounts
+    window.addEventListener("scroll", handleScroll);
+
+    // Clean up the event listener when the component unmounts
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []); // Empty dependency array means this effect runs once when the component mounts
+
   return (
     <>
       {/* Main Navbar */}
-      <div className="navbar">
+      <div
+        className="navbar"
+        style={{
+          backgroundColor:
+            scrollNav === 0 ? "transparent" : "var(--main-background-color)",
+          height: scrollNav === 0 ? "110px" : "95px",
+          borderBottom: scrollNav === 0 ? "" : "1px solid #e1e1e1",
+        }}
+      >
         <div className="innerNav">
           {/* Logo Box */}
           <div className="box">
@@ -82,15 +107,63 @@ const Navbar = () => {
           {/* List Box */}
           <div className="box">
             {/* Start Route */}
-            <li>
-              <NavLink to="/start" className="navLink">
+            <li
+              style={{
+                color:
+                  scrollNav === 0
+                    ? "var(--main-textSecond-color)"
+                    : "var(--main-text-color)",
+                textShadow:
+                  scrollNav === 0
+                    ? "1px 1px 2px rgb(255, 255, 255), 0 0 1em #16205f,0 0 0.2em #16205f"
+                    : "",
+              }}
+            >
+              <NavLink
+                to="/start"
+                className="navLink"
+                style={{
+                  color:
+                    scrollNav === 0
+                      ? "var(--main-textSecond-color)"
+                      : "var(--main-text-color)",
+                  textShadow:
+                    scrollNav === 0
+                      ? "1px 1px 2px rgb(255, 255, 255), 0 0 1em #16205f,0 0 0.2em #16205f"
+                      : "",
+                }}
+              >
                 How to start
               </NavLink>
             </li>
 
             {/* Services Route */}
-            <li>
-              <NavLink to="/services" className="navLink">
+            <li
+              style={{
+                color:
+                  scrollNav === 0
+                    ? "var(--main-textSecond-color)"
+                    : "var(--main-text-color)",
+                textShadow:
+                  scrollNav === 0
+                    ? "1px 1px 2px rgb(255, 255, 255), 0 0 1em #16205f,0 0 0.2em #16205f"
+                    : "",
+              }}
+            >
+              <NavLink
+                to="/services"
+                className="navLink"
+                style={{
+                  color:
+                    scrollNav === 0
+                      ? "var(--main-textSecond-color)"
+                      : "var(--main-text-color)",
+                  textShadow:
+                    scrollNav === 0
+                      ? "1px 1px 2px rgb(255, 255, 255), 0 0 1em #16205f,0 0 0.2em #16205f"
+                      : "",
+                }}
+              >
                 Services
               </NavLink>
               {/* Dropdown Menu */}
@@ -178,8 +251,32 @@ const Navbar = () => {
             </li>
 
             {/* Technologies Route */}
-            <li>
-              <NavLink to="/technologies" className="navLink">
+            <li
+              style={{
+                color:
+                  scrollNav === 0
+                    ? "var(--main-textSecond-color)"
+                    : "var(--main-text-color)",
+                textShadow:
+                  scrollNav === 0
+                    ? "1px 1px 2px rgb(255, 255, 255), 0 0 1em #16205f,0 0 0.2em #16205f"
+                    : "",
+              }}
+            >
+              <NavLink
+                to="/technologies"
+                className="navLink"
+                style={{
+                  color:
+                    scrollNav === 0
+                      ? "var(--main-textSecond-color)"
+                      : "var(--main-text-color)",
+                  textShadow:
+                    scrollNav === 0
+                      ? "1px 1px 2px rgb(255, 255, 255), 0 0 1em #16205f,0 0 0.2em #16205f"
+                      : "",
+                }}
+              >
                 Technologies
               </NavLink>
               {/* Dropdown Menu */}
@@ -267,8 +364,32 @@ const Navbar = () => {
             </li>
 
             {/* Careers Route */}
-            <li>
-              <NavLink to="/careers" className="navLink">
+            <li
+              style={{
+                color:
+                  scrollNav === 0
+                    ? "var(--main-textSecond-color)"
+                    : "var(--main-text-color)",
+                textShadow:
+                  scrollNav === 0
+                    ? "1px 1px 2px rgb(255, 255, 255), 0 0 1em #16205f,0 0 0.2em #16205f"
+                    : "",
+              }}
+            >
+              <NavLink
+                to="/careers"
+                className="navLink"
+                style={{
+                  color:
+                    scrollNav === 0
+                      ? "var(--main-textSecond-color)"
+                      : "var(--main-text-color)",
+                  textShadow:
+                    scrollNav === 0
+                      ? "1px 1px 2px rgb(255, 255, 255), 0 0 1em #16205f,0 0 0.2em #16205f"
+                      : "",
+                }}
+              >
                 Careers
               </NavLink>
             </li>
@@ -289,8 +410,32 @@ const Navbar = () => {
             </button>
 
             {/* Contact Route */}
-            <li>
-              <NavLink to="/contact" className="navLink">
+            <li
+              style={{
+                color:
+                  scrollNav === 0
+                    ? "var(--main-textSecond-color)"
+                    : "var(--main-text-color)",
+                textShadow:
+                  scrollNav === 0
+                    ? "1px 1px 2px rgb(255, 255, 255), 0 0 1em #16205f,0 0 0.2em #16205f"
+                    : "",
+              }}
+            >
+              <NavLink
+                to="/contact"
+                className="navLink"
+                style={{
+                  color:
+                    scrollNav === 0
+                      ? "var(--main-textSecond-color)"
+                      : "var(--main-text-color)",
+                  textShadow:
+                    scrollNav === 0
+                      ? "1px 1px 2px rgb(255, 255, 255), 0 0 1em #16205f,0 0 0.2em #16205f"
+                      : "",
+                }}
+              >
                 Contact Us
               </NavLink>
             </li>
@@ -298,7 +443,7 @@ const Navbar = () => {
 
           {/* DrawerNav Component Box */}
           <div className="hide">
-            <DrawerNav anchor={"right"} component="span" />
+            <DrawerNav anchor={"right"} component="span" scrollNav={scrollNav}/>
           </div>
         </div>
       </div>

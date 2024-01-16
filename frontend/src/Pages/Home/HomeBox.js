@@ -191,10 +191,6 @@ const fourthHomeBox = [
         heading: "Information Scurity Engineers"
     },
     {
-        img: go,
-        heading: "Golang Dev"
-    },
-    {
         img: database,
         heading: "Database admin"
     }

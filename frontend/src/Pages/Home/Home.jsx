@@ -244,7 +244,6 @@ const Home = () => {
               />
             </button>
           </div>
-          <img src={backimg} alt="" />
         </div>
 
         <div className="homeSecondCont">

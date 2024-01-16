@@ -3,11 +3,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--main-background-color);
-  border-bottom: 1px solid #e1e1e1;
-  position: sticky;
+  position: fixed;
   top: 0;
   z-index: 999;
+  transition: background 0.4s linear, height 0.4s ease-in;
 }
 
 .navbar .innerNav {
@@ -15,7 +14,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--main-background-color);
 }
 
 .navbar .innerNav .hide {
@@ -97,7 +95,7 @@
 
 .navbar .innerNav .box button:hover {
   color: var(--main-textSecond-color);
-  background: var(--main-backGradient-color);
+  background: var(--main-second-backGradient-color);
 }
 
 .navbar .innerNav .box button span {

@@ -31,7 +31,7 @@ import Team from "../Team/Team";
 
 const DrawerNav = (props) => {
   // Props
-  const { anchor } = props;
+  const { anchor, scrollNav } = props;
 
   // Build Team Dialog UseState
   const [openBuildTeamDialog, setOpenBuildTeamDialog] = useState(false);
@@ -224,7 +224,7 @@ const DrawerNav = (props) => {
               fontSize: "2rem",
               m: 0,
               p: 0,
-              color: "#16205f",
+              color: scrollNav === 0 ? "#fff" : "#16205f",
             }}
           />
         </Button>
