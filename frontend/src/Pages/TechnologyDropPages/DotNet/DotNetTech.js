@@ -2,74 +2,95 @@
 
 const webDevServices = [
     {
-        name: "Bidirectional Data Binding",
-        text: "Angular provides bidirectional data binding, ensuring that modifications to the model instantly propagate to the view, and conversely.",
+        name: "Enterprise-Grade .NET Solutions",
+        text: "Web Duality utilizes .NET 6 and .NET 7 to create sophisticated cloud-based enterprise solutions. Meticulously designed, these solutions simplify complex business processes, enhance productivity, and reduce errors, aligning seamlessly with evolving business needs.",
         // img: strategicImg
     },
 
     {
-        name: "Dependency Injection Mechanism",
-        text: "Angular employs a dependency injection mechanism, a design pattern facilitating the streamlined management of dependencies among various components within a web application.",
+        name: ".NET Integration Solutions",
+        text: "As a seasoned .NET web development company, Web Duality excels in seamlessly integrating third-party APIs and plugins into existing .NET applications. This expertise optimizes user experience and enhances overall functionality, ensuring a robust and feature-rich software environment.",
         // img: transitionImg
     },
     {
-        name: "Navigation System",
-        text: "Angular features an integrated navigation system that empowers developers to establish routes for diverse components within a web application.",
+        name: "Expert Legacy App Migration Solutions",
+        text: "Web Duality excels in seamlessly migrating web applications for enterprises and small-scale organizations to the ideal .NET version. Our meticulous process ensures the safe transfer of all files, preventing unexpected data loss.",
         // img: cloudsurveillanceImg
     },
     {
-        name: "Dynamic Form Creation",
-        text: "Angular provides dynamic form creation through its reactive forms feature, allowing developers to effortlessly build intricate forms.",
+        name: "Proficient .NET Full Stack Development",
+        text: "Web Duality empowers operations with expert full-stack .NET developers, guiding the entire development lifecycle. From idea validation to seamless third-party API integrations and deployment, our software automates intricate business operations, boosting productivity.",
         // img: cloudanalyticsImg
     },
     {
-        name: "Platform-Agnostic Development",
-        text: "Angular empowers developers to create web applications that seamlessly operate across diverse platforms and devices.",
+        name: "Tailored .NET Application Development",
+        text: "Web Duality excels in contemporary .NET 6 and .NET 7 frameworks, offering a centralized hub for diverse custom .NET software development services. Specializing in upgrading existing applications or building comprehensive solutions, we adhere to industry-best practices for top-quality results.",
         // img: cloudhostingImg
     },
     {
-        name: "Structured Architecture Approach",
-        text: "Angular adheres to a structured architecture approach, specifically the Model-View-Controller (MVC) design, effectively segregating the presentation, data, and logic layers within an application.",
+        name: "Reliable .NET Maintenance Solutions",
+        text: "Web Duality ensures effective management of your .NET application, offering reliable maintenance services to keep it bug-free. Our team conducts ongoing performance monitoring, implementing necessary customizations for smooth operation and optimized user experience.",
         // img: cloudsecurityImg
     },
 ]
 
 const webDevAgency = [
     {
-        name: "Accelerated Development",
+        name: "Scrum Master-Led Agile Implementation",
         // img: kubernetesImg
     },
     {
-        name: "Improved Code Quality",
+        name: "On-Time Product Delivery With Quality Assurance",
         // img: architectureImg
     },
     {
-        name: "Elevated User Experience",
+        name: "Guaranteed Non-Disclosure Agreement",
         // img: serverlessImg
     },
     {
-        name: "Scalability",
+        name: "Fully Scalable .NET Software Solutions",
         // img: aimlcloudImg
+    },
+    {
+        name: "Thorough QA Testing and Support",
+        // img: serverlessImg
     }
+   
 ]
 
 const webDevTechStack = [
     {
         // img: awslogo,
-        heading: "Amazon Web Services"
+        heading: "Travel"
 
     },
     {
         // img: azurelogo,
-        heading: "Azure"
+        heading: "Education"
     },
     {
         // img: googlecloudlogo,
-        heading: "Google Cloud Platform"
+        heading: "Healthcare"
     },
     {
         // img: ibmcloudlogo,
-        heading: "IBM Cloud"
+        heading: "Ecommerece"
+    },
+    {
+        // img: ibmcloudlogo,
+        heading: "Media & Entertainment"
+    },
+    {
+        // img: ibmcloudlogo,
+        heading: "Public Sector"
+    }, 
+    {
+        // img: ibmcloudlogo,
+        heading: "Logistics & Distribution"
+    },
+    {
+        // img: ibmcloudlogo,
+        heading: "Hospitality Management"
     }
 ]
 
