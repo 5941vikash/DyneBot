@@ -1,3 +1,5 @@
+/* eslint-disable jsx-a11y/iframe-has-title */
+
 // React & UseState
 import React, { useState } from "react";
 // Footer CSS
@@ -6,11 +8,11 @@ import "./Footer.css";
 // Image
 import footerCom from "./Assets/footerCom.png";
 // Logo
-import Logo from "./Assets/Logo.png";
+import Logo from "./Assets/Logo Transparent.png";
 
 /* ------------- React Router Dom ------------- */
 // Link
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 // Axios
 import axios from "axios";
@@ -32,6 +34,8 @@ import Snackbar from "@mui/material/Snackbar";
 import MuiAlert from "@mui/material/Alert";
 
 const Footer = () => {
+  const location = useLocation();
+
   // Company List
   const company = [
     {
@@ -187,7 +191,29 @@ const Footer = () => {
       <div className="footerBox">
         <div className="firstContFootBox">
           {/* Image */}
-          <img src={footerCom} alt="" />
+          <div className="img">
+            {location.pathname === "/contact" ? (
+              <>
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7005.2660736574235!2d77.42927685!3d28.61078365!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cee941d0fac1d%3A0x23370297a1102792!2sSector%204%2C%20Greater%20Noida%2C%20Uttar%20Pradesh%20201009!5e0!3m2!1sen!2sin!4v1705414993426!5m2!1sen!2sin"
+                  width="100%"
+                  height="100%"
+                  style={{
+                    borderRadius: "0px 0px 30px 20px",
+                    boxShadow: "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px",
+                  }}
+                  allowFullScreen=""
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </>
+            ) : (
+              <>
+                <img src={footerCom} alt="" draggable="false" />
+              </>
+            )}
+          </div>
+
           <div className="formBox">
             <h2>Connect With Your Next Great Hire Today!</h2>
             {/* All Form Details */}

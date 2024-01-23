@@ -336,7 +336,7 @@ const Navbar = () => {
                     return (
                       <NavLink
                         key={i}
-                        onClick={() => handleClose(0)}
+                        onClick={() => handleClose(1)}
                         to={`/${e.link}`}
                       >
                         <MenuItem
@@ -443,7 +443,11 @@ const Navbar = () => {
 
           {/* DrawerNav Component Box */}
           <div className="hide">
-            <DrawerNav anchor={"right"} component="span" scrollNav={scrollNav}/>
+            <DrawerNav
+              anchor={"right"}
+              component="span"
+              scrollNav={scrollNav}
+            />
           </div>
         </div>
       </div>

@@ -131,7 +131,13 @@ const DrawerNav = (props) => {
       >
         {navServicesPages.map((e, i) => {
           return (
-            <NavLink className="menu" to={`/${e.link}`} key={i}>
+            <NavLink
+              className="menu"
+              to={`/${e.link}`}
+              key={i}
+              onClick={toggleDrawer(anchor, false)}
+              onKeyDown={toggleDrawer(anchor, false)}
+            >
               {e.name}
             </NavLink>
           );
@@ -169,7 +175,13 @@ const DrawerNav = (props) => {
       >
         {navTechnologyPages.map((e, i) => {
           return (
-            <NavLink className="menu" to={`/${e.link}`} key={i}>
+            <NavLink
+              className="menu"
+              to={`/${e.link}`}
+              key={i}
+              onClick={toggleDrawer(anchor, false)}
+              onKeyDown={toggleDrawer(anchor, false)}
+            >
               {e.name}
             </NavLink>
           );

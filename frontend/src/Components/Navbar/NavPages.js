@@ -51,8 +51,8 @@ const navTechnologyPages = [
         link: "blazor"
     },
     {
-        name: "C",
-        link: "c"
+        name: "C#",
+        link: "c-sharp"
     },
     {
         name: "Microservices",
@@ -63,7 +63,7 @@ const navTechnologyPages = [
         link: "angular"
     },
     {
-        name: "React.js",
+        name: "React JS",
         link: "react"
     },
     {
@@ -79,11 +79,11 @@ const navTechnologyPages = [
         link: "typescript"
     },
     {
-        name: "Vue.js",
+        name: "Vue JS",
         link: "vue"
     },
     {
-        name: "Node.js",
+        name: "Node JS",
         link: "node"
     },
 ]
