@@ -2,53 +2,57 @@
 
 const webDevServices = [
     {
-        name: "Bidirectional Data Binding",
-        text: "Angular provides bidirectional data binding, ensuring that modifications to the model instantly propagate to the view, and conversely.",
+        name: "Harnessing the Power of Data Binding in Blazor",
+        text: "Web Duality optimizes Blazor's Data Binding, supporting HTML bind attributes for seamless DOM and component binding. With versatile techniques like one-way, two-way, and event data binding, it ensures an efficient development experience.",
         // img: strategicImg
     },
 
     {
-        name: "Dependency Injection Mechanism",
-        text: "Angular employs a dependency injection mechanism, a design pattern facilitating the streamlined management of dependencies among various components within a web application.",
+        name: "Debugging Capabilities in Blazor",
+        text: "In Blazor, Web Duality enhances debugging support by seamlessly integrating it with Web Assembly applications and incorporating Browse Dev tools across various Chromium browsers.",
         // img: transitionImg
     },
     {
-        name: "Navigation System",
-        text: "Angular features an integrated navigation system that empowers developers to establish routes for diverse components within a web application.",
+        name: "Dependency Injection in Blazor",
+        text: "Web Duality enhances development in Blazor by offering dependency injection for both Web Assembly and server applications. This unique feature empowers developers to create loosely coupled user interfaces, promoting enhanced reusability and testing capabilities.",
         // img: cloudsurveillanceImg
     },
     {
-        name: "Dynamic Form Creation",
-        text: "Angular provides dynamic form creation through its reactive forms feature, allowing developers to effortlessly build intricate forms.",
+        name: "Simplifying Forms and Validation in Blazor",
+        text: "Web Duality streamlines Blazor form validation with built-in DataAnnotationsValidator support. Developers effortlessly optimize validation using annotations, enhancing the entire process for greater convenience.",
         // img: cloudanalyticsImg
     },
     {
-        name: "Platform-Agnostic Development",
-        text: "Angular empowers developers to create web applications that seamlessly operate across diverse platforms and devices.",
+        name: "Stateful Development with Blazor",
+        text: "Blazor's advantage in web app development lies in its ability to create stateful applications, allowing seamless preservation of the end-user's current state in the server's memory.",
         // img: cloudhostingImg
     },
     {
-        name: "Structured Architecture Approach",
-        text: "Angular adheres to a structured architecture approach, specifically the Model-View-Controller (MVC) design, effectively segregating the presentation, data, and logic layers within an application.",
+        name: "Javascript Interoperability in Blazor",
+        text: "Blazor offers Javascript interoperability, granting developers the freedom to call diverse JavaScript functions and libraries using .NET. With this feature, developers can trigger the Bootstrap Javascript runtime by invoking these Javascript functions.",
         // img: cloudsecurityImg
     },
 ]
 
 const webDevAgency = [
     {
-        name: "Accelerated Development",
+        name: "Blazor Web Development",
         // img: kubernetesImg
     },
     {
-        name: "Improved Code Quality",
+        name: "Progressive Web Application Development",
         // img: architectureImg
     },
     {
-        name: "Elevated User Experience",
+        name: "Migration from JavaScript to Blazor",
         // img: serverlessImg
     },
     {
-        name: "Scalability",
+        name: "Blazor Software Development",
+        // img: aimlcloudImg
+    },
+    {
+        name: "Interactive Blazor UI Development",
         // img: aimlcloudImg
     }
 ]
@@ -56,22 +60,27 @@ const webDevAgency = [
 const webDevTechStack = [
     {
         // img: awslogo,
-        heading: "Amazon Web Services"
+        heading: "BlazorForge"
 
     },
     {
         // img: azurelogo,
-        heading: "Azure"
+        heading: "WebFusion"
     },
     {
         // img: googlecloudlogo,
-        heading: "Google Cloud Platform"
+        heading: "CodeVortex"
     },
     {
         // img: ibmcloudlogo,
-        heading: "IBM Cloud"
+        heading: "CSharpWeb"
+    },
+    {
+        // img: ibmcloudlogo,
+        heading: "WebCrafter360"
     }
 ]
+
 
 
 export { webDevServices, webDevAgency, webDevTechStack }

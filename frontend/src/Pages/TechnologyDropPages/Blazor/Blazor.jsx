@@ -14,36 +14,36 @@ import { webDevServices, webDevAgency, webDevTechStack } from "./BlazorTech";
 
 const Blazor = () => {
   const firstContainer = {
-    heading: "Angular Development",
-    para: "Web Duality, a leading Angular development company in India, delivers efficient and cost-effective services globally. Our skilled team excels in building cutting-edge web applications using the latest Angular framework, ensuring customized solutions for seamless user experiences.",
+    heading: "Blazor Development",
+    para: "Web Duality, a leading Blazor development company, crafts dynamic web applications for global businesses using the contemporary Blazor framework. Our team delivers personalized Blazor development services, empowering clients to establish a strong brand identity and engage customers through fully functional web applications.",
     // backimg: angularbackImg,
   };
 
   const secondContainer = {
-    heading: "<strong>Angular Development</strong> with WebDuality Technology.",
+    heading: "Unveil Feature-Rich <strong> Web Applications Through Our Blazor Development </strong> Services.",
     para1:
-      "Web Duality excels in providing a spectrum of Angular development services, ranging from custom web applications to e-commerce and enterprise solutions. Our developers meticulously follow a comprehensive process, spanning ideation, design, development, testing, and deployment. We prioritize close collaboration with clients, ensuring the delivery of personalized solutions that seamlessly integrate with third-party services, APIs, and databases.",
+      "Web Duality, a prominent Blazor development company based in India, leverages Microsoft's cutting-edge Blazor framework to seamlessly launch dynamic SPAs, PWAs, and traditional web applications. Our skilled developers utilize C#, HTML, and CSS to craft high-performance user interfaces, setting Blazor apart by eliminating the need for Javascript.",
     para2:
-      "Emphasizing efficiency and quality, Web Duality takes pride in its commitment to timely project delivery. Our adept team is dedicated to creating innovative and reliable web solutions, tailored to meet the evolving needs of businesses across various sectors.",
+      "Beyond development, Web Duality extends a suite of services designed to provide clients with a competitive edge in the market. Our adept developers efficiently write Blazor code, navigating away from the complexities of Javascript and ensuring an optimal user experience across various platforms. Microsoft's substantial investment in Blazor has sparked a significant transition among developers, moving away from traditional Javascript frameworks to embrace this innovative technology in the current web app development landscape.",
     // img: angularImg,
   };
 
   const thirdContainer = {
-    heading: "<strong>Key Attributes</strong> of Angular Development",
-    para: "Angular development presents a variety of features that position it as an excellent option for constructing sophisticated and contemporary web applications. Here are some of the primary attributes of Angular development.",
+    heading: "Elevating User Experience with <strong> Powerful Blazor Features </strong>",
+    para: "As a Blazor development agency in India, Web Duality integrates all Blazor features into the development of customized Blazor apps, catering to diverse business objectives.",
     webDevServices,
   };
 
   const fourthContainer = {
     heading:
-      "Primary Advantages of <strong>Employing Angular</strong> in Web Development",
-    para: "Leveraging Angular for web development provides a host of benefits compared to other frameworks. Some of the key merits of utilizing Angular for web development encompass.",
+      "Tailored <strong> Blazor Development </strong> Solutions",
+    para: "Web Duality excels in tailored Blazor development services, addressing diverse business objectives. As the foremost Blazor development company, we specialize in feature-rich PWAs and user-friendly SPAs. Our team analyzes your business requirements to deliver a customized web solution.",
     webDevAgency,
   };
 
   const fifthContainer = {
-    heading: "<strong>Technology</strong> Stack",
-    para: "Angular development utilizes a stack with HTML, CSS, and TypeScript for the frontend, using Angular. On the backend, it employs server-side languages like Node.js or Python, coupled with frameworks like Express or Django, ensuring robust and scalable applications. Optimal stack selection is crucial for performance and scalability.",
+    heading: "Elevate Your <strong> Web Applications with Blazor Development </strong> Services",
+    para: "With a track record of crafting numerous web applications using Blazor, Web Duality confidently asserts its superiority over conventional Javascript frameworks. Opting for Blazor development services from Web Duality offers several advantages over traditional Javascript frameworks.",
     webDevTechStack,
   };
 
