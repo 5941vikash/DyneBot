@@ -14,38 +14,38 @@ import { webDevServices, webDevAgency, webDevTechStack } from "./ReactJSTech";
 
 const ReactJS = () => {
   const firstContainer = {
-    heading: ".NET Development",
-    para: "As a leading .NET software development firm, we boast a team of industry experts dedicated to crafting high-performance .NET applications for a global clientele. Our systematic and proven development approach ensures businesses can swiftly introduce dynamic software solutions, reducing time-to-market.",
+    heading: "ReactJS Development",
+    para: "Welcome to Web Duality, a React JS Development Company in India, dedicated to delivering exceptional web development services through the React JS library. Our team of skilled React JS developers utilizes this library to craft contemporary, responsive, and feature-rich web applications tailored to meet your business requirements. We are committed to offering high-quality software development services to ensure our clients maintain a competitive edge in the market.",
     // backimg: dotnetbackImg,
   };
 
   const secondContainer = {
     heading:
-      "our Ultimate Destination for Varied <strong>.NET  Development Services </strong>",
+      "Revolutionize Your Business with <strong> Cutting-Edge Web Applications through ReactJS Development </strong> Services",
     para1:
-      "Web Duality Technologies recognizes that .NET stands as one of the foremost frameworks, primarily employed for crafting robust, mission-centric, and high-performance software solutions that align with diverse business objectives. Offering a myriad of .NET development services, coupled with a personalized development approach, we empower business owners to enter the market with feature-rich and fully operational software, simplifying intricate business operations..",
+      "Improving business processes for a competitive edge and increased profits is paramount. ReactJS proves to be a powerful tool for achieving these goals, providing a robust framework for developing efficient web applications. Its component-based architecture facilitates modular and streamlined code development, making ReactJS an ideal choice for businesses aiming to enhance their digital presence.",
     para2:
-      "Our adept team specializes in designing enterprise-level web, desktop, and mobile applications catering to various industries. Leveraging cutting-edge .NET development technologies such as .NET 7, .NET Core, MVC, Blazor, and MAUI, we assist businesses in navigating the landscape of digital transformation in today's technology-driven world..",
+      "ReactJS web apps enable seamless operations such as inventory management, customer relations, and accounting. The versatility of ReactJS ensures highly responsive and customizable interfaces, delivering a user-friendly experience tailored to your specific business needs. Embracing ReactJS web app development empowers your business to optimize processes, leading to heightened efficiency, productivity, and overall profitability.",
     // img: dotnetImg,
   };
 
   const thirdContainer = {
     heading:
-      "Exploring <strong> Web Duality's .NET Software Development </strong> Services",
-    para: "As a prominent .NET software development company, Web Duality provides comprehensive end-to-end .NET development services tailored to diverse client objectives. Our offerings encompass a wide spectrum of solutions, ensuring that businesses receive the full benefit of our expertise and commitment to delivering high-quality software solutions.",
+      "Unlock the <strong> Power of ReactJS </strong> in Web Development",
+    para: "When it comes to web application development, React JS stands out as a favored choice, offering compelling reasons for businesses to embrace its capabilities. Explore the key factors that make React JS an optimal choice for web development.",
     webDevServices,
   };
 
   const fourthContainer = {
     heading:
-      "Why Pick Web Duality for Your <strong>.NET Development</strong> Partner",
-    para: "Web Duality excels in innovation! Our seasoned .NET developers, adhering to market standards, leverage expertise to create high-performance web, desktop, and mobile applications. With a proven development approach, we empower businesses for rapid time-to-market, delivering top-quality .NET solutions.",
+      "Elevate Your Web Development Journey with <strong> Web Duality's React JS Expertise </strong>",
+    para: "Selecting the ideal React JS development partner is crucial for the success of your web application, and Web Duality stands out as the preferred choice for discerning clients. Our unwavering commitment to delivering top-notch React JS development services positions us as a reliable ally in achieving your digital objectives. Here are compelling reasons to opt for Web Duality in React JS web development.",
     webDevAgency,
   };
 
   const fifthContainer = {
-    heading: "Tailoring <strong>.NET Solutions</strong> Across Industries",
-    para: "As a renowned .NET development company, Web Duality specializes in delivering personalized .NET web and mobile development solutions tailored to your business needs. Our team of .NET developers has collaborated with startups and established enterprises across various industries, ensuring bespoke solutions.",
+    heading: "<strong>ReactJS Development </strong> Services by Web Duality",
+    para: "Explore a spectrum of React JS development services with Web Duality, designed to empower businesses in realizing their digital objectives. Our comprehensive suite of React JS development services encompasses.",
     webDevTechStack,
   };
 
