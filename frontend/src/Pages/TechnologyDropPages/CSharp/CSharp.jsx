@@ -1,13 +1,13 @@
-import React from 'react'
+import React from "react";
 
 // Services Drop Main Root Page Component
 import TechnologyDrop from "../../../Components/TechnologyDrop/TechnologyDrop";
 
 // Image
-// import angularImg from "./Assets/angularImg.webp";
+import csharpImg from "./Assets/csharpImg.png";
 
 // Back Image
-// import angularbackImg from "./Assets/angularBack.png";
+import csharpbackImg from "./Assets/csharpbackImg.jpg";
 
 // Web Pages
 import { webDevServices, webDevAgency, webDevTechStack } from "./CSharpTech";
@@ -16,16 +16,17 @@ const CSharp = () => {
   const firstContainer = {
     heading: "C# Development",
     para: "Web Duality, a leading C# development company in India, delivers comprehensive services globally. Our experienced team utilizes cutting-edge technologies to provide innovative, robust, and scalable C# solutions tailored to meet business objectives, consistently exceeding expectations.",
-    // backimg: angularbackImg,
+    backimg: csharpbackImg,
   };
 
   const secondContainer = {
-    heading: "C# Development Powered by Web Duality Excellence.",
+    heading:
+      "C# Development Powered by <strong>Web Duality Excellence</strong>",
     para1:
       "Web Duality stands at the forefront of C# development services, offering a diverse range from custom applications to enterprise solutions. Our developers meticulously follow a comprehensive process, spanning ideation, design, development, testing, and deployment. We prioritize close collaboration with clients, ensuring the delivery of personalized solutions that seamlessly integrate with third-party services, APIs, and databases.",
     para2:
       "With a focus on efficiency and quality, Web Duality takes pride in its commitment to timely project delivery. Our adept team is dedicated to creating innovative and reliable C# solutions, tailored to meet the evolving needs of businesses across various sectors.",
-    // img: angularImg,
+    img: csharpImg,
   };
 
   const thirdContainer = {
@@ -35,8 +36,7 @@ const CSharp = () => {
   };
 
   const fourthContainer = {
-    heading:
-      "C# Development Services",
+    heading: "C# Development Services",
     para: "As a premier C# development company based in India, we offer an extensive array of C# development services.",
     webDevAgency,
   };
@@ -47,7 +47,7 @@ const CSharp = () => {
     webDevTechStack,
   };
 
-  const hire = "Hire for <strong>Angular</strong>";
+  const hire = "Hire for <strong>C#</strong>";
 
   return (
     <>
@@ -61,6 +61,6 @@ const CSharp = () => {
       />
     </>
   );
-}
+};
 
-export default CSharp
+export default CSharp;

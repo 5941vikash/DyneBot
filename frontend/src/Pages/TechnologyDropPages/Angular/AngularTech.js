@@ -1,75 +1,95 @@
+import databindImg from "./Assets/databindImg.jpg"
+import dependencyinjectImg from "./Assets/dependencyinjectionImg.jpg"
+import navigatesystemImg from "./Assets/navigatesystemImg.jpg"
+import dynamicformImg from "./Assets/dynamicformImg.jpg"
+import platformdevelopmentImg from "./Assets/platformdevelopmentImg.jpg"
+import structuredarchitectureImg from "./Assets/structuredarchitectureImg.jpg"
 
+import accelarateddeImg from "./Assets/accelareteddevImg.avif"
+import codequalityImg from "./Assets/codequalityImg.webp"
+import userexpImg from "./Assets/userexpImg.jpeg"
+import scalabilityImg from "./Assets/scalabilityImg.jpg"
+
+import angularlogo from "./Assets/angularlogo.png"
+import typescriptlogo from "./Assets/typescriptlogo.png"
+import nodejslogo from "./Assets/nodejslogo.png"
+import mongodblogo from "./Assets/mongodblogo.png"
+import awslogo from "./Assets/awslogo.jpg"
 
 const webDevServices = [
     {
         name: "Bidirectional Data Binding",
         text: "Angular provides bidirectional data binding, ensuring that modifications to the model instantly propagate to the view, and conversely.",
-        // img: strategicImg
+        img: databindImg
     },
 
     {
         name: "Dependency Injection Mechanism",
         text: "Angular employs a dependency injection mechanism, a design pattern facilitating the streamlined management of dependencies among various components within a web application.",
-        // img: transitionImg
+        img: dependencyinjectImg
     },
     {
         name: "Navigation System",
         text: "Angular features an integrated navigation system that empowers developers to establish routes for diverse components within a web application.",
-        // img: cloudsurveillanceImg
+        img: navigatesystemImg
     },
     {
         name: "Dynamic Form Creation",
         text: "Angular provides dynamic form creation through its reactive forms feature, allowing developers to effortlessly build intricate forms.",
-        // img: cloudanalyticsImg
+        img: dynamicformImg
     },
     {
         name: "Platform-Agnostic Development",
         text: "Angular empowers developers to create web applications that seamlessly operate across diverse platforms and devices.",
-        // img: cloudhostingImg
+        img: platformdevelopmentImg
     },
     {
         name: "Structured Architecture Approach",
         text: "Angular adheres to a structured architecture approach, specifically the Model-View-Controller (MVC) design, effectively segregating the presentation, data, and logic layers within an application.",
-        // img: cloudsecurityImg
+        img: structuredarchitectureImg
     },
 ]
 
 const webDevAgency = [
     {
         name: "Accelerated Development",
-        // img: kubernetesImg
+        img: accelarateddeImg
     },
     {
         name: "Improved Code Quality",
-        // img: architectureImg
+        img: codequalityImg
     },
     {
         name: "Elevated User Experience",
-        // img: serverlessImg
+        img: userexpImg
     },
     {
         name: "Scalability",
-        // img: aimlcloudImg
+        img: scalabilityImg
     }
 ]
 
 const webDevTechStack = [
     {
-        // img: awslogo,
-        heading: "Amazon Web Services"
+        img: angularlogo,
+        heading: "Angular"
 
     },
     {
-        // img: azurelogo,
-        heading: "Azure"
+        img: typescriptlogo,
+        heading: "Typescript"
     },
     {
-        // img: googlecloudlogo,
-        heading: "Google Cloud Platform"
+        img: nodejslogo,
+        heading: "Node JS"
     },
     {
-        // img: ibmcloudlogo,
-        heading: "IBM Cloud"
+        img: awslogo,
+        heading: "AWS"
+    },
+    {
+        img: mongodblogo,
+        heading: "MongoDB"
     }
 ]
 

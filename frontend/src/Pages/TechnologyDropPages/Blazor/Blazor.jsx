@@ -4,10 +4,10 @@ import React from "react";
 import TechnologyDrop from "../../../Components/TechnologyDrop/TechnologyDrop";
 
 // Image
-// import angularImg from "./Assets/angularImg.webp";
+import blazorImg from "./Assets/blazorImg.jpg";
 
 // Back Image
-// import angularbackImg from "./Assets/angularBack.png";
+import blazorbackImg from "./Assets/blazorbackImg.jpg";
 
 // Web Pages
 import { webDevServices, webDevAgency, webDevTechStack } from "./BlazorTech";
@@ -16,7 +16,7 @@ const Blazor = () => {
   const firstContainer = {
     heading: "Blazor Development",
     para: "Web Duality, a leading Blazor development company, crafts dynamic web applications for global businesses using the contemporary Blazor framework. Our team delivers personalized Blazor development services, empowering clients to establish a strong brand identity and engage customers through fully functional web applications.",
-    // backimg: angularbackImg,
+    backimg: blazorbackImg,
   };
 
   const secondContainer = {
@@ -25,7 +25,7 @@ const Blazor = () => {
       "Web Duality, a prominent Blazor development company based in India, leverages Microsoft's cutting-edge Blazor framework to seamlessly launch dynamic SPAs, PWAs, and traditional web applications. Our skilled developers utilize C#, HTML, and CSS to craft high-performance user interfaces, setting Blazor apart by eliminating the need for Javascript.",
     para2:
       "Beyond development, Web Duality extends a suite of services designed to provide clients with a competitive edge in the market. Our adept developers efficiently write Blazor code, navigating away from the complexities of Javascript and ensuring an optimal user experience across various platforms. Microsoft's substantial investment in Blazor has sparked a significant transition among developers, moving away from traditional Javascript frameworks to embrace this innovative technology in the current web app development landscape.",
-    // img: angularImg,
+    img: blazorImg,
   };
 
   const thirdContainer = {
@@ -47,7 +47,7 @@ const Blazor = () => {
     webDevTechStack,
   };
 
-  const hire = "Hire for <strong>Angular</strong>";
+  const hire = "Hire for <strong>Blazor</strong>";
 
   return (
     <>

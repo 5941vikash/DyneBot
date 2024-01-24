@@ -393,21 +393,6 @@ const Navbar = () => {
                 Careers
               </NavLink>
             </li>
-          </div>
-
-          {/* Button Box */}
-          <div className="box">
-            {/* Button */}
-            <button onClick={handleBuildTeamOpenDialog}>
-              <span>Build a team</span>
-              <ArrowForwardOutlinedIcon
-                sx={{
-                  width: 18,
-                  height: 15.5,
-                  ml: 0.5,
-                }}
-              />
-            </button>
 
             {/* Contact Route */}
             <li
@@ -440,6 +425,52 @@ const Navbar = () => {
               </NavLink>
             </li>
           </div>
+
+          {/* Button Box
+          <div className="box">
+            Button
+            <button onClick={handleBuildTeamOpenDialog}>
+              <span>Build a team</span>
+              <ArrowForwardOutlinedIcon
+                sx={{
+                  width: 18,
+                  height: 15.5,
+                  ml: 0.5,
+                }}
+              />
+            </button>
+
+            Contact Route
+            <li
+              style={{
+                color:
+                  scrollNav === 0
+                    ? "var(--main-textSecond-color)"
+                    : "var(--main-text-color)",
+                textShadow:
+                  scrollNav === 0
+                    ? "1px 1px 2px rgb(255, 255, 255), 0 0 1em #16205f,0 0 0.2em #16205f"
+                    : "",
+              }}
+            >
+              <NavLink
+                to="/contact"
+                className="navLink"
+                style={{
+                  color:
+                    scrollNav === 0
+                      ? "var(--main-textSecond-color)"
+                      : "var(--main-text-color)",
+                  textShadow:
+                    scrollNav === 0
+                      ? "1px 1px 2px rgb(255, 255, 255), 0 0 1em #16205f,0 0 0.2em #16205f"
+                      : "",
+                }}
+              >
+                Contact Us
+              </NavLink>
+            </li>
+          </div> */}
 
           {/* DrawerNav Component Box */}
           <div className="hide">
