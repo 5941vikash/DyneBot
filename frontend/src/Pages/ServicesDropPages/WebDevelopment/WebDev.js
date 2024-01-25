@@ -86,11 +86,13 @@ const webDevAgency = [
 const webDevTechStack = [
     {
         img: reactlogo,
+        link: "/react",
         heading: "React JS"
 
     },
     {
         img: angularlogo,
+        link: "/angular",
         heading: "Angular"
     },
     {
@@ -99,6 +101,7 @@ const webDevTechStack = [
     },
     {
         img: nodejslogo,
+        link: "/node",
         heading: "Node JS"
     },
     {
@@ -107,6 +110,7 @@ const webDevTechStack = [
     },
     {
         img: dotnetlogo,
+        link: "/dot-net",
         heading: "Dot Net"
     },
     {

@@ -73,6 +73,7 @@ const webDevTechStack = [
     },
     {
         img: blazorlogo,
+        link: "/blazor",
         heading: "Blazor"
     },
     {

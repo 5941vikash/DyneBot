@@ -4,10 +4,10 @@ import React from "react";
 import TechnologyDrop from "../../../Components/TechnologyDrop/TechnologyDrop";
 
 // Image
-// import dotnetImg from "./Assets/dotnetImg.png";
+import reactImg from "./Assets/reactImg.png";
 
 // Back Image
-// import dotnetbackImg from "./Assets/dotnetbackImg.jpg";
+import reactbackImg from "./Assets/reactbackImg.png";
 
 // Web Pages
 import { webDevServices, webDevAgency, webDevTechStack } from "./ReactJSTech";
@@ -16,7 +16,7 @@ const ReactJS = () => {
   const firstContainer = {
     heading: "ReactJS Development",
     para: "Welcome to Web Duality, a React JS Development Company in India, dedicated to delivering exceptional web development services through the React JS library. Our team of skilled React JS developers utilizes this library to craft contemporary, responsive, and feature-rich web applications tailored to meet your business requirements. We are committed to offering high-quality software development services to ensure our clients maintain a competitive edge in the market.",
-    // backimg: dotnetbackImg,
+    backimg: reactbackImg,
   };
 
   const secondContainer = {
@@ -26,7 +26,7 @@ const ReactJS = () => {
       "Improving business processes for a competitive edge and increased profits is paramount. ReactJS proves to be a powerful tool for achieving these goals, providing a robust framework for developing efficient web applications. Its component-based architecture facilitates modular and streamlined code development, making ReactJS an ideal choice for businesses aiming to enhance their digital presence.",
     para2:
       "ReactJS web apps enable seamless operations such as inventory management, customer relations, and accounting. The versatility of ReactJS ensures highly responsive and customizable interfaces, delivering a user-friendly experience tailored to your specific business needs. Embracing ReactJS web app development empowers your business to optimize processes, leading to heightened efficiency, productivity, and overall profitability.",
-    // img: dotnetImg,
+    img: reactImg,
   };
 
   const thirdContainer = {
@@ -49,7 +49,7 @@ const ReactJS = () => {
     webDevTechStack,
   };
 
-  const hire = "Hire for <strong>Dot Net</strong>";
+  const hire = "Hire for <strong>ReactJS</strong>";
 
   return (
     <>

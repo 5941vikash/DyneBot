@@ -72,15 +72,18 @@ const webDevAgency = [
 const webDevTechStack = [
     {
         img: angularlogo,
+        link: "/angular",
         heading: "Angular"
 
     },
     {
         img: typescriptlogo,
+        link: "/typescript",
         heading: "Typescript"
     },
     {
         img: nodejslogo,
+        link: "/node",
         heading: "Node JS"
     },
     {

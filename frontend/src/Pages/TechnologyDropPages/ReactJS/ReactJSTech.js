@@ -1,96 +1,97 @@
+import optimizeperformImg from "./Assets/optimizeperformImg.webp"
+import accelareteddevImg from "./Assets/accelareteddevImg.webp"
+import reusablecomponentImg from "./Assets/resuablecomponentImg.webp"
+import seofriendlyImg from "./Assets/seofriendlyImg.jpeg"
+import developercommunityImg from "./Assets/developercommunityImg.webp"
+
+import modernwebImg from "./Assets/modernwebImg.png"
+import clientapproachImg from "./Assets/clientapproachImg.jpg"
+import provenrecordImg from "./Assets/provenrecordImg.jpg"
+import timelydeliveryImg from "./Assets/timelydeliveryImg.jpg"
+import transparentcommunicationImg from "./Assets/transparentcommunicationImg.png"
+
+import webappdevlogo from "./Assets/webapplicationlogo.jpg"
+import uiuxdesignlogo from "./Assets/reactuiuxImg.jpg"
+import singlepageapplogo from "./Assets/singlepageImg.png"
+import integrationservicelogo from "./Assets/integrationservicelogo.png"
+import ecommercedevlogo from "./Assets/ecommercedevlogo.jpg"
+import consultlogo from "./Assets/consultinglogo.jpg"
 
 const webDevServices = [
     {
         name: "Optimized Performance",
         text: "Enhancing web application performance is a critical consideration, and React JS excels in this aspect through its implementation of a Virtual DOM. Discover how React JS elevates performance by minimizing updates to the actual DOM.",
-        // img: expertisedotnetsolutionImg
+        img: optimizeperformImg
     },
-
     {
         name: "Accelerated Development",
         text: "React JS stands out as a swift and streamlined library, significantly expediting the web application development process for developers.",
-        // img: dotnetintegrationImg
+        img: accelareteddevImg
     },
     {
         name: "Reusable Components",
         text: "React JS empowers developers to construct modular and reusable UI components, offering a transformative approach to building scalable and maintainable web applications.",
-        // img: dotnetfullstackImg
+        img: reusablecomponentImg
     },
     {
         name: "SEO-Friendly React JS",
         text: "React JS boasts SEO-friendly features, ensuring that web applications developed with this library are easily detectable and indexable by search engines.",
-        // img: dotnetapplicationImg
+        img: seofriendlyImg
     },
     {
         name: "Developer Community",
         text: "React JS boasts a vibrant and expansive developer community, a key strength that significantly contributes to its popularity and robustness. This extensive community plays a pivotal role in advancing the library and fostering a collaborative environment for developers.",
-        // img: dotnetapplicationImg
+        img: developercommunityImg
     }
 ]
 
 const webDevAgency = [
     {
-        name: "Expertise in Modern Web Solutions",
-        // img: agilemasteryImg
+        name: "Modern Web",
+        img: modernwebImg
     },
     {
-        name: "Client-Centric Approach",
-        // img: qualitydeliveryImg
+        name: "Client Approach",
+        img: clientapproachImg
     },
     {
-        name: "Proven Track Record",
-        // img: securedagreementImg
+        name: "Proven Record",
+        img: provenrecordImg
     },
     {
-        name: "Agile Development Methodology",
-        // img: scalablesolutionImg
-    },
-    {
-        name: "Innovation and Customization",
-        // img: reliablesupport
-    },
-    {
-        name: "Timely Project Delivery",
-        // img: reliablesupport
+        name: "Timely Delivery",
+        img: timelydeliveryImg
     },
     {
         name: "Transparent Communication",
-        // img: reliablesupport
+        img: transparentcommunicationImg
     }
 ]
 
 const webDevTechStack = [
     {
-        // img: travellogo,
-        heading: "Custom React JS Web Application Development"
+        img: webappdevlogo,
+        heading: "Web Application Development"
     },
     {
-        // img: educationlogo,
-        heading: "React JS UI/UX Design"
+        img: uiuxdesignlogo,
+        heading: "UI/UX Design"
     },
     {
-        // img: healthcarelogo,
+        img: singlepageapplogo,
         heading: "Single Page Applications"
     },
     {
-        // img: ecommercelogo,
-        heading: "React JS Migration Services"
+        img: integrationservicelogo,
+        heading: "Integration Services"
     },
     {
-        // img: medialogo,
-        heading: "React JS Support and Maintenance"
+        img: ecommercedevlogo,
+        heading: "E-commerce Development"
     },
     {
-        // img: medialogo,
-        heading: "React JS Integration Services"
-    },
-    {
-        // img: medialogo,
-        heading: "React JS E-commerce Development"
-    },
-    {
-        // img: medialogo,
-        heading: "React JS Consulting"
+        img: consultlogo,
+        heading: "Consulting"
     }
 ]
 

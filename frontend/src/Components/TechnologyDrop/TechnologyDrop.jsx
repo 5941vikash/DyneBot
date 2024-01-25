@@ -293,15 +293,31 @@ const ServicesDropPages = (props) => {
           <div className="box">
             {fifthContainer.webDevTechStack.map((e, i) => {
               return (
-                <NavLink
-                  key={i}
-                  to="/"
-                  className="inBox hidden"
-                  data-animation-key={`fifthServiceDropCont ${i}`}
-                >
-                  <img src={e.img} alt="" draggable="false" />
-                  <h6>{e.heading}</h6>
-                </NavLink>
+                <>
+                  {e.link ? (
+                    <NavLink
+                      key={i}
+                      to={e.link}
+                      className="inBox hidden"
+                      data-animation-key={`fifthServiceDropCont ${i}`}
+                    >
+                      <img src={e.img} alt="" draggable="false" />
+                      <h6>{e.heading}</h6>
+                    </NavLink>
+                  ) : (
+                    <div
+                      key={i}
+                      className="inBox hidden"
+                      data-animation-key={`fifthServiceDropCont ${i}`}
+                      style={{
+                        cursor: "pointer",
+                      }}
+                    >
+                      <img src={e.img} alt="" draggable="false" />
+                      <h6>{e.heading}</h6>
+                    </div>
+                  )}
+                </>
               );
             })}
           </div>
