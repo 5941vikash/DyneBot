@@ -24,6 +24,7 @@ const ScrollUp = () => {
       <div
         className="upBtn"
         style={{
+          zIndex: 9999,
           position: "fixed",
           bottom: 0,
           right: 0,
