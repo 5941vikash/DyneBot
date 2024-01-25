@@ -1,47 +1,52 @@
 
 const webDevServices = [
     {
-        name: "Enterprise-Grade .NET Solutions",
-        text: "Web Duality utilizes .NET 6 and .NET 7 to create sophisticated cloud-based enterprise solutions. Meticulously designed, these solutions simplify complex business processes, enhance productivity, and reduce errors, aligning seamlessly with evolving business needs.",
+        name: "Single Page Application Development",
+        text: "Harness the capabilities of our MEAN & MERN Stack Development Services to craft dynamic and seamless Single Page Applications (SPAs). Our specialized approach ensures efficient development, utilizing the synergies of MEAN and MERN stacks for robust, scalable, and responsive web applications across various devices.",
         // img: expertisedotnetsolutionImg
     },
 
     {
-        name: ".NET Integration Solutions",
-        text: "As a seasoned .NET web development company, Web Duality excels in seamlessly integrating third-party APIs and plugins into existing .NET applications. This expertise optimizes user experience and enhances overall functionality, ensuring a robust and feature-rich software environment.",
+        name: "Web Duality excels in MEAN & MERN web development",
+        text: "Web Duality excels in MEAN & MERN web development, creating feature-rich web applications with seamless integration of Angular or React, Node.js, and MongoDB for high performance and tailored solutions.",
         // img: dotnetintegrationImg
     },
     {
-        name: "Proficient .NET Full Stack Development",
-        text: "Web Duality empowers operations with expert full-stack .NET developers, guiding the entire development lifecycle. From idea validation to seamless third-party API integrations and deployment, our software automates intricate business operations, boosting productivity.",
+        name: "MEAN & MERN Mobile App Development",
+        text: "Web Duality excels in MEAN & MERN mobile app development, providing comprehensive services from ideation to deployment. Using Angular or React Native for the front-end, Node.js for the back-end, and MongoDB for the database ensures a seamless experience across platforms.",
         // img: dotnetfullstackImg
     },
     {
-        name: "Tailored .NET Application Development",
-        text: "Web Duality excels in contemporary .NET 6 and .NET 7 frameworks, offering a centralized hub for diverse custom .NET software development services. Specializing in upgrading existing applications or building comprehensive solutions, we adhere to industry-best practices for top-quality results.",
+        name: "MEAN & MERN Enterprise Solutions",
+        text: "Elevate your enterprise with our tailored MEAN & MERN enterprise application development, ensuring secure, scalable, and productive solutions for streamlined operations and enhanced collaboration.",
+        // img: dotnetapplicationImg
+    },
+    {
+        name: "Scalable Cloud Solutions with MEAN & MERN",
+        text: "Explore the power of scalable, reliable, and secure cloud hosting environments with our MEAN & MERN cloud-based solutions. Leveraging platforms like Amazon Web Services (AWS) or Microsoft Azure, we optimize performance and cost-effectiveness for your applications in the cloud.",
         // img: dotnetapplicationImg
     }
 ]
 
 const webDevAgency = [
     {
-        name: "Agile Mastery",
+        name: "Easy to Learn",
         // img: agilemasteryImg
     },
     {
-        name: "Quality Delivery",
+        name: "Large Developer Community",
         // img: qualitydeliveryImg
     },
     {
-        name: "Secured Agreements",
+        name: "Cost-effective",
         // img: securedagreementImg
     },
     {
-        name: "Scalable Solutions",
+        name: "High-performance Applications",
         // img: scalablesolutionImg
     },
     {
-        name: "Reliable Support",
+        name: "Consistent Technology Stack",
         // img: reliablesupport
     }
 ]
@@ -49,23 +54,35 @@ const webDevAgency = [
 const webDevTechStack = [
     {
         // img: travellogo,
-        heading: "Travel"
+        heading: "MongoDB"
     },
     {
         // img: educationlogo,
-        heading: "Education"
+        heading: "Express"
     },
     {
         // img: healthcarelogo,
-        heading: "Healthcare"
+        heading: "Angular"
     },
     {
         // img: ecommercelogo,
-        heading: "Ecommerece"
+        heading: "Node.js"
     },
     {
         // img: medialogo,
-        heading: "Media"
+        heading: "MongoDB"
+    },
+    {
+        // img: medialogo,
+        heading: "Express"
+    },
+    {
+        // img: medialogo,
+        heading: "React"
+    },
+    {
+        // img: medialogo,
+        heading: "Node.js"
     }
 ]
 

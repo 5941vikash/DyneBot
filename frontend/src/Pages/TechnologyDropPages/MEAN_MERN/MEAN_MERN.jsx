@@ -14,38 +14,38 @@ import { webDevServices, webDevAgency, webDevTechStack } from "./MEAN_MERNTech";
 
 const MEAN_MERN = () => {
   const firstContainer = {
-    heading: ".NET Development",
-    para: "As a leading .NET software development firm, we boast a team of industry experts dedicated to crafting high-performance .NET applications for a global clientele. Our systematic and proven development approach ensures businesses can swiftly introduce dynamic software solutions, reducing time-to-market.",
+    heading: "MEAN & MERN Full-Stack Development",
+    para: "Welcome to Web Duality, a leading MEAN and MERN Full-Stack Development Service provider in India. Specializing in cutting-edge solutions, we empower businesses to enhance their digital presence and drive growth through MEAN and MERN Stack Development Services.",
     // backimg: dotnetbackImg,
   };
 
   const secondContainer = {
     heading:
-      "our Ultimate Destination for Varied <strong>.NET  Development Services </strong>",
+      "The primary <strong> distinction between MEAN and MERN </strong>",
     para1:
-      "Web Duality Technologies recognizes that .NET stands as one of the foremost frameworks, primarily employed for crafting robust, mission-centric, and high-performance software solutions that align with diverse business objectives. Offering a myriad of .NET development services, coupled with a personalized development approach, we empower business owners to enter the market with feature-rich and fully operational software, simplifying intricate business operations..",
+      "MEAN stack is a technology stack consisting of MongoDB, Express, Angular, and Node.js. Each technology serves a specific purpose, and together they create a full-stack solution for building modern web applications. MongoDB is a NoSQL database that uses JSON-like documents to store data. Express is a flexible and minimalist web application framework for Node.js. Angular is a front-end JavaScript framework used for building dynamic and interactive web applications. Node.js is a server-side JavaScript runtime that executes JavaScript code outside of a web browser.",
     para2:
-      "Our adept team specializes in designing enterprise-level web, desktop, and mobile applications catering to various industries. Leveraging cutting-edge .NET development technologies such as .NET 7, .NET Core, MVC, Blazor, and MAUI, we assist businesses in navigating the landscape of digital transformation in today's technology-driven world..",
+      "MERN stack is another popular technology stack consisting of MongoDB, Express, React, and Node.js. While MERN and MEAN share some similarities, MERN has some key differences that make it better suited for certain types of applications. React is a popular front-end JavaScript library used for building dynamic user interfaces. React is component-based and allows developers to build reusable UI components. This makes it easier to build complex user interfaces that can be reused across multiple applications.",
     // img: dotnetImg,
   };
 
   const thirdContainer = {
     heading:
-      "Exploring <strong> Web Duality's .NET Software Development </strong> Services",
-    para: "As a prominent .NET software development company, Web Duality provides comprehensive end-to-end .NET development services tailored to diverse client objectives. Our offerings encompass a wide spectrum of solutions, ensuring that businesses receive the full benefit of our expertise and commitment to delivering high-quality software solutions.",
+      "<strong> MEAN & MERN </strong> Stack Development Solutions",
+    para: "Explore our comprehensive range of MEAN & MERN Stack Development Solutions tailored to diverse industry needs. Our offerings comprise.",
     webDevServices,
   };
 
   const fourthContainer = {
     heading:
-      "Why Pick Web Duality for Your <strong>.NET Development</strong> Partner",
+      "Benefits of Using MEAN & MERN Stack Framework",
     para: "Web Duality excels in innovation! Our seasoned .NET developers, adhering to market standards, leverage expertise to create high-performance web, desktop, and mobile applications. With a proven development approach, we empower businesses for rapid time-to-market, delivering top-quality .NET solutions.",
     webDevAgency,
   };
 
   const fifthContainer = {
-    heading: "Tailoring <strong>.NET Solutions</strong> Across Industries",
-    para: "As a renowned .NET development company, Web Duality specializes in delivering personalized .NET web and mobile development solutions tailored to your business needs. Our team of .NET developers has collaborated with startups and established enterprises across various industries, ensuring bespoke solutions.",
+    heading: "Choosing Between <strong> MEAN and MERN Stack </strong> for Development",
+    para: "MEAN and MERN stand out as leading full-stack development technologies globally. While both are potent and efficient, key distinctions exist, influencing the choice between them for your specific needs.",
     webDevTechStack,
   };
 
