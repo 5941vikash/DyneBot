@@ -47,7 +47,7 @@ const MAUI = () => {
     webDevTechStack,
   };
 
-  const hire = "Hire for <strong>Angular</strong>";
+  const hire = "Hire for <strong>MAUI</strong>";
 
   return (
     <>

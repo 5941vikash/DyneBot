@@ -53,7 +53,7 @@ const Typescript = () => {
     webDevTechStack,
   };
 
-  const hire = "Hire for <strong>Dot Net</strong>";
+  const hire = "Hire for <strong>Typescript</strong>";
 
   return (
     <>
