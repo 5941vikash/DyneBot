@@ -41,12 +41,14 @@ import Node from "../Pages/TechnologyDropPages/Node/Node";
 import ReactJS from "../Pages/TechnologyDropPages/ReactJS/ReactJS";
 import Typescript from "../Pages/TechnologyDropPages/Typescript/Typescript";
 import Vue from "../Pages/TechnologyDropPages/Vue/Vue";
+import ScrollUp from "../Components/ScrollUp/ScrollUp";
 
 const AppRouter = () => {
   return (
     <>
       <Router>
         <Navbar />
+        <ScrollUp />
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route exact path="/start" element={<Start />} />

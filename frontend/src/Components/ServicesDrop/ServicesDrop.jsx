@@ -291,35 +291,28 @@ const ServicesDropPages = (props) => {
           <h2 dangerouslySetInnerHTML={{ __html: fifthContainer.heading }} />
           <p>{fifthContainer.para}</p>
           <div className="box">
-            {fifthContainer.webDevTechStack.map((e, i) => {
-              return (
-                <>
-                  {e.link ? (
-                    <NavLink
-                      key={i}
-                      to={e.link}
-                      className="inBox hidden"
-                      data-animation-key={`fifthServiceDropCont ${i}`}
-                    >
-                      <img src={e.img} alt="" draggable="false" />
-                      <h6>{e.heading}</h6>
-                    </NavLink>
-                  ) : (
-                    <div
-                      key={i}
-                      className="inBox hidden"
-                      data-animation-key={`fifthServiceDropCont ${i}`}
-                      style={{
-                        cursor: "pointer",
-                      }}
-                    >
-                      <img src={e.img} alt="" draggable="false" />
-                      <h6>{e.heading}</h6>
-                    </div>
-                  )}
-                </>
-              );
-            })}
+            {fifthContainer.webDevTechStack.map((e, i) => (
+              <div
+                key={i}
+                className="inBox hidden"
+                data-animation-key={`fifthServiceDropCont ${i}`}
+                style={{
+                  cursor: e.link ? "pointer" : "default",
+                }}
+              >
+                {e.link ? (
+                  <NavLink to={e.link}>
+                    <img src={e.img} alt="" draggable="false" />
+                    <h6>{e.heading}</h6>
+                  </NavLink>
+                ) : (
+                  <>
+                    <img src={e.img} alt="" draggable="false" />
+                    <h6>{e.heading}</h6>
+                  </>
+                )}
+              </div>
+            ))}
           </div>
         </div>
       </div>
