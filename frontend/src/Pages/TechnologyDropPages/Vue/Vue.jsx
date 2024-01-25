@@ -14,42 +14,42 @@ import { webDevServices, webDevAgency, webDevTechStack } from "./VueTech";
 
 const Vue = () => {
   const firstContainer = {
-    heading: ".NET Development",
-    para: "As a leading .NET software development firm, we boast a team of industry experts dedicated to crafting high-performance .NET applications for a global clientele. Our systematic and proven development approach ensures businesses can swiftly introduce dynamic software solutions, reducing time-to-market.",
+    heading: "Vue.js Development",
+    para: "Web Duality, a premier Vue.js Development Company, delivers high-performance and interactive web applications. Leveraging the robust Vue.js framework, our services empower businesses to create scalable and efficient digital solutions with a focus on dynamic user interfaces.",
     // backimg: dotnetbackImg,
   };
 
   const secondContainer = {
     heading:
-      "our Ultimate Destination for Varied <strong>.NET  Development Services </strong>",
+      "Our Go-To Hub for Varied Vue.js Development Services",
     para1:
-      "Web Duality Technologies recognizes that .NET stands as one of the foremost frameworks, primarily employed for crafting robust, mission-centric, and high-performance software solutions that align with diverse business objectives. Offering a myriad of .NET development services, coupled with a personalized development approach, we empower business owners to enter the market with feature-rich and fully operational software, simplifying intricate business operations..",
+      "Web Duality Technologies recognizes Vue.js as a leading framework, extensively utilized for creating dynamic, user-centric, and high-performance web applications aligned with diverse business goals. With a comprehensive range of Vue.js development services and a tailored development approach, we empower businesses to launch into the digital sphere with feature-rich and fully functional web applications, streamlining complex business processes.",
     para2:
-      "Our adept team specializes in designing enterprise-level web, desktop, and mobile applications catering to various industries. Leveraging cutting-edge .NET development technologies such as .NET 7, .NET Core, MVC, Blazor, and MAUI, we assist businesses in navigating the landscape of digital transformation in today's technology-driven world..",
+      "Our skilled team excels in crafting scalable web applications using Vue.js, catering to diverse industries. Employing cutting-edge Vue.js technologies, including the latest versions and plugins, we guide businesses through the realms of digital transformation in today's tech-driven landscape.",
     // img: dotnetImg,
   };
 
   const thirdContainer = {
     heading:
-      "Exploring <strong> Web Duality's .NET Software Development </strong> Services",
-    para: "As a prominent .NET software development company, Web Duality provides comprehensive end-to-end .NET development services tailored to diverse client objectives. Our offerings encompass a wide spectrum of solutions, ensuring that businesses receive the full benefit of our expertise and commitment to delivering high-quality software solutions.",
+      "Empower Your Business with <strong> Vue.js </strong> Development Services",
+    para: "Utilize Vue.js, an open-source JavaScript framework, for high-performance web applications. Our Vue.js Development Services ensure scalability and seamless user experiences. Services include.",
     webDevServices,
   };
 
   const fourthContainer = {
     heading:
-      "Why Pick Web Duality for Your <strong>.NET Development</strong> Partner",
-    para: "Web Duality excels in innovation! Our seasoned .NET developers, adhering to market standards, leverage expertise to create high-performance web, desktop, and mobile applications. With a proven development approach, we empower businesses for rapid time-to-market, delivering top-quality .NET solutions.",
+      "<strong> Vue.js </strong> Development Services Tailored for Your Business",
+    para: "Explore our Vue.js development solutions, catering to diverse business sizes – from startups to enterprises. Our seasoned Vue.js developers excel in crafting scalable and resilient web applications within the Vue.js framework. Our proficiency spans across various domains, including.",
     webDevAgency,
   };
 
   const fifthContainer = {
-    heading: "Tailoring <strong>.NET Solutions</strong> Across Industries",
-    para: "As a renowned .NET development company, Web Duality specializes in delivering personalized .NET web and mobile development solutions tailored to your business needs. Our team of .NET developers has collaborated with startups and established enterprises across various industries, ensuring bespoke solutions.",
+    heading: "Technologies We Use",
+    para: "At Web Duality, we harness cutting-edge technologies for top-notch Vue.js development services. Our toolkit comprises.",
     webDevTechStack,
   };
 
-  const hire = "Hire for <strong>Dot Net</strong>";
+  const hire = "Hire for <strong>Vue.js</strong>";
 
   return (
     <>

@@ -1,47 +1,74 @@
 
 const webDevServices = [
     {
-        name: "Enterprise-Grade .NET Solutions",
-        text: "Web Duality utilizes .NET 6 and .NET 7 to create sophisticated cloud-based enterprise solutions. Meticulously designed, these solutions simplify complex business processes, enhance productivity, and reduce errors, aligning seamlessly with evolving business needs.",
+        name: "Vue.js Web Application Development",
+        text: "Leverage our Vue.js expertise to build scalable, fast, and easily maintainable web applications. Our skilled developers create robust solutions tailored to your business needs.",
         // img: expertisedotnetsolutionImg
     },
 
     {
-        name: ".NET Integration Solutions",
-        text: "As a seasoned .NET web development company, Web Duality excels in seamlessly integrating third-party APIs and plugins into existing .NET applications. This expertise optimizes user experience and enhances overall functionality, ensuring a robust and feature-rich software environment.",
+        name: "Vue.js Mobile App Development",
+        text: "Harness Vue.js for cross-platform mobile applications with our expert development services. Our skilled developers craft user-friendly mobile apps, ensuring broad audience reach and seamless performance.",
         // img: dotnetintegrationImg
     },
     {
-        name: "Proficient .NET Full Stack Development",
-        text: "Web Duality empowers operations with expert full-stack .NET developers, guiding the entire development lifecycle. From idea validation to seamless third-party API integrations and deployment, our software automates intricate business operations, boosting productivity.",
+        name: "Vue.js Plugin Development",
+        text: "Elevate your application's functionality with our Vue.js plugin development services. Our adept developers create tailored plugins to enhance your web or mobile applications, meeting your specific requirements.",
         // img: dotnetfullstackImg
     },
     {
-        name: "Tailored .NET Application Development",
-        text: "Web Duality excels in contemporary .NET 6 and .NET 7 frameworks, offering a centralized hub for diverse custom .NET software development services. Specializing in upgrading existing applications or building comprehensive solutions, we adhere to industry-best practices for top-quality results.",
+        name: "Vue.js Component Development",
+        text: "Optimize your development process with our Vue.js component development services. Our skilled developers create reusable components, ensuring scalability, speed, and easy maintenance across your web or mobile applications.",
+        // img: dotnetapplicationImg
+    },
+    {
+        name: "Vue.js Migration and Integration",
+        text: "Elevate your applications with our Vue.js migration and integration services. Our adept developers seamlessly migrate existing apps to Vue.js or integrate Vue.js into your current projects, ensuring a smooth and efficient transition.",
+        // img: dotnetintegrationImg
+    },
+    {
+        name: "Vue.js for Progressive Web Apps",
+        text: "Leverage Vue.js to craft progressive web applications (PWAs) with cross-platform compatibility. Our Vue.js development services ensure fast performance, offline capabilities, and a native-like user experience for your PWAs.",
+        // img: dotnetfullstackImg
+    },
+    {
+        name: "Vue.js for Single-Page Applications",
+        text: "Harness the power of Vue.js to craft efficient single-page applications (SPAs) that offer a seamless and responsive user experience. Our Vue.js development services ensure the speed, efficiency, and ease of maintenance for your SPAs.",
         // img: dotnetapplicationImg
     }
 ]
 
 const webDevAgency = [
     {
-        name: "Agile Mastery",
+        name: "Healthcare and Telemedicine",
         // img: agilemasteryImg
     },
     {
-        name: "Quality Delivery",
+        name: "Education and E-learning",
         // img: qualitydeliveryImg
     },
     {
-        name: "Secured Agreements",
+        name: "Social Media and Networking",
         // img: securedagreementImg
     },
     {
-        name: "Scalable Solutions",
+        name: "Finance and Banking",
         // img: scalablesolutionImg
     },
     {
-        name: "Reliable Support",
+        name: "Travel and Tourism",
+        // img: reliablesupport
+    },
+    {
+        name: "Ecommerce and Retail",
+        // img: securedagreementImg
+    },
+    {
+        name: "Cargo Management System",
+        // img: scalablesolutionImg
+    },
+    {
+        name: "File Management System",
         // img: reliablesupport
     }
 ]
@@ -49,23 +76,63 @@ const webDevAgency = [
 const webDevTechStack = [
     {
         // img: travellogo,
-        heading: "Travel"
+        heading: "Vue.js"
     },
     {
         // img: educationlogo,
-        heading: "Education"
+        heading: "VueX"
     },
     {
         // img: healthcarelogo,
-        heading: "Healthcare"
+        heading: "Vue Router"
     },
     {
         // img: ecommercelogo,
-        heading: "Ecommerece"
+        heading: "Vuetify"
     },
     {
         // img: medialogo,
-        heading: "Media"
+        heading: "Firebase"
+    },
+    {
+        // img: travellogo,
+        heading: "Nuxt.js"
+    },
+    {
+        // img: educationlogo,
+        heading: "MongoDB"
+    },
+    {
+        // img: healthcarelogo,
+        heading: "MySQL"
+    },
+    {
+        // img: ecommercelogo,
+        heading: "Axios"
+    },
+    {
+        // img: medialogo,
+        heading: "SQL Server"
+    },
+    {
+        // img: travellogo,
+        heading: "Express.js"
+    },
+    {
+        // img: educationlogo,
+        heading: "Node.js"
+    },
+    {
+        // img: healthcarelogo,
+        heading: "Bootstrap"
+    },
+    {
+        // img: ecommercelogo,
+        heading: "Git"
+    },
+    {
+        // img: medialogo,
+        heading: "AWS"
     }
 ]
 
