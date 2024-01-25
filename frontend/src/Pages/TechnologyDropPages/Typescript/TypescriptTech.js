@@ -1,47 +1,54 @@
 
 const webDevServices = [
     {
-        name: "Enterprise-Grade .NET Solutions",
-        text: "Web Duality utilizes .NET 6 and .NET 7 to create sophisticated cloud-based enterprise solutions. Meticulously designed, these solutions simplify complex business processes, enhance productivity, and reduce errors, aligning seamlessly with evolving business needs.",
+        name: "Elevated JavaScript Capabilities",
+        text: "TypeScript enhances JavaScript by introducing static typing, classes, and interfaces. This augmentation simplifies code writing and maintenance, resulting in improved software quality for comprehensive and effective solutions.",
         // img: expertisedotnetsolutionImg
     },
 
     {
-        name: ".NET Integration Solutions",
-        text: "As a seasoned .NET web development company, Web Duality excels in seamlessly integrating third-party APIs and plugins into existing .NET applications. This expertise optimizes user experience and enhances overall functionality, ensuring a robust and feature-rich software environment.",
+        name: "Versatile Typescript Development",
+        text: "Explore the versatility of Typescript, suitable for both front-end and back-end development, offering flexibility and scalability for robust software solutions.",
         // img: dotnetintegrationImg
     },
     {
-        name: "Proficient .NET Full Stack Development",
-        text: "Web Duality empowers operations with expert full-stack .NET developers, guiding the entire development lifecycle. From idea validation to seamless third-party API integrations and deployment, our software automates intricate business operations, boosting productivity.",
+        name: "Type-Safety in TypeScript Development",
+        text: "Benefit from TypeScript's type-safety, catching errors before execution, reducing bugs, and ensuring accurate usage of variables and functions across your codebase.",
         // img: dotnetfullstackImg
     },
     {
-        name: "Tailored .NET Application Development",
-        text: "Web Duality excels in contemporary .NET 6 and .NET 7 frameworks, offering a centralized hub for diverse custom .NET software development services. Specializing in upgrading existing applications or building comprehensive solutions, we adhere to industry-best practices for top-quality results.",
+        name: "Harmonious Integration",
+        text: "Typescript seamlessly integrates with various technologies like JavaScript, HTML, and CSS, facilitating effortless coordination in existing and new software solutions.",
         // img: dotnetapplicationImg
-    }
+    },
+    {
+        name: "Cutting-Edge Typescript Development",
+        text: "Typescript is a leading-edge technology, rapidly becoming the preferred language for modern software development. Opt for Typescript Development Services from Web Duality to stay ahead in the competitive landscape.",
+        // img: dotnetapplicationImg
+    },
+
+
 ]
 
 const webDevAgency = [
     {
-        name: "Agile Mastery",
+        name: "JS to TS Migration",
         // img: agilemasteryImg
     },
     {
-        name: "Quality Delivery",
+        name: "Enterprise App Development & APIs",
         // img: qualitydeliveryImg
     },
     {
-        name: "Secured Agreements",
+        name: "Web App Development",
         // img: securedagreementImg
     },
     {
-        name: "Scalable Solutions",
+        name: "Typescript Consultation",
         // img: scalablesolutionImg
     },
     {
-        name: "Reliable Support",
+        name: "Typescript App Development",
         // img: reliablesupport
     }
 ]
@@ -49,23 +56,19 @@ const webDevAgency = [
 const webDevTechStack = [
     {
         // img: travellogo,
-        heading: "Travel"
+        heading: "Scalability"
     },
     {
         // img: educationlogo,
-        heading: "Education"
+        heading: "Code Readability"
     },
     {
         // img: healthcarelogo,
-        heading: "Healthcare"
+        heading: "Error Reduction"
     },
     {
         // img: ecommercelogo,
-        heading: "Ecommerece"
-    },
-    {
-        // img: medialogo,
-        heading: "Media"
+        heading: "Strong Typing"
     }
 ]
 

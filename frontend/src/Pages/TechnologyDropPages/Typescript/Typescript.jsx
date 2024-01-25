@@ -18,38 +18,38 @@ import {
 
 const Typescript = () => {
   const firstContainer = {
-    heading: ".NET Development",
-    para: "As a leading .NET software development firm, we boast a team of industry experts dedicated to crafting high-performance .NET applications for a global clientele. Our systematic and proven development approach ensures businesses can swiftly introduce dynamic software solutions, reducing time-to-market.",
+    heading: "Typescript Development",
+    para: "In the present era, technology is advancing rapidly, and the software development industry is witnessing heightened competition. Businesses are keen to enhance their operations through innovative software applications, aiming to optimize workflows and gain a competitive edge in the market. This is where a TypeScript Development Company in India, such as Step2gen, plays a pivotal role.",
     // backimg: dotnetbackImg,
   };
 
   const secondContainer = {
     heading:
-      "our Ultimate Destination for Varied <strong>.NET  Development Services </strong>",
+      "Elevate Your Business with <strong> Cutting-Edge TypeScript Development </strong> Services>",
     para1:
-      "Web Duality Technologies recognizes that .NET stands as one of the foremost frameworks, primarily employed for crafting robust, mission-centric, and high-performance software solutions that align with diverse business objectives. Offering a myriad of .NET development services, coupled with a personalized development approach, we empower business owners to enter the market with feature-rich and fully operational software, simplifying intricate business operations..",
+      "TypeScript, a superset of JavaScript, enhances the language's capabilities, making it more robust and secure. As an open-source programming language, TypeScript is widely embraced by businesses and developers globally.",
     para2:
-      "Our adept team specializes in designing enterprise-level web, desktop, and mobile applications catering to various industries. Leveraging cutting-edge .NET development technologies such as .NET 7, .NET Core, MVC, Blazor, and MAUI, we assist businesses in navigating the landscape of digital transformation in today's technology-driven world..",
+      "At Web Duality, we specialize in delivering comprehensive TypeScript Development Services to empower businesses in enhancing their digital presence. Through the utilization of TypeScript, we assist businesses in crafting high-performance web and mobile applications that prioritize security, scalability, and user-friendliness. Our team of experts offers end-to-end TypeScript development services, covering conceptualization, deployment, and ongoing maintenance, ensuring businesses maximize the value of their digital investments.",
     // img: dotnetImg,
   };
 
   const thirdContainer = {
     heading:
-      "Exploring <strong> Web Duality's .NET Software Development </strong> Services",
-    para: "As a prominent .NET software development company, Web Duality provides comprehensive end-to-end .NET development services tailored to diverse client objectives. Our offerings encompass a wide spectrum of solutions, ensuring that businesses receive the full benefit of our expertise and commitment to delivering high-quality software solutions.",
+      "Exclusive <strong> Attribute of TypeScript </strong> Web Development",
+    para: "In TypeScript web development, the exclusive feature of static typing ensures code reliability, maintainability, and improved software quality for applications.",
     webDevServices,
   };
 
   const fourthContainer = {
     heading:
-      "Why Pick Web Duality for Your <strong>.NET Development</strong> Partner",
-    para: "Web Duality excels in innovation! Our seasoned .NET developers, adhering to market standards, leverage expertise to create high-performance web, desktop, and mobile applications. With a proven development approach, we empower businesses for rapid time-to-market, delivering top-quality .NET solutions.",
+      "<strong> Expert TypeScript </strong> Development Services",
+    para: "Explore our diverse range of expert TypeScript Development Services tailored to meet the unique requirements of our clients. Our services encompass:",
     webDevAgency,
   };
 
   const fifthContainer = {
-    heading: "Tailoring <strong>.NET Solutions</strong> Across Industries",
-    para: "As a renowned .NET development company, Web Duality specializes in delivering personalized .NET web and mobile development solutions tailored to your business needs. Our team of .NET developers has collaborated with startups and established enterprises across various industries, ensuring bespoke solutions.",
+    heading: "Benefits of <strong> TypeScript </strong> Compared to <strong> JavaScript </strong>",
+    para: "Discover why TypeScript surpasses JavaScript with added features, making it a more robust choice for large-scale applications.",
     webDevTechStack,
   };
 
