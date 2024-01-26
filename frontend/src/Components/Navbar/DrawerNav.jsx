@@ -213,7 +213,7 @@ const DrawerNav = (props) => {
       </li>
 
       {/* Button */}
-      <button onClick={handleBuildTeamOpenDialog}>
+      {/* <button onClick={handleBuildTeamOpenDialog}>
         <span>Build a team</span>
         <ArrowForwardOutlinedIcon
           sx={{
@@ -222,7 +222,7 @@ const DrawerNav = (props) => {
             ml: 0.5,
           }}
         />
-      </button>
+      </button> */}
     </Box>
   );
 

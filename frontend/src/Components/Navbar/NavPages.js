@@ -71,8 +71,8 @@ const navTechnologyPages = [
         link: "mern"
     },
     {
-        name: "MAUI",
-        link: "maui"
+        name: "MUI",
+        link: "mui"
     },
     {
         name: "TypeScript",

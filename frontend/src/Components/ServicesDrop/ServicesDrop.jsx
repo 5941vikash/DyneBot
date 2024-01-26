@@ -301,7 +301,13 @@ const ServicesDropPages = (props) => {
                 }}
               >
                 {e.link ? (
-                  <NavLink to={e.link}>
+                  <NavLink
+                    to={e.link}
+                    style={{
+                      margin: 0,
+                      padding: 0,
+                    }}
+                  >
                     <img src={e.img} alt="" draggable="false" />
                     <h6>{e.heading}</h6>
                   </NavLink>

@@ -8,6 +8,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 /* ------------- Components ------------- */
 import Navbar from "../Components/Navbar/Navbar";
 import Footer from "../Components/Footer/Footer";
+import ScrollUp from "../Components/ScrollUp/ScrollUp";
 
 /* ------------- Pages ------------- */
 import Home from "../Pages/Home/Home";
@@ -29,19 +30,18 @@ import WebAPI from "../Pages/ServicesDropPages/WebAPI/WebAPI";
 import Databases from "../Pages/ServicesDropPages/Databases/Databases";
 import Reporting from "../Pages/ServicesDropPages/Reporting/Reporting";
 
-/* ---------------- Services Pages ---------------- */
+/* ---------------- Technology Pages ---------------- */
 import Angular from "../Pages/TechnologyDropPages/Angular/Angular";
 import Blazor from "../Pages/TechnologyDropPages/Blazor/Blazor";
 import CSharp from "../Pages/TechnologyDropPages/CSharp/CSharp";
 import DotNet from "../Pages/TechnologyDropPages/DotNet/DotNet";
-import MAUI from "../Pages/TechnologyDropPages/MAUI/MAUI";
+import MUI from "../Pages/TechnologyDropPages/MUI/MUI";
 import MERN_MEAN from "../Pages/TechnologyDropPages/MEAN_MERN/MEAN_MERN";
 import Microservices from "../Pages/TechnologyDropPages/Microservices/Microservices";
 import Node from "../Pages/TechnologyDropPages/Node/Node";
 import ReactJS from "../Pages/TechnologyDropPages/ReactJS/ReactJS";
 import Typescript from "../Pages/TechnologyDropPages/Typescript/Typescript";
 import Vue from "../Pages/TechnologyDropPages/Vue/Vue";
-import ScrollUp from "../Components/ScrollUp/ScrollUp";
 
 const AppRouter = () => {
   return (
@@ -87,7 +87,7 @@ const AppRouter = () => {
           <Route exact path="/mern" element={<MERN_MEAN />} />
           <Route exact path="/microservice" element={<Microservices />} />
           <Route exact path="/node" element={<Node />} />
-          <Route exact path="/maui" element={<MAUI />} />
+          <Route exact path="/mui" element={<MUI />} />
           <Route exact path="/typescript" element={<Typescript />} />
         </Routes>
         <Footer />

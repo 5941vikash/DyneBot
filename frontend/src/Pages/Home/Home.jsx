@@ -3,6 +3,8 @@ import React, { useState, useEffect } from "react";
 // Home CSS
 import "./Home.css";
 
+import { NavLink } from "react-router-dom";
+
 // Image
 import backimg from "./Assets/backimg.png";
 
@@ -233,7 +235,18 @@ const Home = () => {
               testers, and leaders. We are setup to deliver long term solutions,
               or scale to different needs quickly.
             </p>
-            <button onClick={handleBuildTeamOpenDialog}>
+            <button>
+              <NavLink
+                to="/contact"
+                style={{
+                  color: "#fff",
+                  fontWeight: 600,
+                }}
+              >
+                Contact Us
+              </NavLink>
+            </button>
+            {/* <button onClick={handleBuildTeamOpenDialog}>
               Build a team
               <ArrowForwardOutlinedIcon
                 sx={{
@@ -242,7 +255,7 @@ const Home = () => {
                   ml: 0.5,
                 }}
               />
-            </button>
+            </button> */}
           </div>
         </div>
 

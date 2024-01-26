@@ -10,9 +10,9 @@ import TechnologyDrop from "../../../Components/TechnologyDrop/TechnologyDrop";
 // import angularbackImg from "./Assets/angularBack.png";
 
 // Web Pages
-import { webDevServices, webDevAgency, webDevTechStack } from "./MAUITech";
+import { webDevServices, webDevAgency, webDevTechStack } from "./MUITech";
 
-const MAUI = () => {
+const MUI = () => {
   const firstContainer = {
     heading: ".NET MAUI Development",
     para: "Optimize your digital presence with Web Duality's skilled .NET MAUI developers. Launch dynamic cross-platform applications efficiently, engaging users on desktop, iOS, and Android. Benefit from cost-effective solutions and a single shared codebase for a streamlined and impactful digital experience.",
@@ -63,4 +63,4 @@ const MAUI = () => {
   );
 }
 
-export default MAUI
+export default MUI

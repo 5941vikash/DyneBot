@@ -4,10 +4,10 @@ import React from "react";
 import TechnologyDrop from "../../../Components/TechnologyDrop/TechnologyDrop";
 
 // Image
-// import dotnetImg from "./Assets/dotnetImg.png";
+import vuejsImg from "./Assets/vuejsImg.png";
 
 // Back Image
-// import dotnetbackImg from "./Assets/dotnetbackImg.jpg";
+import vuejsbackImg from "./Assets/vuejsbakcImg.png";
 
 // Web Pages
 import { webDevServices, webDevAgency, webDevTechStack } from "./VueTech";
@@ -16,17 +16,17 @@ const Vue = () => {
   const firstContainer = {
     heading: "Vue.js Development",
     para: "Web Duality, a premier Vue.js Development Company, delivers high-performance and interactive web applications. Leveraging the robust Vue.js framework, our services empower businesses to create scalable and efficient digital solutions with a focus on dynamic user interfaces.",
-    // backimg: dotnetbackImg,
+    backimg: vuejsbackImg,
   };
 
   const secondContainer = {
     heading:
-      "Our Go-To Hub for Varied Vue.js Development Services",
+      "Our Go-To Hub for Varied <strong>Vue.js Development</strong> Services",
     para1:
       "Web Duality Technologies recognizes Vue.js as a leading framework, extensively utilized for creating dynamic, user-centric, and high-performance web applications aligned with diverse business goals. With a comprehensive range of Vue.js development services and a tailored development approach, we empower businesses to launch into the digital sphere with feature-rich and fully functional web applications, streamlining complex business processes.",
     para2:
       "Our skilled team excels in crafting scalable web applications using Vue.js, catering to diverse industries. Employing cutting-edge Vue.js technologies, including the latest versions and plugins, we guide businesses through the realms of digital transformation in today's tech-driven landscape.",
-    // img: dotnetImg,
+    img: vuejsImg,
   };
 
   const thirdContainer = {
@@ -44,7 +44,7 @@ const Vue = () => {
   };
 
   const fifthContainer = {
-    heading: "Technologies We Use",
+    heading: "<strong>Technologies</strong> We Use",
     para: "At Web Duality, we harness cutting-edge technologies for top-notch Vue.js development services. Our toolkit comprises.",
     webDevTechStack,
   };

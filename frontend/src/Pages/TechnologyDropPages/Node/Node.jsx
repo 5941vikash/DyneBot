@@ -1,13 +1,13 @@
-import React from 'react'
+import React from "react";
 
 // Services Drop Main Root Page Component
 import TechnologyDrop from "../../../Components/TechnologyDrop/TechnologyDrop";
 
 // Image
-// import dotnetImg from "./Assets/dotnetImg.png";
+import nodejsImg from "./Assets/nodejsImg.webp";
 
 // Back Image
-// import dotnetbackImg from "./Assets/dotnetbackImg.jpg";
+import nodejsbackImg from "./Assets/nodejsbackImg.jpg";
 
 // Web Pages
 import { webDevServices, webDevAgency, webDevTechStack } from "./NodeTech";
@@ -16,17 +16,17 @@ const Node = () => {
   const firstContainer = {
     heading: "NodeJS Development",
     para: "As a dedicated Node.js development partner, we specialize in creating high-performance web solutions, encompassing PWAs, intricate web applications, chatbots, and more, tailored to meet our clients' unique business needs. Our adept developers harness the power of Node.js to facilitate the deployment of serverless cloud-based web solutions, ensuring a cutting-edge user experience.",
-    // backimg: dotnetbackImg,
+    backimg: nodejsbackImg,
   };
 
   const secondContainer = {
     heading:
-      "Embark on Digital Evolution Through Tailored <strong> Node.js </strong> Development Solutions",
+      "Embark on Digital Evolution Through Tailored <strong> NodeJS </strong> Development Solutions",
     para1:
-      "In today's technology-driven business landscape, organizations demand digital solutions capable of efficiently handling vast data volumes in real-time while ensuring a seamless user experience. Node.js has emerged as a leading web development technology, utilizing event-driven data models to construct robust multi-user architectures for modern web solutions.",
+      "In the tech-driven business world, organizations seek digital solutions that handle vast real-time data efficiently. Node.js, with its event-driven data models, is a key technology for constructing robust multi-user architectures in modern web solutions.",
     para2:
-      "Web Duality offers expert Node.js development services, empowering businesses, whether startups or enterprises, to harness the advantages of Node.js' rich ecosystem for launching high-performance web solutions. Our team of skilled Node.js developers leverages the runtime environment to create scalable web applications aligned with clients' business objectives. Additionally, we specialize in Node.js application migration, ensuring existing applications benefit from the latest features and functionalities, enabling clients to maintain a competitive edge in the digital landscape.",
-    // img: dotnetImg,
+      "At Web Duality, we provide expert Node.js development services to empower businesses, from startups to enterprises. Our skilled Node.js developers harness the runtime environment to create scalable web applications aligned with clients' objectives. We specialize in Node.js application migration, ensuring clients' existing applications stay competitive with the latest features and functionalities.",
+    img: nodejsImg,
   };
 
   const thirdContainer = {
@@ -44,12 +44,12 @@ const Node = () => {
   };
 
   const fifthContainer = {
-    heading: "Customizing <strong>Node.js </strong> Solutions Across Industries",
+    heading: "Customizing <strong>NodeJS </strong> Solutions Across Industries",
     para: "As a reputable Node.js development company, Web Duality excels in providing bespoke Node.js web and mobile development solutions crafted to meet your business requirements. Our team of Node.js developers has partnered with startups and established enterprises across diverse industries, ensuring tailored solutions.",
     webDevTechStack,
   };
 
-  const hire = "Hire for <strong>Node.js</strong>";
+  const hire = "Hire for <strong>NodeJS</strong>";
 
   return (
     <>
@@ -63,6 +63,6 @@ const Node = () => {
       />
     </>
   );
-}
+};
 
-export default Node
+export default Node;
