@@ -1,5 +1,3 @@
-/* eslint-disable jsx-a11y/iframe-has-title */
-
 // React & UseState
 import React, { useState } from "react";
 // Footer CSS
@@ -8,7 +6,7 @@ import "./Footer.css";
 // Image
 import footerCom from "./Assets/footerCom.png";
 // Logo
-import Logo from "./Assets/Logo Transparent.png";
+import Logo from "./Assets/Logo_Transparent.png";
 
 /* ------------- React Router Dom ------------- */
 // Link
@@ -195,17 +193,25 @@ const Footer = () => {
             {location.pathname === "/contact" ? (
               <>
                 <iframe
+                  title="map"
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7005.2660736574235!2d77.42927685!3d28.61078365!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cee941d0fac1d%3A0x23370297a1102792!2sSector%204%2C%20Greater%20Noida%2C%20Uttar%20Pradesh%20201009!5e0!3m2!1sen!2sin!4v1705414993426!5m2!1sen!2sin"
                   width="100%"
                   height="100%"
                   style={{
                     borderRadius: "0px 0px 30px 20px",
                     boxShadow: "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px",
+                    border: "0px",
+                    margin: 0,
+                    padding: 0,
+                    backgroundColor: "transparent",
+                    cursor: "pointer",
+                    transition: "box-shadow 0.3s ease",
+                    outline: "none", // Remove default focus outline
                   }}
                   allowFullScreen=""
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
-                ></iframe>
+                />
               </>
             ) : (
               <>
@@ -340,7 +346,7 @@ const Footer = () => {
                     mr: 1,
                   }}
                 />{" "}
-                +91 9358174038
+                <a href="tel:+91 9358174038">+91 9358174038</a>
               </p>
               <p>
                 <EmailOutlinedIcon

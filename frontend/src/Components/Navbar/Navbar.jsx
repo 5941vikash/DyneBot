@@ -4,7 +4,7 @@ import React, { useState, useEffect } from "react";
 import "./Navbar.css";
 
 // Logo
-import Logo from "./Assets/Logo Transparent.png";
+import Logo from "./Assets/Logo_Transparent.png";
 
 /* ------------- React Router Dom ------------- */
 // NavLink
