@@ -55,10 +55,6 @@ const navTechnologyPages = [
         link: "c-sharp"
     },
     {
-        name: "Microservices",
-        link: "microservice"
-    },
-    {
         name: "Angular",
         link: "angular"
     },
@@ -69,10 +65,6 @@ const navTechnologyPages = [
     {
         name: "MEAN/MERN",
         link: "mern"
-    },
-    {
-        name: "MUI",
-        link: "mui"
     },
     {
         name: "TypeScript",
