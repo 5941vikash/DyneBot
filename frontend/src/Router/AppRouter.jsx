@@ -35,9 +35,7 @@ import Angular from "../Pages/TechnologyDropPages/Angular/Angular";
 import Blazor from "../Pages/TechnologyDropPages/Blazor/Blazor";
 import CSharp from "../Pages/TechnologyDropPages/CSharp/CSharp";
 import DotNet from "../Pages/TechnologyDropPages/DotNet/DotNet";
-import MUI from "../Pages/TechnologyDropPages/MUI/MUI";
 import MERN_MEAN from "../Pages/TechnologyDropPages/MEAN_MERN/MEAN_MERN";
-import Microservices from "../Pages/TechnologyDropPages/Microservices/Microservices";
 import Node from "../Pages/TechnologyDropPages/Node/Node";
 import ReactJS from "../Pages/TechnologyDropPages/ReactJS/ReactJS";
 import Typescript from "../Pages/TechnologyDropPages/Typescript/Typescript";
@@ -85,9 +83,7 @@ const AppRouter = () => {
           <Route exact path="/c-sharp" element={<CSharp />} />
           <Route exact path="/blazor" element={<Blazor />} />
           <Route exact path="/mern" element={<MERN_MEAN />} />
-          <Route exact path="/microservice" element={<Microservices />} />
           <Route exact path="/node" element={<Node />} />
-          <Route exact path="/mui" element={<MUI />} />
           <Route exact path="/typescript" element={<Typescript />} />
         </Routes>
         <Footer />
