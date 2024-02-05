@@ -20,8 +20,8 @@ import InputAdornment from "@mui/material/InputAdornment";
 import PersonIcon from "@mui/icons-material/Person";
 // Email Icon
 import EmailIcon from "@mui/icons-material/Email";
-// Phone Icon
-import PhoneIcon from "@mui/icons-material/Phone";
+// PhoneNumber Icon
+import PhoneNumberIcon from "@mui/icons-material/PhoneNumber";
 
 import axios from "axios";
 
@@ -37,16 +37,17 @@ const Hire = (props) => {
 
   // hire UseState
   const [hire, setHire] = useState({
-    fullname: "",
+    name: "",
     email: "",
-    phone: "",
+    phoneNumber: "",
+    domain: heading,
   });
 
   // Input Alert UseState
   const [alert, setAlert] = useState({
-    fullnameAlert: "",
+    nameAlert: "",
     mailAlert: "",
-    phoneAlert: "",
+    phoneNumberAlert: "",
     fileAlert: "",
   });
 
@@ -109,12 +110,12 @@ const Hire = (props) => {
 
     // Check if the form is fill or not
     if (
-      hire.fullname !== "" &&
-      alert.fullnameAlert === "" &&
+      hire.name !== "" &&
+      alert.nameAlert === "" &&
       hire.email !== "" &&
       alert.mailAlert === "" &&
-      hire.phone !== "" &&
-      alert.phoneAlert === "" &&
+      hire.phoneNumber !== "" &&
+      alert.phoneNumberAlert === "" &&
       selectedFile &&
       alert.fileAlert === ""
     ) {
@@ -177,8 +178,8 @@ const Hire = (props) => {
                 label="Full Name"
                 color="warning"
                 type="text"
-                name="fullname"
-                value={hire.fullname}
+                name="name"
+                value={hire.name}
                 onChange={handleHireChange}
                 className="hireInput"
                 variant="outlined"
@@ -198,21 +199,21 @@ const Hire = (props) => {
                   ),
                 }}
                 onBlur={() => {
-                  if (hire.fullname === "" || /^\s*$/.test(hire.fullname)) {
+                  if (hire.name === "" || /^\s*$/.test(hire.name)) {
                     setAlert({
                       ...alert,
-                      fullnameAlert: "Please enter fullname !!",
+                      nameAlert: "Please enter name !!",
                     });
                   } else {
                     setAlert({
                       ...alert,
-                      fullnameAlert: "",
+                      nameAlert: "",
                     });
                   }
                 }}
               />
-              {/* Show fullname Alert */}
-              <p>{alert.fullnameAlert}</p>
+              {/* Show name Alert */}
+              <p>{alert.nameAlert}</p>
             </Box>
 
             {/* Email Id Box */}
@@ -264,29 +265,37 @@ const Hire = (props) => {
               <p>{alert.mailAlert}</p>
             </Box>
 
-            {/* Phone Box */}
+            {/* PhoneNumber Box */}
             <Box className="hireBox">
               {/* Text Field */}
               <TextField
-                label="Phone No."
+                label="PhoneNumber No."
                 color="warning"
                 type="tel"
-                name="phone"
-                value={hire.phone ? hire.phone.trim("") : hire.phone}
+                name="phoneNumber"
+                value={
+                  hire.phoneNumber
+                    ? hire.phoneNumber.trim("")
+                    : hire.phoneNumber
+                }
                 onChange={handleHireChange}
                 className="hireInput"
                 variant="outlined"
-                placeholder="Enter Phone No."
+                placeholder="Enter PhoneNumber No."
                 onBlur={() => {
-                  if (!/^([+]?[0-9]{1,4}[ -]?)?([0-9]{10})$/.test(hire.phone)) {
+                  if (
+                    !/^([+]?[0-9]{1,4}[ -]?)?([0-9]{10})$/.test(
+                      hire.phoneNumber
+                    )
+                  ) {
                     setAlert({
                       ...alert,
-                      phoneAlert: "Invalid phone no. !!",
+                      phoneNumberAlert: "Invalid phoneNumber no. !!",
                     });
                   } else {
                     setAlert({
                       ...alert,
-                      phoneAlert: "",
+                      phoneNumberAlert: "",
                     });
                   }
                 }}
@@ -294,7 +303,7 @@ const Hire = (props) => {
                   startAdornment: (
                     <InputAdornment position="start">
                       {/* Person Icon */}
-                      <PhoneIcon
+                      <PhoneNumberIcon
                         sx={{
                           color: "#16205f",
                           m: 0.5,
@@ -305,11 +314,11 @@ const Hire = (props) => {
                   ),
                 }}
               />
-              {/* Show Phone Alert */}
-              <p>{alert.phoneAlert}</p>
+              {/* Show PhoneNumber Alert */}
+              <p>{alert.phoneNumberAlert}</p>
             </Box>
 
-            {/* Phone Box */}
+            {/* PhoneNumber Box */}
             <Box
               className="hireBox"
               sx={{

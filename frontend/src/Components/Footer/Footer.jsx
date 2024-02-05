@@ -100,7 +100,7 @@ const Footer = () => {
 
   // All Data UseState
   const [org, setOrg] = useState("");
-  const [yourName, setYourName] = useState("");
+  const [name, setName] = useState("");
   const [phoneNumber, setPhoneNumber] = useState("");
   const [email, setEmail] = useState("");
   const [projectDetail, setProjectDetail] = useState("");
@@ -150,7 +150,7 @@ const Footer = () => {
   const consultation = () => {
     if (
       org.trim() !== "" &&
-      yourName.trim() !== "" &&
+      name.trim() !== "" &&
       phoneNumber.trim() !== "" &&
       alert.phoneAlert === "" &&
       email.trim() !== "" &&
@@ -160,10 +160,10 @@ const Footer = () => {
     ) {
       // Save data for send backend
       const data = {
-        org,
-        yourName,
-        phoneNumber,
+        Name: name,
         email,
+        organization: org,
+        phoneNumber,
         projectDetail,
       };
       // Post Request
@@ -242,7 +242,7 @@ const Footer = () => {
                       e === "Organization"
                         ? org
                         : e === "Your Name"
-                        ? yourName
+                        ? name
                         : e === "Phone Number"
                         ? phoneNumber
                         : e === "Email"
@@ -252,7 +252,7 @@ const Footer = () => {
                     onChange={(event) =>
                       handleInputChange(event, (value) => {
                         if (e === "Organization") setOrg(value);
-                        else if (e === "Your Name") setYourName(value);
+                        else if (e === "Your Name") setName(value);
                         else if (e === "Phone Number") setPhoneNumber(value);
                         else if (e === "Email") setEmail(value);
                         else setProjectDetail(value);
