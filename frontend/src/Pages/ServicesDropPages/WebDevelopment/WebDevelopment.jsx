@@ -1,7 +1,7 @@
 import React from "react";
 
-// Services Drop Main Root Page Component
-import ServicesDrop from "../../../Components/ServicesDrop/ServicesDrop";
+// Dropdown Pages Main Root Page Component
+import DropdownPages from "../../../Components/DropdownPages/DropdownPages";
 
 // Image
 import webdevImg from "./Assets/webdevImg.jpg";
@@ -49,10 +49,10 @@ const WebDevelopment = () => {
     webDevTechStack,
   };
 
-  const hire = "Hire for <strong>Web Development</strong>";
+  const hire = "Web Development";
   return (
     <>
-      <ServicesDrop
+      <DropdownPages
         firstContainer={firstContainer}
         secondContainer={secondContainer}
         thirdContainer={thirdContainer}

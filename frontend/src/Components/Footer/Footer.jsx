@@ -34,8 +34,8 @@ import MuiAlert from "@mui/material/Alert";
 const Footer = () => {
   const location = useLocation();
 
-  // Company List
-  const company = [
+  // organy List
+  const organy = [
     {
       content: "About Us",
       link: "/",
@@ -99,7 +99,7 @@ const Footer = () => {
   ];
 
   // All Data UseState
-  const [comp, setComp] = useState("");
+  const [org, setOrg] = useState("");
   const [yourName, setYourName] = useState("");
   const [phoneNumber, setPhoneNumber] = useState("");
   const [email, setEmail] = useState("");
@@ -149,7 +149,7 @@ const Footer = () => {
   // Consultation Func
   const consultation = () => {
     if (
-      comp.trim() !== "" &&
+      org.trim() !== "" &&
       yourName.trim() !== "" &&
       phoneNumber.trim() !== "" &&
       alert.phoneAlert === "" &&
@@ -160,7 +160,7 @@ const Footer = () => {
     ) {
       // Save data for send backend
       const data = {
-        comp,
+        org,
         yourName,
         phoneNumber,
         email,
@@ -206,7 +206,7 @@ const Footer = () => {
                     backgroundColor: "transparent",
                     cursor: "pointer",
                     transition: "box-shadow 0.3s ease",
-                    outline: "none", // Remove default focus outline
+                    outline: "none",
                   }}
                   allowFullScreen=""
                   loading="lazy"
@@ -225,7 +225,7 @@ const Footer = () => {
             {/* All Form Details */}
             <div className="formDetails">
               {[
-                "Company",
+                "Organization",
                 "Your Name",
                 "Phone Number",
                 "Email",
@@ -239,8 +239,8 @@ const Footer = () => {
                     type="text"
                     placeholder={`Enter ${e}`}
                     value={
-                      e === "Company"
-                        ? comp
+                      e === "Organization"
+                        ? org
                         : e === "Your Name"
                         ? yourName
                         : e === "Phone Number"
@@ -251,7 +251,7 @@ const Footer = () => {
                     }
                     onChange={(event) =>
                       handleInputChange(event, (value) => {
-                        if (e === "Company") setComp(value);
+                        if (e === "Organization") setOrg(value);
                         else if (e === "Your Name") setYourName(value);
                         else if (e === "Phone Number") setPhoneNumber(value);
                         else if (e === "Email") setEmail(value);
@@ -366,8 +366,8 @@ const Footer = () => {
               </p>
             </div>
             <div className="footBox">
-              <p>Company</p>
-              {company.map((e, i) => {
+              <p>organy</p>
+              {organy.map((e, i) => {
                 return (
                   <Link key={i} to={e.link} className="footLink">
                     {e.content}

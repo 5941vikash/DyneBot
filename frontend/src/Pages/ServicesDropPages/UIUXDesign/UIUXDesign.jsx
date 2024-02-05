@@ -1,7 +1,7 @@
 import React from "react";
 
-// Services Drop Main Root Page Component
-import ServicesDrop from "../../../Components/ServicesDrop/ServicesDrop";
+// Dropdown Pages Main Root Page Component
+import DropdownPages from "../../../Components/DropdownPages/DropdownPages";
 
 // Image
 import uiuxImg from "./Assets/uiuxImg.avif";
@@ -50,11 +50,11 @@ const UIUXDesign = () => {
     webDevTechStack,
   };
 
-  const hire = "Hire for <strong>UI UX Design</strong>";
+  const hire = "UI UX Design";
 
   return (
     <>
-      <ServicesDrop
+      <DropdownPages
         firstContainer={firstContainer}
         secondContainer={secondContainer}
         thirdContainer={thirdContainer}

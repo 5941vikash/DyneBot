@@ -1,7 +1,7 @@
 import React from "react";
 
-// Services Drop Main Root Page Component
-import TechnologyDrop from "../../../Components/TechnologyDrop/TechnologyDrop";
+// Dropdown Pages Main Root Page Component
+import DropdownPages from "../../../Components/DropdownPages/DropdownPages";
 
 // Image
 import csharpImg from "./Assets/csharpImg.png";
@@ -47,11 +47,11 @@ const CSharp = () => {
     webDevTechStack,
   };
 
-  const hire = "Hire for <strong>C#</strong>";
+  const hire = "C#";
 
   return (
     <>
-      <TechnologyDrop
+      <DropdownPages
         firstContainer={firstContainer}
         secondContainer={secondContainer}
         thirdContainer={thirdContainer}

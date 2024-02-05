@@ -1,7 +1,7 @@
 import React from "react";
 
-// Services Drop Main Root Page Component
-import TechnologyDrop from "../../../Components/TechnologyDrop/TechnologyDrop";
+// Dropdown Pages Main Root Page Component
+import DropdownPages from "../../../Components/DropdownPages/DropdownPages";
 
 // Image
 import angularImg from "./Assets/angularImg.webp";
@@ -20,8 +20,7 @@ const Angular = () => {
   };
 
   const secondContainer = {
-    heading:
-      "<strong>Angular Development</strong> with WebDuality Technology.",
+    heading: "<strong>Angular Development</strong> with WebDuality Technology.",
     para1:
       "Web Duality excels in providing a spectrum of Angular development services, ranging from custom web applications to e-commerce and enterprise solutions. Our developers meticulously follow a comprehensive process, spanning ideation, design, development, testing, and deployment. We prioritize close collaboration with clients, ensuring the delivery of personalized solutions that seamlessly integrate with third-party services, APIs, and databases.",
     para2:
@@ -36,23 +35,23 @@ const Angular = () => {
   };
 
   const fourthContainer = {
-    heading: "Primary Advantages of <strong>Employing Angular</strong> in Web Development",
+    heading:
+      "Primary Advantages of <strong>Employing Angular</strong> in Web Development",
     para: "Leveraging Angular for web development provides a host of benefits compared to other frameworks. Some of the key merits of utilizing Angular for web development encompass.",
     webDevAgency,
   };
 
   const fifthContainer = {
-    heading:
-      "<strong>Technology</strong> Stack",
+    heading: "<strong>Technology</strong> Stack",
     para: "Angular development utilizes a stack with HTML, CSS, and TypeScript for the frontend, using Angular. On the backend, it employs server-side languages like Node.js or Python, coupled with frameworks like Express or Django, ensuring robust and scalable applications. Optimal stack selection is crucial for performance and scalability.",
     webDevTechStack,
   };
 
-  const hire = "Hire for <strong>Angular</strong>";
+  const hire = "Angular";
 
   return (
     <>
-      <TechnologyDrop
+      <DropdownPages
         firstContainer={firstContainer}
         secondContainer={secondContainer}
         thirdContainer={thirdContainer}

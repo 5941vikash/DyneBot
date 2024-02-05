@@ -1,7 +1,7 @@
 import React from "react";
 
-// Services Drop Main Root Page Component
-import TechnologyDrop from "../../../Components/TechnologyDrop/TechnologyDrop";
+// Dropdown Pages Main Root Page Component
+import DropdownPages from "../../../Components/DropdownPages/DropdownPages";
 
 // Image
 import vuejsImg from "./Assets/vuejsImg.png";
@@ -49,11 +49,11 @@ const Vue = () => {
     webDevTechStack,
   };
 
-  const hire = "Hire for <strong>Vue.js</strong>";
+  const hire = "Vue.js";
 
   return (
     <>
-      <TechnologyDrop
+      <DropdownPages
         firstContainer={firstContainer}
         secondContainer={secondContainer}
         thirdContainer={thirdContainer}

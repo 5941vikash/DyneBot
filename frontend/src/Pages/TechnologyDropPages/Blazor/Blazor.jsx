@@ -1,7 +1,7 @@
 import React from "react";
 
-// Services Drop Main Root Page Component
-import TechnologyDrop from "../../../Components/TechnologyDrop/TechnologyDrop";
+// Dropdown Pages Main Root Page Component
+import DropdownPages from "../../../Components/DropdownPages/DropdownPages";
 
 // Image
 import blazorImg from "./Assets/blazorImg.jpg";
@@ -20,7 +20,8 @@ const Blazor = () => {
   };
 
   const secondContainer = {
-    heading: "Unveil Feature-Rich <strong> Web Applications Through Our Blazor Development </strong> Services.",
+    heading:
+      "Unveil Feature-Rich <strong> Web Applications Through Our Blazor Development </strong> Services.",
     para1:
       "Web Duality, a prominent Blazor development company based in India, leverages Microsoft's cutting-edge Blazor framework to seamlessly launch dynamic SPAs, PWAs, and traditional web applications. Our skilled developers utilize C#, HTML, and CSS to craft high-performance user interfaces, setting Blazor apart by eliminating the need for Javascript.",
     para2:
@@ -29,29 +30,30 @@ const Blazor = () => {
   };
 
   const thirdContainer = {
-    heading: "Elevating User Experience with <strong> Powerful Blazor Features </strong>",
+    heading:
+      "Elevating User Experience with <strong> Powerful Blazor Features </strong>",
     para: "As a Blazor development agency in India, Web Duality integrates all Blazor features into the development of customized Blazor apps, catering to diverse business objectives.",
     webDevServices,
   };
 
   const fourthContainer = {
-    heading:
-      "Tailored <strong> Blazor Development </strong> Solutions",
+    heading: "Tailored <strong> Blazor Development </strong> Solutions",
     para: "Web Duality excels in tailored Blazor development services, addressing diverse business objectives. As the foremost Blazor development company, we specialize in feature-rich PWAs and user-friendly SPAs. Our team analyzes your business requirements to deliver a customized web solution.",
     webDevAgency,
   };
 
   const fifthContainer = {
-    heading: "Elevate Your <strong> Web Applications with Blazor Development </strong> Services",
+    heading:
+      "Elevate Your <strong> Web Applications with Blazor Development </strong> Services",
     para: "With a track record of crafting numerous web applications using Blazor, Web Duality confidently asserts its superiority over conventional Javascript frameworks. Opting for Blazor development services from Web Duality offers several advantages over traditional Javascript frameworks.",
     webDevTechStack,
   };
 
-  const hire = "Hire for <strong>Blazor</strong>";
+  const hire = "Blazor";
 
   return (
     <>
-      <TechnologyDrop
+      <DropdownPages
         firstContainer={firstContainer}
         secondContainer={secondContainer}
         thirdContainer={thirdContainer}

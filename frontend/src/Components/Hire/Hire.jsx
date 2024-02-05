@@ -167,7 +167,9 @@ const Hire = (props) => {
             }}
             className="hireMainBox"
           >
-            <h2 dangerouslySetInnerHTML={{ __html: heading }} />
+            <h2>
+              Apply for <strong>{heading}</strong>
+            </h2>
             {/* First Name Box */}
             <Box className="hireBox">
               {/* Text Field */}

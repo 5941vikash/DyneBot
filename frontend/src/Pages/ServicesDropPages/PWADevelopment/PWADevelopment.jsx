@@ -1,7 +1,7 @@
 import React from "react";
 
-// Services Drop Main Root Page Component
-import ServicesDrop from "../../../Components/ServicesDrop/ServicesDrop";
+// Dropdown Pages Main Root Page Component
+import DropdownPages from "../../../Components/DropdownPages/DropdownPages";
 
 // Image
 import pwaImg from "./Assets/pwaimg.png";
@@ -48,11 +48,11 @@ const PWADevelopment = () => {
     webDevTechStack,
   };
 
-  const hire = "Hire for <strong>PWA Development</strong>";
+  const hire = "PWA Development";
 
   return (
     <>
-      <ServicesDrop
+      <DropdownPages
         firstContainer={firstContainer}
         secondContainer={secondContainer}
         thirdContainer={thirdContainer}

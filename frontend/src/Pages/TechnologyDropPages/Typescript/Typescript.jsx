@@ -1,7 +1,7 @@
 import React from "react";
 
-// Services Drop Main Root Page Component
-import TechnologyDrop from "../../../Components/TechnologyDrop/TechnologyDrop";
+// Dropdown Pages Main Root Page Component
+import DropdownPages from "../../../Components/DropdownPages/DropdownPages";
 
 // Image
 import tsImg from "./Assets/tsImg.svg";
@@ -53,11 +53,11 @@ const Typescript = () => {
     webDevTechStack,
   };
 
-  const hire = "Hire for <strong>Typescript</strong>";
+  const hire = "Typescript";
 
   return (
     <>
-      <TechnologyDrop
+      <DropdownPages
         firstContainer={firstContainer}
         secondContainer={secondContainer}
         thirdContainer={thirdContainer}

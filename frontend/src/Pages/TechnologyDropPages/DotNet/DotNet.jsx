@@ -1,7 +1,7 @@
 import React from "react";
 
-// Services Drop Main Root Page Component
-import TechnologyDrop from "../../../Components/TechnologyDrop/TechnologyDrop";
+// Dropdown Pages Main Root Page Component
+import DropdownPages from "../../../Components/DropdownPages/DropdownPages";
 
 // Image
 import dotnetImg from "./Assets/dotnetImg.png";
@@ -49,11 +49,11 @@ const DotNet = () => {
     webDevTechStack,
   };
 
-  const hire = "Hire for <strong>Dot Net</strong>";
+  const hire = "Dot Net";
 
   return (
     <>
-      <TechnologyDrop
+      <DropdownPages
         firstContainer={firstContainer}
         secondContainer={secondContainer}
         thirdContainer={thirdContainer}

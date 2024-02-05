@@ -1,6 +1,6 @@
 // React & UseState & UseEffect
 import React, { useState, useEffect } from "react";
-import "./TechnologyDrop.css";
+import "./DropdownPages.css";
 
 /* ------------- React Router Dom ------------- */
 // NavLink
@@ -17,7 +17,7 @@ import "slick-carousel/slick/slick-theme.css";
 
 import thirdBackImg from "./Assets/thirdBackImg.jpg";
 
-const ServicesDropPages = (props) => {
+const DropdownPages = (props) => {
   const {
     firstContainer,
     secondContainer,
@@ -207,7 +207,7 @@ const ServicesDropPages = (props) => {
                   : "var(--main-background-color)",
               }}
             >
-              Hire Now
+              Apply Now
             </button>
           </div>
         </div>
@@ -297,7 +297,7 @@ const ServicesDropPages = (props) => {
                 className="inBox hidden"
                 data-animation-key={`fifthServiceDropCont ${i}`}
                 style={{
-                  cursor: "pointer",
+                  cursor: e.link ? "pointer" : "default",
                 }}
               >
                 {e.link ? (
@@ -333,4 +333,4 @@ const ServicesDropPages = (props) => {
   );
 };
 
-export default ServicesDropPages;
+export default DropdownPages;

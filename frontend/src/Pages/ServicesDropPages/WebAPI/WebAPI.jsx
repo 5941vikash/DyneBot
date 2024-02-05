@@ -1,7 +1,7 @@
 import React from "react";
 
-// Services Drop Main Root Page Component
-import ServicesDrop from "../../../Components/ServicesDrop/ServicesDrop";
+// Dropdown Pages Main Root Page Component
+import DropdownPages from "../../../Components/DropdownPages/DropdownPages";
 
 // Image
 import webapiImg from "./Assets/webapi.webp";
@@ -45,11 +45,11 @@ const WebAPI = () => {
     webDevTechStack,
   };
 
-  const hire = "Hire for <strong>Web API</strong>";
+  const hire = "Web API";
 
   return (
     <>
-      <ServicesDrop
+      <DropdownPages
         firstContainer={firstContainer}
         secondContainer={secondContainer}
         thirdContainer={thirdContainer}
