@@ -21,9 +21,10 @@ import PersonIcon from "@mui/icons-material/Person";
 // Email Icon
 import EmailIcon from "@mui/icons-material/Email";
 // PhoneNumber Icon
-import PhoneNumberIcon from "@mui/icons-material/PhoneNumber";
+import PhoneIcon from "@mui/icons-material/Phone";
 
 import axios from "axios";
+import { backendURL } from "../../Helper/BaseUrl";
 
 /* ------------- Alerts ------------- */
 // Snack Bar
@@ -121,12 +122,25 @@ const Hire = (props) => {
     ) {
       // Post Request
       axios
-        .post(`/api`, hire)
+        .post(`${backendURL}/v1/apply`, hire)
         .then((res) => {
           // Response
+          setSnack({
+            open: true,
+            message: `${res.data.msg}`,
+            severity: "success",
+          });
+
+          setHire({ name: "", email: "", phoneNumber: "", domain: heading });
+          setSelectedFile();
         })
         .catch((err) => {
           // Error
+          setSnack({
+            open: true,
+            message: "Server Error !!",
+            severity: "error",
+          });
         });
     }
     // Else show fill the form
@@ -303,7 +317,7 @@ const Hire = (props) => {
                   startAdornment: (
                     <InputAdornment position="start">
                       {/* Person Icon */}
-                      <PhoneNumberIcon
+                      <PhoneIcon
                         sx={{
                           color: "#16205f",
                           m: 0.5,

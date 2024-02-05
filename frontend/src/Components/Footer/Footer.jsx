@@ -14,6 +14,7 @@ import { Link, useLocation } from "react-router-dom";
 
 // Axios
 import axios from "axios";
+import { backendURL } from "../../Helper/BaseUrl";
 
 /* ------------------- MUI Icons ------------------- */
 // Right Arrow Icon
@@ -160,7 +161,7 @@ const Footer = () => {
     ) {
       // Save data for send backend
       const data = {
-        Name: name,
+        name,
         email,
         organization: org,
         phoneNumber,
@@ -168,12 +169,27 @@ const Footer = () => {
       };
       // Post Request
       axios
-        .post(`/api`, data)
+        .post(`${backendURL}/v1/consultation`, data)
         .then((res) => {
           // Response
+          setSnack({
+            open: true,
+            message: `${res.data.msg}`,
+            severity: "success",
+          });
+          setOrg("");
+          setName("");
+          setPhoneNumber("");
+          setEmail("");
+          setProjectDetail("");
         })
         .catch((err) => {
           // Error
+          setSnack({
+            open: true,
+            message: "Server Error !!",
+            severity: "error",
+          });
         });
     } else {
       setSnack({
