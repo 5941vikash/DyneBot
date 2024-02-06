@@ -382,7 +382,7 @@ const Footer = () => {
               </p>
             </div>
             <div className="footBox">
-              <p>organy</p>
+              <p>Company</p>
               {organy.map((e, i) => {
                 return (
                   <Link key={i} to={e.link} className="footLink">

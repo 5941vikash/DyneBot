@@ -1,12 +1,12 @@
 import React, { Component } from "react";
 import "./Services.css";
 
-import bcimg from "../Assests/img/Rectangle 26.png";
+import bcimg from "./Assets/startback.webp";
 import { Avatar, Box, Container, Grid, Typography } from "@mui/material";
-import outsourcing1 from "../Assests/img/outsourcing 1.png";
-import link1 from "../Assests/img/link 1.png";
-import management1 from "../Assests/img/management 1.png";
-import shield1 from "../Assests/img/shield 1.png";
+import outsourcing from "./Assets/outsourcing.png";
+import link from "./Assets/link.png";
+import management from "./Assets/management.png";
+import shield from "./Assets/shield.png";
 
 class Services extends Component {
   render() {
@@ -14,29 +14,20 @@ class Services extends Component {
       <Grid>
         <Box
           sx={{
-            position: "relative",
-            height: { xs: "250px", sm: "430px" }, // Responsive height
-            width: "100vw",
-            overflow: "hidden",
+            height: "400px", // Responsive height
+            width: "100%",
+            backgroundImage: `url("${bcimg}")`,
+            backgroundRepeat: "no-repeat",
+            backgroundSize: "cover",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            flexDirection: "column",
           }}
         >
-          <img
-            src={bcimg}
-            alt="Background_img"
-            style={{
-              width: "100%",
-              height: "100%",
-              objectFit: "cover",
-              opacity: ".95",
-            }}
-          />
           <Typography
             variant="h4"
             sx={{
-              position: "absolute",
-              top: "50%",
-              left: "50%",
-              transform: "translate(-50%, -50%)",
               color: "white",
               textAlign: "center",
               fontWeight: "bold",
@@ -49,13 +40,11 @@ class Services extends Component {
           <Typography
             variant="body1"
             sx={{
-              position: "absolute",
-              top: "60%",
-              left: "50%",
-              transform: "translate(-50%, -50%)",
               color: "white",
               textAlign: "center",
-              fontSize: { xs: ".6rem", sm: ".9rem" }, // Responsive font size
+              fontSize: "16px", // Responsive font size
+              fontWeight: "400",
+              mt: 5,
             }}
           >
             We specialize in helping you build a team of expert developers.
@@ -89,7 +78,7 @@ class Services extends Component {
                 }}
               >
                 <Avatar
-                  src={link1}
+                  src={link}
                   alt="dsj"
                   variant="rounded"
                   sx={{
@@ -130,7 +119,7 @@ class Services extends Component {
                 }}
               >
                 <Avatar
-                  src={management1}
+                  src={management}
                   alt="dsj"
                   variant="rounded"
                   sx={{
@@ -178,7 +167,7 @@ class Services extends Component {
                 }}
               >
                 <Avatar
-                  src={outsourcing1}
+                  src={outsourcing}
                   alt="dsj"
                   variant="rounded"
                   sx={{
@@ -221,7 +210,7 @@ class Services extends Component {
                 }}
               >
                 <Avatar
-                  src={shield1}
+                  src={shield}
                   alt="dsj"
                   variant="rounded"
                   sx={{
