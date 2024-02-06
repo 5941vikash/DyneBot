@@ -1,12 +1,263 @@
-import React from 'react'
-import "./Services.css"
+import React, { Component } from "react";
+import "./Services.css";
 
-const Services = () => {
-  return (
-    <>
-        <h1>Service Page</h1>
-    </>
-  )
+import bcimg from "../Assests/img/Rectangle 26.png";
+import { Avatar, Box, Container, Grid, Typography } from "@mui/material";
+import outsourcing1 from "../Assests/img/outsourcing 1.png";
+import link1 from "../Assests/img/link 1.png";
+import management1 from "../Assests/img/management 1.png";
+import shield1 from "../Assests/img/shield 1.png";
+
+class Services extends Component {
+  render() {
+    return (
+      <Grid>
+        <Box
+          sx={{
+            position: "relative",
+            height: { xs: "250px", sm: "430px" }, // Responsive height
+            width: "100vw",
+            overflow: "hidden",
+          }}
+        >
+          <img
+            src={bcimg}
+            alt="Background_img"
+            style={{
+              width: "100%",
+              height: "100%",
+              objectFit: "cover",
+              opacity: ".95",
+            }}
+          />
+          <Typography
+            variant="h4"
+            sx={{
+              position: "absolute",
+              top: "50%",
+              left: "50%",
+              transform: "translate(-50%, -50%)",
+              color: "white",
+              textAlign: "center",
+              fontWeight: "bold",
+              fontFamily: "Poppins",
+              fontSize: { xs: "2rem", sm: "2.5rem" }, // Responsive font size
+            }}
+          >
+            Our Services
+          </Typography>
+          <Typography
+            variant="body1"
+            sx={{
+              position: "absolute",
+              top: "60%",
+              left: "50%",
+              transform: "translate(-50%, -50%)",
+              color: "white",
+              textAlign: "center",
+              fontSize: { xs: ".6rem", sm: ".9rem" }, // Responsive font size
+            }}
+          >
+            We specialize in helping you build a team of expert developers.
+          </Typography>
+        </Box>
+        {/* <Container maxWidth="sm" sx={{mt:'3rem'}}>
+                      
+              </Container> */}
+        <Container maxWidth="lg" sx={{ mt: "3rem" }}>
+          <Box sx={{ display: "flex" }}>
+            <Typography variant="h4" fontWeight={"bold"} color={"#16205F"}>
+              Hire Permanent and Remote<br></br> Developers
+            </Typography>
+          </Box>
+          <Box>
+            <Typography variant="body1" color={"#16205F"}>
+              From full-time remote engineering teams to hourly contractors,
+              <br></br> work with remote devs as needed
+            </Typography>
+          </Box>
+          <Box sx={{ mt: "2rem" }}>
+            <Grid container spacing={2}>
+              <Grid
+                item
+                xs={12}
+                sm={6}
+                md={6}
+                sx={{
+                  display: "flex",
+                  flexDirection: { sm: "column", md: "row" },
+                }}
+              >
+                <Avatar
+                  src={link1}
+                  alt="dsj"
+                  variant="rounded"
+                  sx={{
+                    backgroundImage:
+                      "linear-gradient(90deg, #30BCC9 0%, #313968 100%)",
+                    boxShadow: " 0px 4px 16px 0px rgba(0, 0, 0, 0.06)",
+                    width: "66px",
+                    height: "66px",
+                  }}
+                />
+                <Box
+                  sx={{
+                    marginLeft: { sm: ".5rem", md: "1rem" },
+                    marginTop: { sm: "1rem", md: 0 },
+                  }}
+                >
+                  <Typography
+                    variant="h5"
+                    fontWeight={"bold"}
+                    color={"#16205F"}
+                  >
+                    Dedicated Teams
+                  </Typography>
+                  <Typography variant="body1" color={"#16205F"}>
+                    Building an extended team with Courtney is just like opening
+                    your own remote development center, but without the hassle.
+                  </Typography>
+                </Box>
+              </Grid>
+              <Grid
+                item
+                xs={12}
+                sm={6}
+                md={6}
+                sx={{
+                  display: "flex",
+                  flexDirection: { sm: "column", md: "row" },
+                }}
+              >
+                <Avatar
+                  src={management1}
+                  alt="dsj"
+                  variant="rounded"
+                  sx={{
+                    backgroundImage:
+                      "linear-gradient(90deg, #30BCC9 0%, #313968 100%)",
+                    boxShadow: " 0px 4px 16px 0px rgba(0, 0, 0, 0.06)",
+                    width: "66px",
+                    height: "66px",
+                  }}
+                />
+                <Box
+                  sx={{
+                    marginLeft: { sm: ".5rem", md: "1rem" },
+                    marginTop: { sm: "1rem", md: 0 },
+                  }}
+                >
+                  <Typography
+                    variant="h5"
+                    fontWeight={"bold"}
+                    color={"#16205F"}
+                  >
+                    Staff Augmentation
+                  </Typography>
+                  <Typography variant="body1" color={"#16205F"}>
+                    IT Staff Augmentation is a service designed to add extra
+                    talent to your team on an on-demand basis. This allows
+                    businesses to immediately find the right fit for
+                    hard-to-fill or temporary positions, which boosts the
+                    scalability and efficiency of project development.
+                  </Typography>
+                </Box>
+              </Grid>
+            </Grid>
+          </Box>
+          <Box sx={{ mt: "2rem", mb: "2rem" }}>
+            <Grid container spacing={2}>
+              <Grid
+                item
+                xs={12}
+                sm={6}
+                md={6}
+                sx={{
+                  display: "flex",
+                  flexDirection: { sm: "column", md: "row" },
+                }}
+              >
+                <Avatar
+                  src={outsourcing1}
+                  alt="dsj"
+                  variant="rounded"
+                  sx={{
+                    backgroundImage:
+                      "linear-gradient(90deg, #30BCC9 0%, #313968 100%)",
+                    boxShadow: " 0px 4px 16px 0px rgba(0, 0, 0, 0.06)",
+                    width: "66px",
+                    height: "66px",
+                  }}
+                />
+                <Box
+                  sx={{
+                    marginLeft: { sm: ".5rem", md: "1rem" },
+                    marginTop: { sm: "1rem", md: 0 },
+                  }}
+                >
+                  <Typography
+                    variant="h5"
+                    fontWeight={"bold"}
+                    color={"#16205F"}
+                  >
+                    Software Outsourcing
+                  </Typography>
+                  <Typography variant="body1" color={"#16205F"}>
+                    Today, organizations all over the world deal with software
+                    outsourcing companies to have access to experienced software
+                    engineers with a variety of tech expertise ranging from user
+                    experience design to blockchain consulting.
+                  </Typography>
+                </Box>
+              </Grid>
+              <Grid
+                item
+                xs={12}
+                sm={6}
+                md={6}
+                sx={{
+                  display: "flex",
+                  flexDirection: { sm: "column", md: "row" },
+                }}
+              >
+                <Avatar
+                  src={shield1}
+                  alt="dsj"
+                  variant="rounded"
+                  sx={{
+                    backgroundImage:
+                      "linear-gradient(90deg, #30BCC9 0%, #313968 100%)",
+                    boxShadow: " 0px 4px 16px 0px rgba(0, 0, 0, 0.06)",
+                    width: "66px",
+                    height: "66px",
+                  }}
+                />
+                <Box
+                  sx={{
+                    marginLeft: { sm: ".5rem", md: "1rem" },
+                    marginTop: { sm: "1rem", md: 0 },
+                  }}
+                >
+                  <Typography
+                    variant="h5"
+                    fontWeight={"bold"}
+                    color={"#16205F"}
+                  >
+                    Remote Office
+                  </Typography>
+                  <Typography variant="body1" color={"#16205F"}>
+                    Courtney is a trustworthy partner that can help you open
+                    your own remote development center and grow your business
+                    from Sri Lanka and the United Kingdom.
+                  </Typography>
+                </Box>
+              </Grid>
+            </Grid>
+          </Box>
+        </Container>
+      </Grid>
+    );
+  }
 }
 
-export default Services
+export default Services;

@@ -13,8 +13,8 @@ import ScrollUp from "../Components/ScrollUp/ScrollUp";
 /* ------------- Pages ------------- */
 import Home from "../Pages/Home/Home";
 import Start from "../Pages/Start/Start";
-import Services from "../Pages/Services/Services";
-import Technology from "../Pages/Technology/Technology";
+// import Services from "../Pages/Services/Services";
+// import Technology from "../Pages/Technology/Technology";
 import Careers from "../Pages/Careers/Careers";
 import Contact from "../Pages/Contact/Contact";
 
@@ -50,8 +50,8 @@ const AppRouter = () => {
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route exact path="/start" element={<Start />} />
-          <Route exact path="/services" element={<Services />} />
-          <Route exact path="/technologies" element={<Technology />} />
+          {/* <Route exact path="/services" element={<Services />} /> */}
+          {/* <Route exact path="/technologies" element={<Technology />} /> */}
           <Route exact path="/careers" element={<Careers />} />
           <Route exact path="/contact" element={<Contact />} />
 
