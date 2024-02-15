@@ -31,7 +31,9 @@ const ScrollUp = () => {
           margin: "20px",
           background: "var(--main-backGradient-color)",
           borderRadius: "50%",
-          display: scrollNav > 100 ? "flex" : "none",
+          display: "flex",
+          transform: scrollNav > 100 ? "translateY(0px)" : "translateY(100px)",
+          transition: "transform 0.5s ease",
           justifyContent: "center",
           alignItems: "center",
           boxShadow:
