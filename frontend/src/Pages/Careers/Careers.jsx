@@ -1,5 +1,6 @@
 import React from "react";
 import "./Careers.css";
+import BoxDiv from "../../Components/BoxDiv/BoxDiv";
 
 const JobListing = ({ jobTitle, jobDescription, requirements, applyLink }) => (
   <div className="job-listing">
@@ -57,16 +58,13 @@ const Careers = () => {
     // Add more job listings as needed
   ];
 
+  const heading = "Careers";
+  const para =
+    "Do you want to learn more about Courtney? Our team is looking for people who want to work on interesting international projects, develop and learn new skills, and share what they've learned with others.";
+
   return (
     <div className="career-main">
-      <div className="upBox">
-        <h2>Careers</h2>
-        <p>
-          Do you want to learn more about Courtney? Our team is looking for
-          people who want to work on interesting international projects, develop
-          and learn new skills, and share what they've learned with others.
-        </p>
-      </div>
+      <BoxDiv heading={heading} para={para} />
       <div className="career-page">
         {jobListings.map((job, index) => (
           <JobListing key={index} {...job} />

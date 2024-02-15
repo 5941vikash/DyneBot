@@ -6,13 +6,16 @@ import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
 import React from "react";
 
+import BoxDiv from "../../Components/BoxDiv/BoxDiv";
+
 const Contact = () => {
+  const heading = "Contact";
+  const para =
+    "We specialize in helping you build a team of expert developers.";
+
   return (
     <>
-      <div className="upBox">
-        <h2>Contact</h2>
-        <p>We specialize in helping you build a team of expert developers.</p>
-      </div>
+      <BoxDiv heading={heading} para={para} />
       <Container maxWidth="lg" sx={{ mt: 2 }}>
         <div style={{ maxWidth: "100%", margin: "auto" }}>
           <Grid container spacing={2}>

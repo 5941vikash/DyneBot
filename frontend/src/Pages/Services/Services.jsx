@@ -1,55 +1,21 @@
 import React, { Component } from "react";
 import "./Services.css";
 
-import bcimg from "./Assets/startback.webp";
 import { Avatar, Box, Container, Grid, Typography } from "@mui/material";
 import outsourcing from "./Assets/outsourcing.png";
 import link from "./Assets/link.png";
 import management from "./Assets/management.png";
 import shield from "./Assets/shield.png";
+import BoxDiv from "../../Components/BoxDiv/BoxDiv";
+
+const heading = "Our Services";
+const para = "We specialize in helping you build a team of expert developers.";
 
 class Services extends Component {
   render() {
     return (
       <Grid>
-        <Box
-          sx={{
-            height: "400px", // Responsive height
-            width: "100%",
-            backgroundImage: `url("${bcimg}")`,
-            backgroundRepeat: "no-repeat",
-            backgroundSize: "cover",
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            flexDirection: "column",
-          }}
-        >
-          <Typography
-            variant="h4"
-            sx={{
-              color: "white",
-              textAlign: "center",
-              fontWeight: "bold",
-              fontFamily: "Poppins",
-              fontSize: { xs: "2rem", sm: "2.5rem" }, // Responsive font size
-            }}
-          >
-            Our Services
-          </Typography>
-          <Typography
-            variant="body1"
-            sx={{
-              color: "white",
-              textAlign: "center",
-              fontSize: "16px", // Responsive font size
-              fontWeight: "400",
-              mt: 5,
-            }}
-          >
-            We specialize in helping you build a team of expert developers.
-          </Typography>
-        </Box>
+        <BoxDiv heading={heading} para={para} />
         {/* <Container maxWidth="sm" sx={{mt:'3rem'}}>
                       
               </Container> */}

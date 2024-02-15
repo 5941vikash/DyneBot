@@ -8,6 +8,7 @@ import { firstStartBox, secondStartBox } from "./StartBox";
 
 // Slider Component
 import SliderBox from "../Home/SliderBox";
+import BoxDiv from "../../Components/BoxDiv/BoxDiv";
 
 const Start = () => {
   const [animationsShown, setAnimationsShown] = useState({});
@@ -53,13 +54,14 @@ const Start = () => {
     };
   }, [animationsShown]); // Add animationsShown to the dependency array
 
+  const heading = "How to Start";
+  const para =
+    "We specialize in helping you build a team of expert developers.";
+
   return (
     <>
       <div className="startPage">
-        <div className="firstStartCont">
-          <h2>How to Start</h2>
-          <p>We specialize in helping you build a team of expert developers.</p>
-        </div>
+        <BoxDiv heading={heading} para={para} />
 
         <div className="secondStartCont">
           <h4>How to Get Started with Courtney</h4>
