@@ -2,9 +2,9 @@ const serviceModels = require("../Models/servicesModels");
 
 const service = async function (req, res) {
   try {
-    const { name, email, phoneNumber, domain } = req.body;
+    const { name, email, phoneNumber, domain, resume } = req.body;
     const services = new serviceModels({
-      name, email, phoneNumber, domain,
+      name, email, phoneNumber, domain, resume
 
     });
     await services.save()

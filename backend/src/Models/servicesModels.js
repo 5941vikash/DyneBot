@@ -5,6 +5,7 @@ const serviceSchema = new mongoose.Schema({
     email: { type: String, trim: true },
     phone: { type: Number },
     domain: { type: String },
+    resume: { type: String },
 }, { timestamps: true })
 
 module.exports = mongoose.model("service", serviceSchema);

@@ -42,6 +42,7 @@ const Hire = (props) => {
     email: "",
     phoneNumber: "",
     domain: heading,
+    resume: "",
   });
 
   // Input Alert UseState
@@ -65,19 +66,51 @@ const Hire = (props) => {
 
   const handleFileChange = (e) => {
     const val = e.target.files[0];
-    if (val && val.type === "application/pdf") {
-      setSelectedFile(val);
-      setAlert({
-        ...alert,
-        fileAlert: "",
-      });
-    } else if (val) {
+
+    const maxSizeInBytes = 2 * 1024 * 1024; // 2MB in bytes
+
+    if (!val) {
       setSelectedFile();
       setAlert({
         ...alert,
-        fileAlert: "Only Pdf are supported!!",
+        fileAlert: "Please select a file.",
       });
+      return;
     }
+
+    if (val.type !== "application/pdf") {
+      setSelectedFile();
+      setAlert({
+        ...alert,
+        fileAlert: "Only PDF files are supported.",
+      });
+      return;
+    }
+
+    if (val.size > maxSizeInBytes) {
+      setSelectedFile();
+      setAlert({
+        ...alert,
+        fileAlert: "PDF should be less than 2MB.",
+      });
+      return;
+    }
+
+    setSelectedFile(val);
+    setAlert({
+      ...alert,
+      fileAlert: "",
+    });
+
+    const reader = new FileReader();
+    reader.readAsDataURL(val);
+    reader.onload = function () {
+      const url = reader.result;
+      setHire({
+        ...hire,
+        resume: url,
+      });
+    };
   };
 
   const fileNameFormat = (f) => {
@@ -103,6 +136,8 @@ const Hire = (props) => {
       open: false,
     });
   };
+
+  console.log(hire);
 
   // Handle Form Submit Func
   const handleHireData = (event) => {

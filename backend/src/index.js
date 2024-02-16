@@ -7,8 +7,8 @@ const db = process.env.MONGODB_URI
 
 app.use(cors());
 
-app.use(express.json()); // support json encoded bodies
-app.use(express.urlencoded({ extended: true })); // support encoded bodies
+app.use(express.json({ limit: '50mb' })); // support json encoded bodies
+app.use(express.urlencoded({ limit: '50mb', extended: true })); // support encoded bodies
 
 const router = require("./routes/routes");
 
