@@ -137,8 +137,6 @@ const Hire = (props) => {
     });
   };
 
-  console.log(hire);
-
   // Handle Form Submit Func
   const handleHireData = (event) => {
     // Stop Reloading the Page when Submiting the Form
@@ -367,7 +365,7 @@ const Hire = (props) => {
               <p>{alert.phoneNumberAlert}</p>
             </Box>
 
-            {/* PhoneNumber Box */}
+            {/* Resume Box */}
             <Box
               className="hireBox"
               sx={{

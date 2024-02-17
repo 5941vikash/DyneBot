@@ -182,6 +182,7 @@ const Footer = () => {
           setPhoneNumber("");
           setEmail("");
           setProjectDetail("");
+          setIsChecked(false);
         })
         .catch((err) => {
           // Error
