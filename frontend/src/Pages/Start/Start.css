@@ -10,8 +10,8 @@
 .startPage .secondStartCont {
   width: 90%;
   display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
   color: var(--Black, #16205f);
   font-family: Poppins;
@@ -135,8 +135,8 @@
 .startPage .thirdStartCont {
   width: 90%;
   display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
   color: var(--Black, #16205f);
   font-family: Poppins;

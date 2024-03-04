@@ -5,11 +5,6 @@ import "./Home.css";
 
 import { NavLink } from "react-router-dom";
 
-// Image
-import backimg from "./Assets/backimg.png";
-
-// Right Arrow Icon
-import ArrowForwardOutlinedIcon from "@mui/icons-material/ArrowForwardOutlined";
 // Next Arrow
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 // Previous Arrow
@@ -206,47 +201,48 @@ const Home = () => {
     <>
       <div className="homeContainer">
         <div className="homeFirstCont">
-          <div className="box">
-            {/* Type Animation */}
-            <h2>
-              <TypeAnimation
-                sequence={[
-                  // Same substring at the start will only be typed out once, initially
-                  "Building dev team, Quickly and Affordably",
-                  1000,
-                  "Growing a Development Team, Swiftly and Economically",
-                  1000,
-                  "Establishing a Dev Team, Speedily and Budget-Friendly",
-                  1000,
-                  "Constructing a Tech Team, Rapidly and Cost-Effectively",
-                  1000,
-                  "Forming a Development Squad, Quickly and Within Budget",
-                  1000,
-                  "Assembling a Coding Team, Fast and Affordably",
-                  1000,
-                ]}
-                wrapper="span"
-                speed={250}
-                repeat={Infinity}
-              />
-            </h2>
-            <p>
-              We specialize in helping you build a team of expert developers,
-              testers, and leaders. We are setup to deliver long term solutions,
-              or scale to different needs quickly.
-            </p>
-            <button>
-              <NavLink
-                to="/contact"
-                style={{
-                  color: "#fff",
-                  fontWeight: 600,
-                }}
-              >
-                Contact Us
-              </NavLink>
-            </button>
-            {/* <button onClick={handleBuildTeamOpenDialog}>
+          <div className="sizeBox">
+            <div className="box">
+              {/* Type Animation */}
+              <h2>
+                <TypeAnimation
+                  sequence={[
+                    // Same substring at the start will only be typed out once, initially
+                    "Building dev team, Quickly and Affordably",
+                    1000,
+                    "Growing a Development Team, Swiftly and Economically",
+                    1000,
+                    "Establishing a Dev Team, Speedily and Budget-Friendly",
+                    1000,
+                    "Constructing a Tech Team, Rapidly and Cost-Effectively",
+                    1000,
+                    "Forming a Development Squad, Quickly and Within Budget",
+                    1000,
+                    "Assembling a Coding Team, Fast and Affordably",
+                    1000,
+                  ]}
+                  wrapper="span"
+                  speed={250}
+                  repeat={Infinity}
+                />
+              </h2>
+              <p>
+                We specialize in helping you build a team of expert developers,
+                testers, and leaders. We are setup to deliver long term
+                solutions, or scale to different needs quickly.
+              </p>
+              <button>
+                <NavLink
+                  to="/contact"
+                  style={{
+                    color: "#fff",
+                    fontWeight: 600,
+                  }}
+                >
+                  Contact Us
+                </NavLink>
+              </button>
+              {/* <button onClick={handleBuildTeamOpenDialog}>
               Build a team
               <ArrowForwardOutlinedIcon
                 sx={{
@@ -256,35 +252,38 @@ const Home = () => {
                 }}
               />
             </button> */}
+            </div>
           </div>
         </div>
 
         <div className="homeSecondCont">
-          <h5>Solutions</h5>
-          <h2>Software Solutions, with expert software engineering teams</h2>
-          <p>
-            We specialize in helping you build a team of expert developers,
-            testers, and leaders.
-          </p>
-          <div className="box hide">
-            {firstHomeBox.map((e, i) => {
-              return (
-                <div
-                  className="inBox hidden"
-                  data-animation-key={`homeSecondCont${i}`}
-                  key={i}
-                >
-                  <img src={e.img} alt="" draggable="false" />
-                  <span>
-                    <p>{e.heading}</p>
-                    <p>{e.para}</p>
-                  </span>
-                </div>
-              );
-            })}
+          <div className="sizeBox">
+            <h5>Solutions</h5>
+            <h2>Software Solutions, with expert software engineering teams</h2>
+            <p>
+              We specialize in helping you build a team of expert developers,
+              testers, and leaders.
+            </p>
+            <div className="box hide">
+              {firstHomeBox.map((e, i) => {
+                return (
+                  <div
+                    className="inBox hidden"
+                    data-animation-key={`homeSecondCont${i}`}
+                    key={i}
+                  >
+                    <img src={e.img} alt="" draggable="false" />
+                    <span>
+                      <p>{e.heading}</p>
+                      <p>{e.para}</p>
+                    </span>
+                  </div>
+                );
+              })}
+            </div>
+            {/* Responsive */}
+            <SliderBox boxes={firstHomeBox} />
           </div>
-          {/* Responsive */}
-          <SliderBox boxes={firstHomeBox} />
         </div>
 
         <div className="homeThirdCont">
@@ -314,102 +313,110 @@ const Home = () => {
         </div>
 
         <div className="homeFourthCont">
-          <h5>Expertise</h5>
-          <h2>Hire Permanent and Remote Developers</h2>
-          <p>
-            From full-time remote engineering teams to hourly contractors, work
-            with remote devs as needed
-          </p>
+          <div className="sizeBox">
+            <h5>Expertise</h5>
+            <h2>Hire Permanent and Remote Developers</h2>
+            <p>
+              From full-time remote engineering teams to hourly contractors,
+              work with remote devs as needed
+            </p>
 
-          <div className="box hide">
-            {thirdHomeBox.map((e, i) => {
-              return (
-                <div
-                  className="inBox hidden"
-                  data-animation-key={`homeFourthCont${i}`}
-                  key={i}
-                >
-                  <img src={e.img} alt="" draggable="false" />
-                  <span>
-                    <p>{e.heading}</p>
-                    <p>{e.para}</p>
-                  </span>
-                </div>
-              );
-            })}
+            <div className="box hide">
+              {thirdHomeBox.map((e, i) => {
+                return (
+                  <div
+                    className="inBox hidden"
+                    data-animation-key={`homeFourthCont${i}`}
+                    key={i}
+                  >
+                    <img src={e.img} alt="" draggable="false" />
+                    <span>
+                      <p>{e.heading}</p>
+                      <p>{e.para}</p>
+                    </span>
+                  </div>
+                );
+              })}
+            </div>
+            {/* Responsive */}
+            <SliderBox boxes={thirdHomeBox} />
           </div>
-          {/* Responsive */}
-          <SliderBox boxes={thirdHomeBox} />
         </div>
 
         <div className="homeFifthCont">
-          <h5>Specialized</h5>
-          <h2>Specialized Staff We Provide</h2>
-          <div className="box hide">
-            {fourthHomeBox.map((e, i) => {
-              return (
-                <div
-                  className="inBox hidden"
-                  data-animation-key={`homeFifthCont${i}`}
-                  key={i}
-                >
-                  <img src={e.img} alt="" draggable="false" />
-                  <p>{e.heading}</p>
-                </div>
-              );
-            })}
-          </div>
-          {/* Responsive */}
-          <div className="slider-container">
-            <div className="slides box">
-              {[0, 1, 2, 3].map((_, index) => (
-                <div
-                  key={index}
-                  className={`slide ${
-                    index === currentSlideState ? "active" : ""
-                  }`}
-                >
-                  {fourthHomeBox
-                    .slice(
-                      (index * fourthHomeBox.length) / 4,
-                      ((index + 1) * fourthHomeBox.length) / 4
-                    )
-                    .map((e, i) => (
-                      <div key={i} className="inBox">
-                        <img src={e.img} alt="" draggable="false" />
-                        <p>{e.heading}</p>
-                      </div>
-                    ))}
-                </div>
-              ))}
+          <div className="sizeBox">
+            <h5>Specialized</h5>
+            <h2>Specialized Staff We Provide</h2>
+            <div className="box hide">
+              {fourthHomeBox.map((e, i) => {
+                return (
+                  <div
+                    className="inBox hidden"
+                    data-animation-key={`homeFifthCont${i}`}
+                    key={i}
+                  >
+                    <img src={e.img} alt="" draggable="false" />
+                    <p>{e.heading}</p>
+                  </div>
+                );
+              })}
             </div>
-            <div className="indicators">
-              {[0, 1, 2, 3].map((_, index) => (
-                <span
-                  key={index}
-                  className={index === currentSlideState ? "active" : ""}
-                  onClick={() => goToSlide(index)}
-                ></span>
-              ))}
+            {/* Responsive */}
+            <div className="slider-container">
+              <div className="slides box">
+                {[0, 1, 2, 3].map((_, index) => (
+                  <div
+                    key={index}
+                    className={`slide ${
+                      index === currentSlideState ? "active" : ""
+                    }`}
+                  >
+                    {fourthHomeBox
+                      .slice(
+                        (index * fourthHomeBox.length) / 4,
+                        ((index + 1) * fourthHomeBox.length) / 4
+                      )
+                      .map((e, i) => (
+                        <div key={i} className="inBox">
+                          <img src={e.img} alt="" draggable="false" />
+                          <p>{e.heading}</p>
+                        </div>
+                      ))}
+                  </div>
+                ))}
+              </div>
+              <div className="indicators">
+                {[0, 1, 2, 3].map((_, index) => (
+                  <span
+                    key={index}
+                    className={index === currentSlideState ? "active" : ""}
+                    onClick={() => goToSlide(index)}
+                  ></span>
+                ))}
+              </div>
             </div>
           </div>
         </div>
 
         <div className="homeSixthCont">
-          <h5>Specialized</h5>
-          <h2>Technologies</h2>
-          {/* React Slick Slider */}
-          <div className="box">
-            <Slider {...settings}>{techList}</Slider>
+          <div className="sizeBox">
+            <h5>Specialized</h5>
+            <h2>Technologies</h2>
+            {/* React Slick Slider */}
+            <div className="box">
+              <Slider {...settings}>{techList}</Slider>
+            </div>
           </div>
         </div>
 
         <div className="homeSixthCont">
-          <h5>Clients</h5>
-          <h2>Amazing clients who trust us</h2>
-          {/* React Slick Slider */}
-          <div className="box">
-            <Slider {...settings}>{clientList}</Slider>
+          <div className="sizeBox">
+            <h5>Clients</h5>
+            <h2>Amazing clients who trust us</h2>
+            {/* React Slick Slider */}
+            <div className="box">
+              <Slider {...settings}>{clientList}</Slider>
+            </div>
           </div>
         </div>
       </div>

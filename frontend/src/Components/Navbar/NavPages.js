@@ -79,4 +79,30 @@ const navTechnologyPages = [
         link: "node"
     },
 ]
-export { navServicesPages, navTechnologyPages }
+
+const navLink = [
+    {
+        label: "How to start",
+        link: "start",
+    },
+    {
+        label: "Services",
+        link: "services",
+        subMenu: navServicesPages
+    },
+    {
+        label: "Technologies",
+        link: "technologies",
+        subMenu: navTechnologyPages
+    },
+    {
+        label: "Careers",
+        link: "careers",
+    },
+    {
+        label: "Contact Us",
+        link: "contact",
+    },
+]
+
+export { navLink }

@@ -18,13 +18,11 @@ import Drawer from "@mui/material/Drawer";
 /* ------------------- MUI Icons ------------------- */
 // Down Arrow Icon
 import KeyboardArrowDownOutlinedIcon from "@mui/icons-material/KeyboardArrowDownOutlined";
-// Right Arrow Icon
-import ArrowForwardOutlinedIcon from "@mui/icons-material/ArrowForwardOutlined";
 // Menu Icon
 import MenuIcon from "@mui/icons-material/Menu";
 
 // NavPages
-import { navServicesPages, navTechnologyPages } from "./NavPages";
+import { navLink } from "./NavPages";
 
 // Team Component
 import Team from "../Team/Team";
@@ -64,13 +62,15 @@ const DrawerNav = (props) => {
   };
 
   // Open Drop UseState
-  const [openDrop, setOpenDrop] = useState([false, false]);
+  const [openDrop, setOpenDrop] = useState([false, false, false, false]);
 
   // Handle Drop Func
   const handleDrop = (index) => {
-    const newDrop = [...openDrop];
-    newDrop[index] = !openDrop[index];
-    setOpenDrop(newDrop);
+    setOpenDrop((prev) => {
+      // Toggle the value at the specified index
+      prev[index] = !prev[index];
+      return [...prev]; // Return a new array to trigger re-render
+    });
   };
 
   // List Func
@@ -87,130 +87,70 @@ const DrawerNav = (props) => {
       role="presentation"
       className="drawerNav"
     >
-      {/* Start Route */}
-      <li>
-        <NavLink
-          onClick={toggleDrawer(anchor, false)}
-          onKeyDown={toggleDrawer(anchor, false)}
-          to="/start"
-          className="navLink"
-        >
-          How to start
-        </NavLink>
-      </li>
-
-      {/* Services Route */}
-      <li>
-        <NavLink
-          onClick={toggleDrawer(anchor, false)}
-          onKeyDown={toggleDrawer(anchor, false)}
-          to="/services"
-          className="navLink"
-        >
-          Services
-        </NavLink>
-        {/* Dropdown Icon */}
-        <KeyboardArrowDownOutlinedIcon
-          sx={{
-            width: 24,
-            height: 24,
-            transform: openDrop[0] ? "rotate(180deg)" : "rotate(0deg)",
+      {navLink.map((val, i) => (
+        <div
+          key={i}
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            flexDirection: "column",
           }}
-          onClick={() => {
-            handleDrop(0);
-          }}
-        />
-      </li>
-
-      {/* Service Dropdown Box */}
-      <li
-        className="menuBox"
-        style={{
-          display: openDrop[0] ? "flex" : "none",
-        }}
-      >
-        {navServicesPages.map((e, i) => {
-          return (
+        >
+          <li>
             <NavLink
-              className="menu"
-              to={`/${e.link}`}
-              key={i}
               onClick={toggleDrawer(anchor, false)}
               onKeyDown={toggleDrawer(anchor, false)}
+              to={`/${val.link}`}
+              className="navLink"
             >
-              {e.name}
+              {val.label}
             </NavLink>
-          );
-        })}
-      </li>
 
-      {/* Technologies Route */}
-      <li>
-        <NavLink
-          onClick={toggleDrawer(anchor, false)}
-          onKeyDown={toggleDrawer(anchor, false)}
-          to="/technologies"
-          className="navLink"
-        >
-          Technologies
-        </NavLink>
-        {/* Dropdown Icon */}
-        <KeyboardArrowDownOutlinedIcon
-          sx={{
-            width: 24,
-            height: 24,
-            transform: openDrop[1] ? "rotate(180deg)" : "rotate(0deg)",
-          }}
-          onClick={() => {
-            handleDrop(1);
-          }}
-        />
-      </li>
-      {/* Technology Dropdown Box*/}
-      <li
-        className="menuBox"
-        style={{
-          display: openDrop[1] ? "flex" : "none",
-        }}
-      >
-        {navTechnologyPages.map((e, i) => {
-          return (
-            <NavLink
-              className="menu"
-              to={`/${e.link}`}
-              key={i}
-              onClick={toggleDrawer(anchor, false)}
-              onKeyDown={toggleDrawer(anchor, false)}
-            >
-              {e.name}
-            </NavLink>
-          );
-        })}
-      </li>
+            {val.subMenu && (
+              <>
+                {/* Dropdown Icon */}
+                <KeyboardArrowDownOutlinedIcon
+                  sx={{
+                    width: 24,
+                    height: 24,
+                    transform: openDrop[i] ? "rotate(180deg)" : "rotate(0deg)",
+                    display: "block",
+                  }}
+                  onClick={() => {
+                    handleDrop(i);
+                  }}
+                />
+              </>
+            )}
+          </li>
 
-      {/* Careers Route */}
-      <li>
-        <NavLink
-          onClick={toggleDrawer(anchor, false)}
-          onKeyDown={toggleDrawer(anchor, false)}
-          to="/careers"
-          className="navLink"
-        >
-          Careers
-        </NavLink>
-      </li>
-
-      {/* Contact Route */}
-      <li>
-        <NavLink
-          onClick={toggleDrawer(anchor, false)}
-          onKeyDown={toggleDrawer(anchor, false)}
-          to="/contact"
-          className="navLink"
-        >
-          Contact Us
-        </NavLink>
-      </li>
+          {val.subMenu && (
+            <>
+              <li
+                className="menuBox"
+                style={{
+                  display: openDrop[i] ? "flex" : "none",
+                }}
+              >
+                {val.subMenu.map((e, idx) => {
+                  return (
+                    <NavLink
+                      className="menu"
+                      to={`/${e.link}`}
+                      key={idx}
+                      onClick={toggleDrawer(anchor, false)}
+                      onKeyDown={toggleDrawer(anchor, false)}
+                    >
+                      {e.name}
+                    </NavLink>
+                  );
+                })}
+              </li>
+            </>
+          )}
+        </div>
+      ))}
 
       {/* Button */}
       {/* <button onClick={handleBuildTeamOpenDialog}>

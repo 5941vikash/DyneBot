@@ -84,7 +84,6 @@
 }
 
 .homeContainer .homeFirstCont .box {
-  width: 90%;
   color: var(--main-textSecond-color);
   display: flex;
   justify-content: center;
@@ -159,10 +158,10 @@
 .homeContainer .homeSixthCont {
   width: 100%;
   display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
-  padding: 30px 70px;
+  padding-top: 30px;
   background-color: var(--main-background-color);
 }
 
@@ -598,4 +597,18 @@
   filter: blur(0);
   visibility: visible;
   transform: translateX(0);
+}
+
+.sizeBox {
+  width: 90%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+@media only screen and (min-width: 1221px) {
+  .sizeBox {
+    width: 1220px;
+  }
 }
